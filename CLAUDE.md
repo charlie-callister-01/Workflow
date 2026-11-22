@@ -4,7 +4,7 @@ Charlie's toolbox for a software development and AI workflow: Claude Code skills
 
 ## Start here
 1. `/start-session`: fetches, checks the branch is current, reads the README and the last 5 commits (preset `lite`).
-2. What the toolbox is: `README.md`. How to use it: `SETUP.md`. Settings and knobs: `CUSTOMISING.md`. Future plans: `notes/ideas.md`.
+2. What the toolbox is and where it's up to: `README.md`. Set up a project: `SETUP.md`. Use it in a project: `USING.md`. Develop the toolbox: `DEVELOPING.md`. Settings and knobs: `CUSTOMISING.md`. Future plans: `notes/ideas.md`; roadmap map: `.scratch/map-toolbox-roadmap/map.md`.
 3. Workflow settings: `docs/agents/workflow-settings.md` (preset `lite`, platform `github`).
 
 ## Repo map
