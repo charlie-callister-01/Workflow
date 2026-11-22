@@ -11,6 +11,7 @@ Charlie's toolbox for a software development and AI workflow: Claude Code skills
 - `skills/`: the toolbox's skills (core, optional, global). **Edit here, never in `.claude/skills/`.**
 - `.claude/skills/`: copies of the core skills so this repo uses its own workflow. After changing a core skill, delete its copy and re-run `powershell -File tools/Install-Workflow.ps1 -Project . -Preset lite -Platform github -Skills core`.
 - `templates/`, `presets/`, `platforms/`, `tools/`: what `/setup-workflow` copies into projects.
+- `beta/`: full copies of files on trial, laid over production (`notes/trials.md`). Edit the beta copy, not production, while a trial runs.
 - `notes/`: research, ideas, decisions for developing the workflow. `CHANGELOG.md`: one line per change.
 
 ## Commands
