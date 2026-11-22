@@ -28,6 +28,15 @@ _Avoid_: repo type, category
 The route one piece of work takes (start project, new feature, small feature, small change, bug fix, research or spike); chosen at the start of the work. Decides which skills run.
 _Avoid_: pipeline (for one change), mode
 
+The six change flows (being decided in roadmap decision ticket 13):
+
+- **Start project**: from an empty or new repo to a plan and a first spec.
+- **New feature**: work needing several decisions, sessions or PRs; spec plus work tickets.
+- **Small feature**: one or two decisions, one session, one PR; a spec but no work tickets.
+- **Small change**: nothing worth writing down as a decision; done in chat. _Avoid_: fast-lane
+- **Bug fix**: something that should work doesn't; starts from a failing test.
+- **Spike**: work whose output is knowledge, not merged code. _Avoid_: experiment, POC
+
 **Preset**:
 v1's word for a bundle of profile and flow (`full`, `fast-lane`, `lite`, `team`). Being replaced by repo profile plus change flow.
 
