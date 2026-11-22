@@ -4,7 +4,8 @@ Backlog of future plans and things to try. Move to `CHANGELOG.md` (and `decision
 
 ## Direction
 - [ ] **Find the best workflow for me**: research other ways of working and other people's workflows (findings in `research/`), try them as presets, keep what works. Everything here is a base to improve on.
-- [ ] **Toolbox roadmap** (wayfinder map `.scratch/toolbox-roadmap/map.md`, destination `notes/roadmap.md`). First research: [Addy Osmani agent-skills](research/2026-11-22%20Addy%20Osmani%20agent-skills.md), [Cursor pstack and team kit](research/2026-11-22%20Cursor%20pstack%20and%20team%20kit.md), [ICM](research/2026-11-22%20Interpretable%20Context%20Methodology.md), [survey of skill sets](research/2026-11-22%20Survey%20of%20skill%20sets%20and%20workflows.md).
+- [ ] **Toolbox roadmap** (wayfinder map `.scratch/toolbox-roadmap/map.md`, destination `notes/roadmap.md`). First research: [Addy Osmani agent-skills](research/2026-11-22%20Addy%20Osmani%20agent-skills.md), [Cursor pstack and team kit](research/2026-11-22%20Cursor%20pstack%20and%20team%20kit.md), [ICM](research/2026-11-22%20Interpretable%20Context%20Methodology.md), [survey of skill sets](research/2026-11-22%20Survey%20of%20skill%20sets%20and%20workflows.md), [The Pragmatic Programmer](research/2026-11-22%20The%20Pragmatic%20Programmer.md), [Domain-Driven Design](research/2026-11-22%20Domain-Driven%20Design.md).
+- [ ] **A GLOSSARY.md for this repo's own terms** (skill, preset, platform, template, tier), from the DDD note.
 - [ ] **Measure it**: tokens per session, PRs per week, time from spec to merge, to compare presets fairly.
 
 ## Platforms

@@ -20,7 +20,7 @@ It started as the workflow of one real project (`examples/poreader/`) and is bui
 _Last updated 2026-11-22._
 
 - **Working now:** presets `full`, `fast-lane`, `lite`; platforms `github` and `azure`; `/setup-workflow` primes a project in one command, `/refit-workflow` merges into a repo that already has a workflow. This repo uses its own workflow (`lite`, `github`).
-- **In progress:** charting the toolbox roadmap with wayfinder. The map is [.scratch/toolbox-roadmap/map.md](.scratch/toolbox-roadmap/map.md); its destination is `notes/roadmap.md` v1. First research is done (Addy Osmani's agent-skills, Cursor's pstack and team kit, ICM, a survey of other skill sets; the two books are in progress). Next: the decision tickets, one per session.
+- **In progress:** charting the toolbox roadmap with wayfinder. The map is [.scratch/toolbox-roadmap/map.md](.scratch/toolbox-roadmap/map.md); its destination is `notes/roadmap.md` v1. First research is done (Addy Osmani's agent-skills, Cursor's pstack and team kit, ICM, a survey of other skill sets, and The Pragmatic Programmer and Domain-Driven Design). Next: the decision tickets, one per session.
 - **Next big questions:** what to adopt from that research, projects that use more than one agent, how a project is configured (solo or team, platform, agents), a learning section, and how research and lessons are organised and exported to the vault.
 
 To continue: `/mattpocock-skills:wayfinder .scratch/toolbox-roadmap/map.md`.
