@@ -3,6 +3,7 @@
 One line per change to the workflow, newest first: what changed and why. Bigger choices get a note in `notes/decisions/`.
 
 ## 2026-11-22
+- This repo's `code_pattern` also matches `beta/skills|tools|templates/`. Why: `/ship` classed beta changes as docs-only and would pick squash.
 - v2 planning: agreed pace and release tracks (production on `main`, beta as a `beta/` overlay folder of full copies, `notes/trials.md` as the trials board, rules for switching a project mid-way), written into `DEVELOPING.md`; glossary terms Track and Trial; mechanics in roadmap decision ticket 17. Why: develop slowly and tested, see what's on trial, and never overwhelm a project.
 - v2 planning: added `GLOSSARY.md` for the toolbox's own terms and `notes/v1.md` (tag `v1.0`); README status split into v1 (in use) and v2 (in planning). Why: v1 must stay stable and understood while v2 is planned.
 - README rewritten as a front door with a "Where I'm up to" section; new `USING.md` (working in a primed project) and `DEVELOPING.md` (the improvement loop, where notes go, making and releasing a change). Why: the repo had no readable path for "what now" in either role.
