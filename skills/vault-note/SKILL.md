@@ -1,6 +1,6 @@
 ---
 name: vault-note
-description: Save something worth keeping to an Obsidian vault as a knowledge note: a lesson (a concept explained) or a plain-English decision summary. Use when the owner asks to keep or note something, or when /end-session offers it.
+description: "[wf] Save something worth keeping to an Obsidian vault as a knowledge note: a lesson (a concept explained) or a plain-English decision summary. Use when the owner asks to keep or note something, or when /end-session offers it."
 disable-model-invocation: true
 tier: optional
 needs: vault_folder set in workflow-settings.md

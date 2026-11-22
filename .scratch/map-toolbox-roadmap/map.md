@@ -16,6 +16,7 @@ Started: 2026-11-22
 - Grilling tickets: call the grilling and domain-modeling skills. Decisions with a real trade-off go to `notes/decisions/NNNN-*.md`.
 - Open items in `notes/ideas.md` are absorbed here (tickets or fog); `ideas.md` stays the inbox for new ideas.
 - Vocabulary is in `GLOSSARY.md` (decision ticket vs work ticket, repo profile vs change flow, ...). Grilling tickets add to it as terms settle.
+- Pace: slow and tested. v2 changes reach projects as trials on the beta track (`beta/` overlay folder, `notes/trials.md`), then get promoted to production. Principles in `DEVELOPING.md`, "Pace and release tracks"; mechanics in decision ticket 17.
 - Projects must never end up carrying files or skills they don't use: every v2 proposal says what lands in a project and why.
 - Tracker: local markdown (`docs/agents/issue-tracker.md`, "Wayfinding operations"). Decision tickets are `decisions/NN-*.md` (never `issues/`, which holds work tickets from `/to-tickets`).
 
@@ -32,7 +33,6 @@ Started: 2026-11-22
 ## Not yet specified
 
 - **Team preset** (`presets/team.md`) and **Azure team mode** (Boards mirror, work-item links, reviewers by path or risk). Probably shaped by the repo profile (07).
-- **v1 and v2 side by side**: a "production" v1 and a "test" v2 of the toolbox, without clutter. A `v1` maintenance branch or a `v2/` folder, and how `/setup-workflow` and `/refit-workflow` choose which one a project gets. Depends on how big v2 turns out; decide with the roadmap phases.
 - **Distribution and updates**: copies vs a plugin, `-Force` re-sync, how `workflow_version` lets `refit-workflow` pull toolbox changes into primed repos.
 - **Measuring presets**: tokens per session, PRs per week, spec-to-merge time.
 - **Risk levels**: process that varies by the type and risk of a change (drafts in `platforms/*.md`).

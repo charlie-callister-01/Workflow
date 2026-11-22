@@ -18,6 +18,14 @@ The toolbox as it was imported from the first project and is used today (tag `v1
 **v2**:
 The toolbox the roadmap describes; in planning, not yet in `skills/` or `templates/`.
 
+**Track**:
+Which copy of the toolbox a project runs: **production** (everything on `main` outside `beta/`, tagged per release) or **beta** (production with the `beta/` folder's trial copies laid on top).
+_Avoid_: channel, test branch
+
+**Trial**:
+One change being tried on the beta track in a real project before promotion, recorded as a row in `notes/trials.md` with its success check and verdict (keep, tune, drop).
+_Avoid_: experiment (that is a spike)
+
 ## Configuring a project
 
 **Repo profile**:

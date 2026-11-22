@@ -20,6 +20,18 @@ idea  ->  research  ->  decide  ->  change  ->  try on a project  ->  keep, tune
 
 Bigger or foggy questions go through a **wayfinder map** instead of one grill: see below.
 
+## Pace and release tracks
+
+Slow and tested, so the workflow never gets overwhelming. Agreed 2026-11-22; the mechanics are being decided in roadmap decision ticket 17, so parts of this aren't built yet.
+
+- **Trials board:** every change being tried is a row in [notes/trials.md](notes/trials.md): what it should improve (the success check), the trial project, notes, and a verdict (keep, tune, drop). It's there to see what's in flight and to prompt notes, not to cap how many.
+- **Two tracks:**
+  - **Production:** everything on `main` outside `beta/`, tagged per release (`v1.0`, `v1.1`, ...). What projects get by default.
+  - **Beta:** the `beta/` folder mirrors the repo and holds **full copies** of anything on trial (`beta/skills/ship/SKILL.md` next to `skills/ship/SKILL.md`), so wording changes are visible with a diff. A trial project installs production with `beta/` laid on top.
+- **Promote:** move the beta copy over production, tag a release, `CHANGELOG.md` line, verdict "keep". **Drop:** move the beta copy to `notes/archive/`, verdict "drop" with why.
+- **Switching a project mid-way:** only the files the beta changes are replaced; the project's own work (specs, code, STATUS, LOG) is untouched. Going back to production restores those files. A beta change that **creates or moves project files** must write its rollback in `trials.md` first, or it doesn't go on trial mid-project.
+- **Labels:** my skills' descriptions start `[wf]`, so they stand out in the `/` menu. Installed copies will be stamped `[wf v1.0]` or `[wf v1.1 beta]`.
+
 ## Where things go
 
 | I have... | It goes in |

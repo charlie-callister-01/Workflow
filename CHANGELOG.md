@@ -3,6 +3,7 @@
 One line per change to the workflow, newest first: what changed and why. Bigger choices get a note in `notes/decisions/`.
 
 ## 2026-11-22
+- v1 fix: every toolbox skill's description starts `[wf]` so it stands out in the `/` menu. Agreed pace and release tracks for v2 (production on `main`, beta as a `beta/` overlay folder of full copies, `notes/trials.md` as the trials board, rules for switching a project mid-way); written into `DEVELOPING.md`, glossary terms Track and Trial, mechanics in roadmap decision ticket 17. Why: develop slowly and tested, see what's on trial, and never overwhelm a project.
 - v1 fix: wayfinder maps live in `.scratch/map-<effort>/` with **decision tickets** in `decisions/`, apart from a spec's **work tickets** in `issues/` (tracker template, `start-session`). Added `GLOSSARY.md` for the toolbox's own terms and `notes/v1.md`; README status split into v1 (in use, tag `v1.0`) and v2 (in planning). Why: the two kinds of ticket were easy to mix up, and v1 must stay stable while v2 is planned.
 - README rewritten as a front door with a "Where I'm up to" section; new `USING.md` (working in a primed project) and `DEVELOPING.md` (the improvement loop, where notes go, making and releasing a change). Why: the repo had no readable path for "what now" in either role.
 - `setup-workflow` prints the exact command to install the Matt Pocock skills plugin when it is missing, and `SETUP.md` gives the same command. Why: pointing at SETUP.md left the owner hunting for the marketplace.

@@ -1,6 +1,6 @@
 ---
 name: start-session
-description: Start a work session: check the branch is current, read STATUS and the files HANDOFF lists, list open PRs, and propose the next step in under 10 lines.
+description: "[wf] Start a work session: check the branch is current, read STATUS and the files HANDOFF lists, list open PRs, and propose the next step in under 10 lines."
 disable-model-invocation: true
 tier: core
 ---
