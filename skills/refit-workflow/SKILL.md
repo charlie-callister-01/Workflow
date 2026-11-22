@@ -1,6 +1,6 @@
 ---
 name: refit-workflow
-description: Merge the Workflow toolbox into a repo that already has its own workflow, without bloat: analyse what exists against the toolbox, write a targeted grill brief for /mattpocock-skills:grill-with-docs, then apply the decisions. Also used to update a primed repo when the toolbox has changed.
+description: "[wf] Merge the Workflow toolbox into a repo that already has its own workflow, without bloat: analyse what exists against the toolbox, write a targeted grill brief for /mattpocock-skills:grill-with-docs, then apply the decisions. Also used to update a primed repo when the toolbox has changed."
 disable-model-invocation: true
 tier: global
 needs: installed with tools/Install-GlobalSkills.ps1 (writes workflow-repo.txt next to this file)

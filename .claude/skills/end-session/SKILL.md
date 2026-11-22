@@ -1,6 +1,6 @@
 ---
 name: end-session
-description: Close a work session: refresh STATUS from git and the platform, rewrite HANDOFF as a pointer list, add one LOG line, re-slice the phase Specs list, and commit the docs on the session's last PR.
+description: "[wf] Close a work session: refresh STATUS from git and the platform, rewrite HANDOFF as a pointer list, add one LOG line, re-slice the phase Specs list, and commit the docs on the session's last PR."
 disable-model-invocation: true
 tier: core
 ---
