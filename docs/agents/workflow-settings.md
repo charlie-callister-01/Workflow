@@ -18,7 +18,7 @@ This repo is the toolbox itself, primed with its own workflow (preset `lite`).
 - commit_format: type(scope): message
 - test_command: none (smoke test: `powershell -File tools/Install-Workflow.ps1 -Project <empty temp folder> -Preset full -Platform azure -Skills core,pr-explainer -DryRun`)
 - format_command: none
-- code_pattern: ^(skills|tools|templates)/
+- code_pattern: ^(beta/)?(skills|tools|templates)/
 
 ## State files (preset lite)
 
