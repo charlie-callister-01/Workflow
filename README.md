@@ -96,6 +96,7 @@ templates/         CLAUDE.md, docs/ state files, docs/agents/* for projects
 presets/           full, fast-lane, lite, team (later)
 platforms/         github, azure
 tools/             install scripts and PR helpers
+beta/              full copies of files on trial (see notes/trials.md)
 examples/          poreader: the project this came from
 notes/             research, ideas, decisions, the workflow guide
 .scratch/          working space: the v2 roadmap map (map-toolbox-roadmap/) and its decision tickets

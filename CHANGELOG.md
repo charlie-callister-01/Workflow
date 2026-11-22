@@ -4,6 +4,8 @@ One line per change to the workflow, newest first: what changed and why. Bigger 
 
 ## 2026-11-22
 - This repo's `code_pattern` also matches `beta/skills|tools|templates/`. Why: `/ship` classed beta changes as docs-only and would pick squash.
+- **Beta:** `AGENTS.md` as the project's instruction file, with `CLAUDE.md` only `@AGENTS.md` (beta copies of the templates, `Install-Workflow.ps1`, `setup-workflow` and `refit-workflow` in `beta/`; production unchanged). This repo switched too. First trial on the beta track, with Antigravity CLI; guide in `notes/trials/agent-trial-template.md`. Why: one instruction file for every agent, to trial a second agent beside Claude. Decision 0006.
+- `SETUP.md` step 0: clone this repo and pull before every setup or refit; `USING.md`: tag LOG lines with the agent when using more than one. Why: setup never said where the files come from.
 - v2 planning: agreed pace and release tracks (production on `main`, beta as a `beta/` overlay folder of full copies, `notes/trials.md` as the trials board, rules for switching a project mid-way), written into `DEVELOPING.md`; glossary terms Track and Trial; mechanics in roadmap decision ticket 17. Why: develop slowly and tested, see what's on trial, and never overwhelm a project.
 - v2 planning: added `GLOSSARY.md` for the toolbox's own terms and `notes/v1.md` (tag `v1.0`); README status split into v1 (in use) and v2 (in planning). Why: v1 must stay stable and understood while v2 is planned.
 - README rewritten as a front door with a "Where I'm up to" section; new `USING.md` (working in a primed project) and `DEVELOPING.md` (the improvement loop, where notes go, making and releasing a change). Why: the repo had no readable path for "what now" in either role.
