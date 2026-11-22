@@ -58,6 +58,7 @@ Small changes in a `full` project (docs, config, fixes under about 30 lines) ski
 | End of the day | `/day-log` (if installed) |
 | The toolbox has changed and I want the updates | `/refit-workflow` in the project: it shows what changed since `workflow_version` |
 | The project outgrew its preset | `/refit-workflow` and choose the new preset |
+| I work in it with more than one agent | Tag each LOG line with the agent: `## YYYY-MM-DD [antigravity]: ...`. Trying a new agent: copy `notes/trials/agent-trial-template.md` from the Workflow repo |
 
 ## Rules that always hold
 

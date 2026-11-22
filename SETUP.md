@@ -4,6 +4,7 @@ How to put this workflow into a project. About 15 minutes.
 
 ## 1. Once per machine
 
+0. **Clone this repo** to any folder: `gh repo clone charlie-callister-01/Workflow <folder>`. Projects never get a clone of it: the skills copy files into a project from this local clone, so `git pull` here before every `/setup-workflow` or `/refit-workflow`. If you move the clone, re-run step 5.
 1. **Claude Code**, signed in.
 2. **Matt Pocock's skills plugin.** In Claude Code: `/plugin install mattpocock-skills@claude-plugins-official`, then restart. If that marketplace is missing: `/plugin marketplace add mattpocock/skills`, then `/plugin install mattpocock-skills@mattpocock`. Skills are then called as `/mattpocock-skills:<name>`.
 3. **Platform CLI.**
