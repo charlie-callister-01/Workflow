@@ -5,7 +5,7 @@ How to put this workflow into a project. About 15 minutes.
 ## 1. Once per machine
 
 1. **Claude Code**, signed in.
-2. **Matt Pocock's skills plugin.** In Claude Code: `/plugin`, add the marketplace that carries `mattpocock-skills` (or follow <https://github.com/mattpocock/skills>), install it. Skills are then called as `/mattpocock-skills:<name>`.
+2. **Matt Pocock's skills plugin.** In Claude Code: `/plugin install mattpocock-skills@claude-plugins-official`, then restart. If that marketplace is missing: `/plugin marketplace add mattpocock/skills`, then `/plugin install mattpocock-skills@mattpocock`. Skills are then called as `/mattpocock-skills:<name>`.
 3. **Platform CLI.**
    - GitHub: `winget install GitHub.cli`, then `gh auth login`.
    - Azure DevOps: `winget install -e --id Microsoft.AzureCLI`, then `az login` and `az extension add --name azure-devops`. Open a new terminal afterwards so `az` is on PATH.

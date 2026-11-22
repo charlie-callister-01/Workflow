@@ -18,13 +18,16 @@ This skill replaces `/mattpocock-skills:setup-matt-pocock-skills`: the templates
 3. **Branch:** `git checkout -b chore/workflow-setup`.
 4. **Copy:** `powershell -File "W\tools\Install-Workflow.ps1" -Project . -Preset <p> -Platform <pl> -Skills core,<optional...>`. It never overwrites; keep its `skipped:` list and the `workflow_version:` line.
 5. **Fill in** (only files the script copied this run; never rewrite a skipped file):
-   - `docs/agents/workflow-settings.md`: every answer from step 2, the platform's `pr_command`/`pr_list_command` from `docs/agents/platform.md`, and add `workflow_version: <hash>` and `workflow_repo: W` under "Who and how".
+   - `docs/agents/workflow-settings.md`: every answer from step 2, the platform's `pr_command`/`pr_list_command` from `docs/agents/platform.md`, and `workflow_version: <hash>` and `workflow_repo: W` under "Who and how". Delete the lines that do not apply to the preset and platform (e.g. `lite` keeps only `log_file` under state files; `github` drops the `azure_*` lines; no vault drops the vault lines except an empty `vault_folder:`).
    - `CLAUDE.md`: replace the `<...>` placeholders from what you explored; delete lines that do not apply to the preset. Keep it under ~120 lines.
    - Preset `full`/`fast-lane`: a first `docs/STATUS.md` (today, "workflow set up", next action) and `docs/HANDOFF.md`; `docs/LOG.md` first line.
    - If `CLAUDE.md` was **skipped** (it existed): do not edit it; propose a short `## Workflow` section (pointer to `docs/agents/workflow-settings.md`, the pipeline line for the preset, `/ship` as the only PR route) and add it only after a yes.
 6. **Show** `git status` and the diff summary; commit after a yes: `chore: set up the workflow (<preset>, <platform>)`. Offer `/ship`; do not push without a yes.
 7. **Existing workflow?** If step 1 found one, or step 4 skipped more than `CLAUDE.md`, report what was skipped in one short list and offer `/refit-workflow` to merge the two without bloat.
-8. **Remind** once: the Matt Pocock skills plugin must be installed (`W\SETUP.md`); do not run `setup-matt-pocock-skills` here.
+8. **Plugin check** once: if no `mattpocock-skills:*` skills are in your skill list, print these lines for the owner to type (only the user can install plugins), then restart Claude Code:
+   `/plugin install mattpocock-skills@claude-plugins-official`
+   If that marketplace is missing: `/plugin marketplace add mattpocock/skills`, then `/plugin install mattpocock-skills@mattpocock`.
+   Do not run `setup-matt-pocock-skills` here.
 9. **What to build (preset `full` only, new projects).** Ask: "Is the way from idea to a plan clear?" (exploring, `W\notes\decisions\0005-wayfinder-for-foggy-starts.md`).
    - **No, it is foggy:** print this line for the owner to type (wayfinder can only be started by the user):
      `/mattpocock-skills:wayfinder Destination: docs/PLAN.md with phases, Phase 1 sliced into a Specs list in docs/phases/P-01.md, and the first ADRs and GLOSSARY terms. Idea: <one line from the owner>`
