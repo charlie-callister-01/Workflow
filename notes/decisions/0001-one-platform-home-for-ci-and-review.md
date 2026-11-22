@@ -1,0 +1,3 @@
+# One platform is the CI and review home; merge type follows the kind of change
+
+From the first project (2026-11-20). A project has exactly one place where PRs, CI and the protected `main` live; any mirror (for example an old GitHub copy) is archived read-only so only one CI counts. `main` is protected: a required build on PRs, one reviewer (self-approval allowed when solo). PRs are opened by one process (`/ship`), which picks **squash for docs-only** diffs (tidy history) and a **normal merge for code** (keeps ticket commits for bisecting). Learning mode is opt-in, and the per-step skills were trimmed into one PR-body, explainer and handoff process. Revisit: when a second person joins (reviewers, see `presets/team.md`).
