@@ -16,7 +16,7 @@ Three layers, from cheapest to most work:
 | `workflow_version` | set by setup/refit | refit-workflow | the toolbox commit the project last took; refit shows changes since |
 | `workflow_repo` | set by setup | refit-workflow | where the Workflow repo is on this machine |
 | `main_branch` | `main` | all | the protected branch |
-| `branch_prefixes` | `feature/ fix/ chore/ throwaway/` | end-session sweep | naming and what gets tagged before delete |
+| `branch_prefixes` | `feature/ fix/ chore/ throwaway/ research/` | end-session sweep | naming and what gets tagged before delete |
 | `commit_format` | `type(scope): message (phase N)` | ship | PR titles and commits |
 | `test_command` | (required) | end-session, pr-explainer | how tests run |
 | `format_command` | (optional) | CLAUDE.md | formatting gate |

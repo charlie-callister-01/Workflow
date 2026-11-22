@@ -2,6 +2,18 @@
 
 For: a multi-week project with phases, where context has to survive many sessions. This is how PoReader runs (`examples/poreader/`).
 
+## Project start (once; exploring)
+
+```
+/setup-workflow   prime the repo
+  foggy?  yes -> /mattpocock-skills:wayfinder   chart a map (one session)
+                 -> work its tickets, one per session (research runs in parallel subagents)
+                 -> destination: docs/PLAN.md + Phase 1 Specs list (+ first ADRs, GLOSSARY)
+          no  -> /mattpocock-skills:grill-with-docs -> docs/PLAN.md + Phase 1 Specs list
+```
+
+A phase that starts foggy can also begin with a map. See `notes/decisions/0005-wayfinder-for-foggy-starts.md`.
+
 ## Pipeline
 
 ```

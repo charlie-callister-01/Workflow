@@ -14,7 +14,7 @@ Delete a line to use the default shown in `CUSTOMISING.md`.
 ## Repo
 
 - main_branch: main
-- branch_prefixes: feature/, fix/, chore/, throwaway/
+- branch_prefixes: feature/, fix/, chore/, throwaway/, research/
 - commit_format: type(scope): message (phase N)
 - test_command: <e.g. dotnet test MySolution.slnx | npm test>
 - format_command: <e.g. dotnet format MySolution.slnx | npm run lint -- --fix>

@@ -25,3 +25,7 @@ This skill replaces `/mattpocock-skills:setup-matt-pocock-skills`: the templates
 6. **Show** `git status` and the diff summary; commit after a yes: `chore: set up the workflow (<preset>, <platform>)`. Offer `/ship`; do not push without a yes.
 7. **Existing workflow?** If step 1 found one, or step 4 skipped more than `CLAUDE.md`, report what was skipped in one short list and offer `/refit-workflow` to merge the two without bloat.
 8. **Remind** once: the Matt Pocock skills plugin must be installed (`W\SETUP.md`); do not run `setup-matt-pocock-skills` here.
+9. **What to build (preset `full` only, new projects).** Ask: "Is the way from idea to a plan clear?" (exploring, `W\notes\decisions\0005-wayfinder-for-foggy-starts.md`).
+   - **No, it is foggy:** print this line for the owner to type (wayfinder can only be started by the user):
+     `/mattpocock-skills:wayfinder Destination: docs/PLAN.md with phases, Phase 1 sliced into a Specs list in docs/phases/P-01.md, and the first ADRs and GLOSSARY terms. Idea: <one line from the owner>`
+   - **Yes:** print `/mattpocock-skills:grill-with-docs Write docs/PLAN.md and slice Phase 1 into a Specs list. Idea: <one line>`.
