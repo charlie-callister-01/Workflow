@@ -8,6 +8,8 @@ Delete a line to use the default shown in `CUSTOMISING.md`.
 - owner: <your name>                  # who approves, who the skills wait for
 - preset: full                        # full | fast-lane | lite   (see presets/)
 - platform: github                    # github | azure            (see platforms/)
+- workflow_version: <hash>             # Workflow repo commit this project was primed or refitted from
+- workflow_repo: <path to the Workflow repo>
 
 ## Repo
 

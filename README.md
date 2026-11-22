@@ -43,6 +43,10 @@ How much of this you use depends on the **preset** (`presets/`), and where PRs a
 | `thermo-nuclear-code-quality-review` | optional | Very strict maintainability review at the end of a phase |
 | `day-log` | optional | End-of-day note in an Obsidian vault |
 | `vault-note` | optional | A lesson or decision summary in an Obsidian vault |
+| `setup-workflow` | global | Prime a repo: detect the stack, ask once, copy skills and templates (never overwrites), fill in settings |
+| `refit-workflow` | global | Merge the toolbox into a repo that already has a workflow, via a targeted grill, without bloat; also updates a primed repo |
+
+Core and optional skills are copied into a project; global skills are installed once into `~/.claude/skills/` (`tools/Install-GlobalSkills.ps1`). `setup-workflow` replaces Matt Pocock's `setup-matt-pocock-skills`: it writes the same `docs/agents/*` files, so don't run both.
 
 ## Skills from elsewhere (install, don't copy)
 
@@ -71,7 +75,8 @@ skills/          my skills (copy into .claude/skills/)
 templates/       CLAUDE.md, docs/ state files, docs/agents/*
 presets/         full, fast-lane, lite, team (later)
 platforms/       github, azure
-tools/           New-AzurePr.ps1, gh-pr.md, Export-StandaloneHtml.ps1
+tools/           Install-Workflow.ps1, Install-GlobalSkills.ps1, New-AzurePr.ps1,
+                 gh-pr.md, Export-StandaloneHtml.ps1
 examples/        poreader: the project this came from
 notes/           research, ideas and decisions for developing the workflow itself
 ```

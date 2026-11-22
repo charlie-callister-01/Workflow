@@ -13,6 +13,8 @@ Three layers, from cheapest to most work:
 | `owner` | (required) | all | who approves; who the skills wait for |
 | `preset` | `full` | start/end-session | which state files exist and which steps run |
 | `platform` | `github` | ship, start/end-session | PR and CI commands, text rules |
+| `workflow_version` | set by setup/refit | refit-workflow | the toolbox commit the project last took; refit shows changes since |
+| `workflow_repo` | set by setup | refit-workflow | where the Workflow repo is on this machine |
 | `main_branch` | `main` | all | the protected branch |
 | `branch_prefixes` | `feature/ fix/ chore/ throwaway/` | end-session sweep | naming and what gets tagged before delete |
 | `commit_format` | `type(scope): message (phase N)` | ship | PR titles and commits |

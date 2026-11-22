@@ -10,9 +10,14 @@ How to put this workflow into a project. About 15 minutes.
    - GitHub: `winget install GitHub.cli`, then `gh auth login`.
    - Azure DevOps: `winget install -e --id Microsoft.AzureCLI`, then `az login` and `az extension add --name azure-devops`. Open a new terminal afterwards so `az` is on PATH.
 4. **Optional, for `pr-explainer`:** the Claude Code Artifact tool (claude.ai account) and the `artifact-design` / `artifact-diagramming` skills.
-5. **Optional, for skills on every project:** copy the skills you always want into `~/.claude/skills/` instead of each project.
+5. **Global skills:** from this repo, `powershell -File tools/Install-GlobalSkills.ps1`. Installs `/setup-workflow` and `/refit-workflow` into `~/.claude/skills/` and records where this repo is. Re-run after pulling changes.
+6. **Optional, for skills on every project:** copy any other skill you always want into `~/.claude/skills/` instead of each project.
+
+> Don't run `/mattpocock-skills:setup-matt-pocock-skills` on a primed repo: `/setup-workflow` already writes the `docs/agents/*` files his skills read. Re-run his only to switch issue tracker.
 
 ## 2. Per project
+
+**Quick way:** open Claude Code in the project and run `/setup-workflow`. It does the steps below for you, and offers `/refit-workflow` if the repo already has its own workflow. The manual steps are kept for reference.
 
 1. **Pick a preset and a platform** (`presets/`, `platforms/`). Unsure: `lite` + `github` for personal, `full` + `azure` for work.
 2. **Copy the skills** you want into the project's `.claude/skills/`:
