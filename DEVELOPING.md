@@ -29,21 +29,21 @@ Bigger or foggy questions go through a **wayfinder map** instead of one grill: s
 | Notes on a book | `notes/research/` for now; a learning section is being decided (roadmap ticket 08) |
 | A decision with a real trade-off | `notes/decisions/NNNN-<slug>.md` |
 | A change that shipped | one line in `CHANGELOG.md` |
-| A big, foggy question | a wayfinder map in `.scratch/<effort>/` |
+| A big, foggy question | a wayfinder map in `.scratch/map-<effort>/` (its decision tickets in `decisions/`) |
 | A new skill | `skills/<name>/SKILL.md` (see CUSTOMISING.md, "Writing a new skill") |
 
 ## Where it's up to: the roadmap map
 
-The current big effort is the **toolbox roadmap**: [.scratch/toolbox-roadmap/map.md](.scratch/toolbox-roadmap/map.md). It ends with `notes/roadmap.md` v1.
+The current big effort is the **toolbox roadmap**: [.scratch/map-toolbox-roadmap/map.md](.scratch/map-toolbox-roadmap/map.md). It ends with `notes/roadmap.md` v1.
 
 - **Decisions so far** lists every resolved ticket with a one-line answer.
-- **Tickets** are in `.scratch/toolbox-roadmap/issues/`. `Status: open` and nothing in `Blocked by` that is still open means it can be worked now.
+- **Decision tickets** are in `.scratch/map-toolbox-roadmap/decisions/`. `Status: open` and nothing in `Blocked by` that is still open means it can be worked now.
 - **Not yet specified** holds what's coming but not clear enough to ticket yet.
 
 To work the next ticket, start a fresh session and run:
 
 ```
-/mattpocock-skills:wayfinder .scratch/toolbox-roadmap/map.md
+/mattpocock-skills:wayfinder .scratch/map-toolbox-roadmap/map.md
 ```
 
 It picks the first open ticket (or name one), works it with you, records the answer and updates the map. One ticket per session.

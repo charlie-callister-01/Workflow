@@ -19,11 +19,18 @@ It started as the workflow of one real project (`examples/poreader/`) and is bui
 
 _Last updated 2026-11-22._
 
-- **Working now:** presets `full`, `fast-lane`, `lite`; platforms `github` and `azure`; `/setup-workflow` primes a project in one command, `/refit-workflow` merges into a repo that already has a workflow. This repo uses its own workflow (`lite`, `github`).
-- **In progress:** charting the toolbox roadmap with wayfinder. The map is [.scratch/toolbox-roadmap/map.md](.scratch/toolbox-roadmap/map.md); its destination is `notes/roadmap.md` v1. First research is done (Addy Osmani's agent-skills, Cursor's pstack and team kit, ICM, a survey of other skill sets, and The Pragmatic Programmer and Domain-Driven Design). Next: the decision tickets, one per session.
-- **Next big questions:** what to adopt from that research, projects that use more than one agent, how a project is configured (solo or team, platform, agents), a learning section, and how research and lessons are organised and exported to the vault.
+### v1: in use
 
-To continue: `/mattpocock-skills:wayfinder .scratch/toolbox-roadmap/map.md`.
+What this repo's `skills/`, `templates/`, `presets/` and `platforms/` hold, and what projects get. Presets `full`, `fast-lane`, `lite`; platforms `github` and `azure`; `/setup-workflow` primes a project in one command, `/refit-workflow` merges into a repo that already has a workflow. Tagged `v1.0`; changes only for fixes. Summary: [notes/v1.md](notes/v1.md).
+
+### v2: in planning
+
+Nothing in v2 changes v1 yet. It is being charted as a wayfinder map: [.scratch/map-toolbox-roadmap/map.md](.scratch/map-toolbox-roadmap/map.md), ending in `notes/roadmap.md`.
+
+- **Done:** research on Addy Osmani's agent-skills, Cursor's pstack and team kit, ICM, a survey of other skill sets, and two books (The Pragmatic Programmer, Domain-Driven Design). Vocabulary in [GLOSSARY.md](GLOSSARY.md).
+- **Next decisions:** change flows (start project, new feature, small feature, small change, bug fix, spike) and repo profiles in place of presets; what happens after wayfinder and after implementation; what to adopt from the research; projects with more than one agent; a learning section; organising and exporting research and lessons; a status page I can read.
+
+To continue: `/mattpocock-skills:wayfinder .scratch/map-toolbox-roadmap/map.md`.
 
 ## The pipeline at a glance
 
@@ -83,6 +90,7 @@ USING.md           use it day to day in a project
 DEVELOPING.md      improve the toolbox itself
 CUSTOMISING.md     every setting and knob
 CHANGELOG.md       one line per change, newest first
+GLOSSARY.md        the toolbox's own terms (decision ticket, work ticket, repo profile, change flow, ...)
 skills/            my skills (edit here, never in .claude/skills/)
 templates/         CLAUDE.md, docs/ state files, docs/agents/* for projects
 presets/           full, fast-lane, lite, team (later)
@@ -90,7 +98,7 @@ platforms/         github, azure
 tools/             install scripts and PR helpers
 examples/          poreader: the project this came from
 notes/             research, ideas, decisions, the workflow guide
-.scratch/          working space: the wayfinder roadmap map and its tickets
+.scratch/          working space: the v2 roadmap map (map-toolbox-roadmap/) and its decision tickets
 docs/              this repo's own workflow files (LOG, agent settings)
 .claude/skills/    copies of the core skills so this repo uses its own workflow
 ```

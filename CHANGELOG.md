@@ -3,6 +3,7 @@
 One line per change to the workflow, newest first: what changed and why. Bigger choices get a note in `notes/decisions/`.
 
 ## 2026-11-22
+- v1 fix: wayfinder maps live in `.scratch/map-<effort>/` with **decision tickets** in `decisions/`, apart from a spec's **work tickets** in `issues/` (tracker template, `start-session`). Added `GLOSSARY.md` for the toolbox's own terms and `notes/v1.md`; README status split into v1 (in use, tag `v1.0`) and v2 (in planning). Why: the two kinds of ticket were easy to mix up, and v1 must stay stable while v2 is planned.
 - README rewritten as a front door with a "Where I'm up to" section; new `USING.md` (working in a primed project) and `DEVELOPING.md` (the improvement loop, where notes go, making and releasing a change). Why: the repo had no readable path for "what now" in either role.
 - `setup-workflow` prints the exact command to install the Matt Pocock skills plugin when it is missing, and `SETUP.md` gives the same command. Why: pointing at SETUP.md left the owner hunting for the marketplace.
 - Wayfinder for foggy project starts (exploring): `full` preset gains a "Project start" stage, `setup-workflow` offers the wayfinder line, `start-session` shows a map's frontier, `research/` branches are swept. Why: don't spec on guesses when the way to a plan is unclear. Decision 0005.
