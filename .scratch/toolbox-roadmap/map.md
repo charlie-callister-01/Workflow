@@ -21,6 +21,11 @@ Started: 2026-11-22
 
 <!-- one line per resolved ticket: [title](issues/NN-slug.md): gist -->
 
+- [Addy Osmani's agent-skills](issues/01-addy-osmani-agent-skills.md): 26 lifecycle skills plus personas and evals; strong on review, ship and production concerns where Pocock is strong on define and build. One portable `skills/` core with thin per-agent adapters (the pattern for 06). Borrow selected skills and the excuses / red-flags / verification sections; don't install the whole pack.
+- [Cursor's pstack and cursor-team-kit](issues/02-cursor-pstack-team-kit.md): team kit is 18 small stack-neutral skills (deslop, verify-this, CI loop); pstack is one person's heavy style (playbooks, one-rule principle skills, reflect/correct learning loop). Cursor loads `.claude/skills/` and `AGENTS.md`, so our skills likely work there already; keep agent-specific tool names out of skill bodies.
+- [Survey of other skill sets and workflows](issues/04-survey-other-methods.md): shortlist for deep dives: Matt Pocock v1.3.2/main (setup-workflow must mirror his setup fixes), obra/superpowers, Compound Engineering (lessons in `docs/solutions/`), GitHub Spec Kit (customisation layers), OpenSpec (specs archived into living specs). Runners-up: BMAD, GSD Core, anthropics/skills.
+- [Interpretable Context Methodology (ICM)](issues/03-icm.md): folder-per-stage pipelines with a CONTEXT.md contract each; same principles as the toolbox but process lives in folders, not skills. Worth taking: per-task "load / don't load" tables, a no-placeholders check after setup, audit tables in file-writing skills, one-way links, line limits for `docs/agents/*.md`.
+
 ## Not yet specified
 
 - **Team preset** (`presets/team.md`) and **Azure team mode** (Boards mirror, work-item links, reviewers by path or risk). Probably shaped by the configuration model (07).
@@ -28,7 +33,7 @@ Started: 2026-11-22
 - **Measuring presets**: tokens per session, PRs per week, spec-to-merge time.
 - **Risk levels**: process that varies by the type and risk of a change (drafts in `platforms/*.md`).
 - **Entry points vs building blocks**: which of my skills are user-only entry points and which the model may chain (see `ideas.md`, Skill chaining).
-- **Deep dives** on whatever the survey (04) shortlists.
+- **Deep dives** on the survey shortlist: superpowers (vs `/ship` and `/end-session`, transcript diagnosis), Compound Engineering (lessons that carry forward, post-PR care), Spec Kit (customisation layers, before the update flow), OpenSpec (what happens to `.scratch/` specs after merge). Ticket each when the question it feeds (05, 09, 10, distribution) needs it.
 - **Roadmap phases**: the ordering of everything above into phases; graduates once 05-10 are resolved.
 
 ## Out of scope
