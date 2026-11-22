@@ -1,0 +1,3 @@
+# Specs and tickets stay in markdown; a board is only a one-way mirror
+
+From the first project (2026-11-20). Markdown under `.scratch/` is the single source of truth for specs and tickets, because the agent skills read and write those files directly; a board they cannot read would split the truth. Rejected: everything on the board (the skills would need an API layer, and offline work stops) and markdown only (wanted to learn what a board adds, and a team will want one). Compromise: phases and specs are mirrored one way into the board by hand, when a phase is sliced; tickets, logs and ADRs are not. If the two disagree, markdown wins. Review after a few phases: keep the mirror if it was used, drop it if not. Revisit two-way sync only for a team. See `platforms/azure.md`.

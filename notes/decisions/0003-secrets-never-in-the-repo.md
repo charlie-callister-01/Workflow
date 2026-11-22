@@ -1,0 +1,3 @@
+# Pipeline secrets live in the platform's secret store, one group per environment, never in PR builds
+
+From the first project (2026-11-20). Secrets go in the platform's store (Azure variable groups, or GitHub environment secrets), marked secret, one group per environment (dev, live) so a dev run can never see live credentials. PR builds get no secrets, because a PR can change the pipeline's own steps. A cloud key vault was deferred until there is a subscription for it; linking it later does not change the pipeline. Secrets never enter the repo or its history (a committed secret must be rotated even after the file is deleted), and scripts must not print or transform secret values: masking is a safety net, not a guarantee.

@@ -1,0 +1,3 @@
+# Builds run on hosted agents; a self-hosted agent only when a stage needs internal network access
+
+From the first project (2026-11-20). Hosted build agents (a clean machine per run) cover everything that needs no internal network: unit tests with fakes, synthetic data, local databases. When a later stage needs internal systems (shadow runs, deploys to a dev environment), add a self-hosted agent inside the network that only makes outbound HTTPS calls, with a least-privilege service account whose credentials live in the secret store (decision 0003). Hosted and self-hosted mix in one pipeline with a one-line `pool` setting per job, so starting hosted traps nothing. Real data stays inside the network.
