@@ -1,6 +1,6 @@
 ---
 name: pr-explainer
-description: Build a teacher-and-senior-engineer HTML explainer for the current branch's changes (plain-language what/why, technical why, wider system, testing guide, next steps, diagrams), save it to the explainer folder and publish it as an Artifact. Called by /ship for code PRs, or on request.
+description: "[wf] Build a teacher-and-senior-engineer HTML explainer for the current branch's changes (plain-language what/why, technical why, wider system, testing guide, next steps, diagrams), save it to the explainer folder and publish it as an Artifact. Called by /ship for code PRs, or on request."
 tier: optional
 needs: Claude Code Artifact tool (claude.ai); the artifact-design and artifact-diagramming skills
 ---

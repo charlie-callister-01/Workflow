@@ -1,6 +1,6 @@
 ---
 name: day-log
-description: End-of-day log for an Obsidian vault: gathers today's LOG lines, commits and PRs across all sessions and writes one plain-English day note (done, decisions, learned, next, hours). Run once at the end of the working day.
+description: "[wf] End-of-day log for an Obsidian vault: gathers today's LOG lines, commits and PRs across all sessions and writes one plain-English day note (done, decisions, learned, next, hours). Run once at the end of the working day."
 disable-model-invocation: true
 tier: optional
 needs: vault_folder set in workflow-settings.md

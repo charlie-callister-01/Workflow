@@ -1,6 +1,6 @@
 ---
 name: setup-workflow
-description: Prime the current repo to work with the Workflow toolbox: detect the stack, ask preset/platform/skills in one round, copy skills and templates without overwriting, fill in the settings and CLAUDE.md on a chore/workflow-setup branch. Offers /refit-workflow if the repo already has a workflow.
+description: "[wf] Prime the current repo to work with the Workflow toolbox: detect the stack, ask preset/platform/skills in one round, copy skills and templates without overwriting, fill in the settings and CLAUDE.md on a chore/workflow-setup branch. Offers /refit-workflow if the repo already has a workflow."
 disable-model-invocation: true
 tier: global
 needs: installed with tools/Install-GlobalSkills.ps1 (writes workflow-repo.txt next to this file)
