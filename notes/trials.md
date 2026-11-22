@@ -6,5 +6,4 @@ When a trial ends, set the verdict: **keep** (move the beta copy over production
 
 | Change | Should improve (success check) | Track | Trial project | Started | Rollback (if it creates or moves project files) | Notes | Verdict |
 |---|---|---|---|---|---|---|---|
-
-_No trials yet. The first will come from roadmap Phase 1._
+| **AGENTS.md as the main file** (decision 0006): instructions in `AGENTS.md`, `CLAUDE.md` only `@AGENTS.md`. Beta copies: `beta/templates/AGENTS.md`, `beta/templates/CLAUDE.md`, `beta/tools/Install-Workflow.ps1`, `beta/skills/setup-workflow/`, `beta/skills/refit-workflow/` | A second agent (Antigravity CLI) follows the same rules with no second instruction file, and Claude Code behaves as before; switching agents mid-work needs no re-explaining | beta | a personal GitHub project (switched by hand, guide: `notes/trials/agent-trial-template.md`); this repo | 2026-11-22 | `git rm CLAUDE.md`, `git mv AGENTS.md CLAUDE.md`, remove `workflow_track: beta`, delete local `.agents/` | First use of the beta track, built by hand: refit can't install `beta/` yet (ticket 17), and the global setup/refit stay production. Findings go in the project's `.scratch/<agent>-trial.md`, summary to `notes/research/`. | |
