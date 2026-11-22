@@ -3,6 +3,7 @@
 One line per change to the workflow, newest first: what changed and why. Bigger choices get a note in `notes/decisions/`.
 
 ## 2026-11-22
+- Added `.gitignore` for `.vs/`. Why: Visual Studio cache showed up as untracked.
 - This repo's `code_pattern` also matches `beta/skills|tools|templates/`. Why: `/ship` classed beta changes as docs-only and would pick squash.
 - **Beta:** `AGENTS.md` as the project's instruction file, with `CLAUDE.md` only `@AGENTS.md` (beta copies of the templates, `Install-Workflow.ps1`, `setup-workflow` and `refit-workflow` in `beta/`; production unchanged). This repo switched too. First trial on the beta track, with Antigravity CLI; guide in `notes/trials/agent-trial-template.md`. Why: one instruction file for every agent, to trial a second agent beside Claude. Decision 0006.
 - `SETUP.md` step 0: clone this repo and pull before every setup or refit; `USING.md`: tag LOG lines with the agent when using more than one. Why: setup never said where the files come from.
