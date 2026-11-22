@@ -6,6 +6,10 @@ First use: Antigravity CLI (`agy`), for the trial "AGENTS.md as the main file" i
 
 ## 1. Setup (once)
 
+**Before you start:**
+- **The workflow is in the project.** Machine set up (toolbox cloned, global skills installed) and the project primed with `/setup-workflow`, or `/refit-workflow` if it had its own workflow: see `SETUP.md` in the Workflow repo. The project has `CLAUDE.md`, `.claude/skills/` and `docs/agents/workflow-settings.md`, and that PR is merged.
+- **The agent is installed.** Antigravity CLI (`agy`): install and sign in following Google's guide, https://codelabs.developers.google.com/antigravity-cli-hands-on. Check with `agy --version`.
+
 Antigravity reads `AGENTS.md` (and `GEMINI.md`, `.agents/rules/*.md`) and skills from `.agents/skills/<name>/SKILL.md`. It does not read `CLAUDE.md` or `.claude/skills/`. Its global files live in `~/.gemini/`.
 
 1. **Instruction file.** If the project still has `CLAUDE.md` only (refit can't install the beta yet; roadmap ticket 17), switch it by hand on a `chore/` branch, then `/ship` it:
