@@ -78,6 +78,17 @@ A description of one piece of work to build, written by `/to-spec`.
 A small slice of a spec to build, written by `/to-tickets` into the spec's `issues/` folder and built by `/implement`.
 _Avoid_: ticket (alone), task
 
+**Scope block**:
+The part of a plan that says what one task may edit (Touch), read, must ask about first (Ask first) or must never touch (Never), plus what it deliberately isn't doing (Not doing). Anything noticed outside it becomes an idea, not an edit.
+_Avoid_: boundaries, out of scope (that is a map section)
+
+**Working rules**:
+The few standing principles at the top of a project's `AGENTS.md` that apply to every task, whatever the change flow.
+_Avoid_: principles, non-negotiables
+
+**Ratchet**:
+How `AGENTS.md` grows and shrinks: a line is added only to stop a failure that really happened, and removed once a model no longer needs it.
+
 ## Ideas
 
 **Idea**:

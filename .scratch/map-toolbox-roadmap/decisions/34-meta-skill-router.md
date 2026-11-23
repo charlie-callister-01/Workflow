@@ -17,3 +17,7 @@ Points to decide:
 5. **Cost and portability:** how much context it adds per session, and whether other agents (Cursor, Codex, Antigravity) can use it (06).
 
 Related: 01, 13, 26, 29, 30 (SessionStart injection), 05 (principles, with 33 merged in), 06 (multi-agent).
+
+## From 05 (2026-11-23)
+
+Point 4 decided: the Working rules live in `AGENTS.md`, not in a router. The router may surface the plan's Scope block. Borrowed skills come in one trial at a time; Pocock's skills and built-ins stay the defaults.

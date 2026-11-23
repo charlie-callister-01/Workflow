@@ -24,3 +24,7 @@ Related: 30 (hooks back the session skills), 21.
 ## Moved in from 30: session hooks (2026-11-23)
 
 A SessionStart hook that feeds `/start-session` its git and PR facts (up to 10,000 characters; can't block), and a SessionEnd hook that leaves a note when `/end-session` was skipped (can't talk to the model; 1.5 s budget). Hooks back the session skills, never replace them (research 29). How hooks are shipped and trialled is 30's; 15 decides what these two do.
+
+## From 05 (2026-11-23)
+
+Where `retro` sits after `/ship` (05 adopted it as the ratchet's review step); `/end-session` gains the lesson question. The CI watcher and PR care (team kit, Compound Engineering) are candidates here.
