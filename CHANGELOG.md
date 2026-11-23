@@ -2,6 +2,9 @@
 
 One line per change to the workflow, newest first: what changed and why. Bigger choices get a note in `notes/decisions/`.
 
+## 2026-11-23
+- v2 planning: roadmap decision ticket 22, a fast ideas inbox (capture a one-line idea mid-task, then sort it into the wayfinder map). Why: adding to `notes/ideas.md` is slow and nothing routes ideas into the map.
+
 ## 2026-11-22
 - Agent trial guide: a "Before you start" list (workflow already in the project via `SETUP.md`; how to install Antigravity CLI). Why: the guide assumed both.
 - This repo's `code_pattern` also matches `beta/skills|tools|templates/`. Why: `/ship` classed beta changes as docs-only and would pick squash.
