@@ -6,7 +6,8 @@ How to work in a project once `/setup-workflow` has primed it. For setting it up
 
 | File or folder | What it is | Preset |
 |---|---|---|
-| `CLAUDE.md` | The rules agents follow in this project: commands, branch rules, the pipeline | all |
+| `AGENTS.md` | The rules agents follow in this project: commands, branch rules, the pipeline | all |
+| `CLAUDE.md` | One line, `@AGENTS.md`: Claude Code imports `AGENTS.md`; other agents read it directly | all |
 | `docs/agents/workflow-settings.md` | Your answers from setup: preset, platform, owner, test command, PR commands | all |
 | `docs/agents/*.md` | Where tickets live, triage labels, domain docs, platform rules (read by Matt Pocock's skills) | all |
 | `docs/LOG.md` | One line per session | all |
@@ -65,7 +66,7 @@ Small changes in a `full` project (docs, config, fixes under about 30 lines) ski
 - Never commit to `main`. Branches are `feature/`, `fix/`, `chore/`.
 - Open PRs only with `/ship`. It picks squash (docs) or merge commit (code).
 - If STATUS and git disagree, trust git.
-- Agents read only what they need: `CLAUDE.md`, STATUS and the files HANDOFF lists. Everything else on demand.
+- Agents read only what they need: `AGENTS.md`, STATUS and the files HANDOFF lists. Everything else on demand.
 - Archive, don't delete.
 
 ## Changing how a project works

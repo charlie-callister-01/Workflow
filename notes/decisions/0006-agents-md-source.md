@@ -1,6 +1,6 @@
 # AGENTS.md is the project's instruction file; CLAUDE.md only imports it
 
-Status: **on trial** (2026-11-22, beta track, `notes/trials.md`). Review when the Antigravity trial ends.
+Status: **accepted** (2026-11-23): promoted from the beta track as the first v2 change. Trialled from 2026-11-22 (`notes/trials.md`).
 
 A primed project keeps its rules in `AGENTS.md`, and `CLAUDE.md` is the single line `@AGENTS.md`. Claude Code reads `CLAUDE.md` and imports the file; Antigravity, Cursor, Codex and others read `AGENTS.md` directly, so one file serves every agent and Claude-only projects lose nothing. Every project gets the same layout (no "which agents?" question), because a one-line `CLAUDE.md` is not bloat and a fork in the setup and refit skills would be. `/refit-workflow` moves an existing `CLAUDE.md` with `git mv` so its history follows; where both files exist, the grill decides each extra rule. No `GEMINI.md` or `.agents/rules/`: Antigravity combines every instruction file it finds, which would split the rules.
 
