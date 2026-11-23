@@ -37,6 +37,7 @@ Started: 2026-11-22
 - [Addy Osmani: the agent-skills blog post](decisions/26-agent-skills-post.md): skills are processes with a hard verification exit, not prose; scope discipline matters most. Agent configuration decays: prune by experiment (turn a skill off, keep it only if the agent then fails). Must-hold rules belong in hooks.
 - [AI Hero: the home repo pattern](decisions/27-home-repo-pattern.md): one home repo, agent started there, plain pointers to other repos; shared skills live in one place so updates are just commits. Feeds 23: keep skills central (global or plugin), templates as per-project copies; borrow its setup inventory for refit.
 - [Flavio Copes on pstack](decisions/28-pstack-flavio-copes.md): every task gets a goal plus a way to check it; loops need a finish condition and a decision log; review keeps dismissed findings with reasons. His fstack (nail, plan, build, check, push) backs `lite`; borrow "what we're NOT doing" and a three-question check before `/ship`.
+- [The owner's notes on the three workflows](decisions/29-owner-notes-three-workflows.md): the common thread is moving rules from prose into hooks, checks and verification (the toolbox has none); hooks back the session skills rather than replace them; `/goal` over Ralph plugins, cloud sessions for unattended work; Mermaid state diagrams over TLA+; architecture tests per stack; Ship / Show / Ask fits 24.
 
 ## Not yet specified
 

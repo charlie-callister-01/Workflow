@@ -3,6 +3,7 @@
 One line per change to the workflow, newest first: what changed and why. Bigger choices get a note in `notes/decisions/`.
 
 ## 2026-11-23
+- v2 planning: research ticket 29 resolved, an analysis of my own notes on the three workflows plus gap research (loops, sandboxes and session hooks; verification and enforceable architecture). Why: my takeaways all point to moving rules from prose into hooks, checks and verification, which no ticket covered yet.
 - v2 planning: research tickets 25-28 resolved (Addy Osmani on agent harness engineering and on agent-skills, AI Hero's home repo pattern, Flavio Copes on pstack), findings in `notes/research/2026-11-23 *.md`; ticket 05 (what to adopt) now waits on them too. Why: four more sources to weigh before choosing what to adopt.
 - v2 planning: roadmap decision ticket 24, leaner `/ship` and `/end-session` (one PR per session where possible, where the LOG line goes once the PR has merged, a docs-only fast path, trimming token use). Why: one session opened three small PRs (#12, #13 and the work PR), costing usage and review time.
 - v2 planning: resolved roadmap decision ticket 22, a fast ideas inbox: a global user-only `/idea` skill, a project inbox in `docs/IDEAS.md` created on first use, toolbox ideas as GitHub `idea` issues (decision 0007), triage by `/idea` with no text; glossary terms Idea, Inbox, Triage. Why: capture an idea in seconds mid-task, from any machine, and route it into the map.
