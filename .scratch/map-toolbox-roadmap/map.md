@@ -42,11 +42,9 @@ Started: 2026-11-22
 ## Not yet specified
 
 - **Team preset** (`presets/team.md`) and **Azure team mode** (Boards mirror, work-item links, reviewers by path or risk). Probably shaped by the repo profile (07).
-- **Distribution**: copies vs a plugin. Updating primed projects is now decision ticket 23.
 - **Risk levels**: process that varies by the type and risk of a change (drafts in `platforms/*.md`).
 - **Deep dives** on the survey shortlist: superpowers (vs `/ship` and `/end-session`, transcript diagnosis), Compound Engineering (lessons that carry forward, post-PR care), Spec Kit (customisation layers, before the update flow), OpenSpec (what happens to `.scratch/` specs after merge). Ticket each when the question it feeds (05, 09, 10, distribution) needs it.
 - **Autonomous loops and sandboxes**: whether the toolbox supports unattended runs (`/goal`, Ralph-style loops) and where they run (cloud sessions, dev container, WSL2 sandbox). Waits on 30 and 31 (research in ticket 29).
-- **Home repo as a workplace**: working on projects from this repo (an "Other Repos" pointer list) and an LLM-kept wiki of what I learn (`notes/index.md`, a notes lint). Links to 08 and 10 (research in 27 and 29).
 - **Roadmap phases**: the ordering of everything above into phases; graduates once 05-16 are resolved.
 
 ## Out of scope
