@@ -3,6 +3,7 @@
 One line per change to the workflow, newest first: what changed and why. Bigger choices get a note in `notes/decisions/`.
 
 ## 2026-11-23
+- v2 planning: roadmap decision ticket 23, updating the workflow in an older project (a new `/update-workflow` skill or a mode of `/refit-workflow`); the "Distribution and updates" fog line now covers distribution only. Why: refit is built for merging two workflows, not for taking toolbox changes since `workflow_version`.
 - v2 planning: roadmap decision ticket 22, a fast ideas inbox (capture a one-line idea mid-task, then sort it into the wayfinder map). Why: adding to `notes/ideas.md` is slow and nothing routes ideas into the map.
 
 ## 2026-11-22

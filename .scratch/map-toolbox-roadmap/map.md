@@ -36,7 +36,7 @@ Started: 2026-11-22
 ## Not yet specified
 
 - **Team preset** (`presets/team.md`) and **Azure team mode** (Boards mirror, work-item links, reviewers by path or risk). Probably shaped by the repo profile (07).
-- **Distribution and updates**: copies vs a plugin, `-Force` re-sync, how `workflow_version` lets `refit-workflow` pull toolbox changes into primed repos.
+- **Distribution**: copies vs a plugin. Updating primed projects is now decision ticket 23.
 - **Risk levels**: process that varies by the type and risk of a change (drafts in `platforms/*.md`).
 - **Entry points vs building blocks**: which of my skills are user-only entry points and which the model may chain (see `ideas.md`, Skill chaining).
 - **Deep dives** on the survey shortlist: superpowers (vs `/ship` and `/end-session`, transcript diagnosis), Compound Engineering (lessons that carry forward, post-PR care), Spec Kit (customisation layers, before the update flow), OpenSpec (what happens to `.scratch/` specs after merge). Ticket each when the question it feeds (05, 09, 10, distribution) needs it.
