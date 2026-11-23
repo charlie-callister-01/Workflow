@@ -13,7 +13,7 @@ For: a small personal project, a spike, or a weekend build. No phases, no vault,
 ```
 
 ## Keeps
-- `CLAUDE.md` (short), `docs/LOG.md`, `docs/agents/workflow-settings.md`.
+- `AGENTS.md` (short) and the one-line `CLAUDE.md`, `docs/LOG.md`, `docs/agents/workflow-settings.md`.
 - Branches and PRs if the repo has CI; otherwise your call.
 
 ## Drops

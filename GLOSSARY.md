@@ -13,10 +13,10 @@ A project the toolbox has been set up in by `/setup-workflow` or `/refit-workflo
 _Avoid_: onboarded repo, installed project
 
 **v1**:
-The toolbox as it was imported from the first project and is used today (tag `v1.0`, described in `notes/v1.md`). Changed only by fixes.
+The toolbox as it was imported from the first project (tag `v1.0`, described in `notes/v1.md`). Changed only by fixes; `main` has moved on to v2 changes.
 
 **v2**:
-The toolbox the roadmap describes; in planning, not yet in `skills/` or `templates/`.
+The toolbox the roadmap describes; being planned, and reaching `skills/` and `templates/` one change at a time (first: `AGENTS.md` as the instruction file, decision 0006).
 
 **Track**:
 Which copy of the toolbox a project runs: **production** (everything on `main` outside `beta/`, tagged per release) or **beta** (production with the `beta/` folder's trial copies laid on top).

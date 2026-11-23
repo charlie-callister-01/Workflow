@@ -19,7 +19,7 @@ Three layers, from cheapest to most work:
 | `branch_prefixes` | `feature/ fix/ chore/ throwaway/ research/` | end-session sweep | naming and what gets tagged before delete |
 | `commit_format` | `type(scope): message (phase N)` | ship | PR titles and commits |
 | `test_command` | (required) | end-session, pr-explainer | how tests run |
-| `format_command` | (optional) | CLAUDE.md | formatting gate |
+| `format_command` | (optional) | AGENTS.md | formatting gate |
 | `code_pattern` | `src/ tests/ tools/` + build files | ship, New-AzurePr.ps1 | what counts as code: explainer, review, merge type |
 | `status_file` ... `explainer_dir` | `docs/...` | all | where state lives |
 | `pr_command`, `pr_list_command` | per platform | ship, start/end-session, day-log | how PRs are opened and listed |
@@ -40,10 +40,10 @@ Numbers and rules you might tune per project or per person:
 
 | Knob | Current | Where |
 |---|---|---|
-| Fast-lane limit | fixes under ~30 lines | CLAUDE.md, presets |
-| Size check | lines x ~12 tokens + ~20k; >160k suggest a fix spec, >200k make one | CLAUDE.md |
-| PR size | one PR per spec; split past ~400 lines | CLAUDE.md |
-| Implement mode | `implement` by default; `implement-spec` for 3+ independent tickets | CLAUDE.md |
+| Fast-lane limit | fixes under ~30 lines | AGENTS.md, presets |
+| Size check | lines x ~12 tokens + ~20k; >160k suggest a fix spec, >200k make one | AGENTS.md |
+| PR size | one PR per spec; split past ~400 lines | AGENTS.md |
+| Implement mode | `implement` by default; `implement-spec` for 3+ independent tickets | AGENTS.md |
 | File size | ~500 lines | coding standards, thermo review |
 | STATUS / HANDOFF length | ~40 / ~10 lines | end-session |
 | Merge type | squash for docs, normal merge for code | ship, platform |

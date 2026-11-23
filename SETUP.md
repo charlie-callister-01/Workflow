@@ -25,7 +25,8 @@ How to put this workflow into a project. About 15 minutes.
    - always: `start-session`, `end-session`, `ship`
    - optional: `pr-explainer`, `thermo-nuclear-code-quality-review`, `day-log`, `vault-note`
 3. **Copy the templates:**
-   - `templates/CLAUDE.md` -> project root; fill in the `<...>` parts. Keep it under ~120 lines.
+   - `templates/AGENTS.md` -> project root; fill in the `<...>` parts. Keep it under ~120 lines.
+   - `templates/CLAUDE.md` -> project root, as is: the single line `@AGENTS.md`, so Claude Code imports the same rules other agents read.
    - `templates/docs/agents/*` -> `docs/agents/`.
    - `platforms/<platform>.md` -> `docs/agents/platform.md`.
    - Preset `full`: `templates/docs/STATUS.md`, `HANDOFF.md`, `LOG.md`, `PLAN.md`, `phases/P-NN.md`, `adr/0000-template.md` -> `docs/`.

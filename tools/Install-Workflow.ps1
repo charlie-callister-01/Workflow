@@ -4,6 +4,8 @@
 .DESCRIPTION
   Never overwrites: a file that already exists is skipped and listed, so the caller can see an existing workflow.
   Output lines start with "copied:", "skipped:" or "would copy:" (with -DryRun), then one "workflow_version:" line.
+  The instruction file is AGENTS.md, with a CLAUDE.md that only imports it (decision 0006). A project that
+  already has CLAUDE.md but no AGENTS.md is left alone: /refit-workflow moves CLAUDE.md to AGENTS.md.
 .EXAMPLE
   powershell -File tools/Install-Workflow.ps1 -Project C:\src\my-app -Preset lite -Platform github -Skills core,pr-explainer
 #>
@@ -43,7 +45,14 @@ foreach ($name in ($skillNames | Select-Object -Unique)) {
     }
 }
 
-Add-Item 'templates\CLAUDE.md' 'CLAUDE.md'
+$hasClaude = Test-Path -LiteralPath (Join-Path $dst 'CLAUDE.md')
+$hasAgents = Test-Path -LiteralPath (Join-Path $dst 'AGENTS.md')
+if ($hasClaude -and -not $hasAgents) {
+    Write-Output 'skipped: AGENTS.md (CLAUDE.md exists; /refit-workflow moves it to AGENTS.md)'
+} else {
+    Add-Item 'templates\AGENTS.md' 'AGENTS.md'
+    Add-Item 'templates\CLAUDE.md' 'CLAUDE.md'
+}
 Get-ChildItem -LiteralPath (Join-Path $src 'templates\docs\agents') -File | ForEach-Object {
     Add-Item "templates\docs\agents\$($_.Name)" "docs\agents\$($_.Name)"
 }
