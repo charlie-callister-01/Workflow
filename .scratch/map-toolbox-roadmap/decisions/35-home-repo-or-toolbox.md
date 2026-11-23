@@ -22,4 +22,4 @@ Points to decide:
 4. **The wiki:** whether this repo becomes an LLM-kept wiki of what I learn (`notes/index.md`, ingest / query / lint, research 29) and how it relates to the Obsidian vault (10) and the learning section (08).
 5. **What lands in a project** under the chosen role (projects never carry files they don't use).
 
-Related: 23 (waits on this), 27, 29, 06, 07, 08, 10, 17.
+Related: 23, 06 and 10 wait on this; 27, 29, 07, 17.

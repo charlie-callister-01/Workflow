@@ -1,7 +1,8 @@
 # Principles in AGENTS.md
 
 Type: grilling
-Status: open
+Status: resolved
+Notes: merged into 05 (2026-11-23); its points now live there.
 Blocked by: 05
 
 ## Question
