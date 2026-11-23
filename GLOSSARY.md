@@ -70,3 +70,16 @@ A description of one piece of work to build, written by `/to-spec`.
 **Work ticket**:
 A small slice of a spec to build, written by `/to-tickets` into the spec's `issues/` folder and built by `/implement`.
 _Avoid_: ticket (alone), task
+
+## Ideas
+
+**Idea**:
+A one-line thought about future work, captured mid-task with `/idea` and not yet sorted. About the current project or, with `wf`, about the toolbox.
+_Avoid_: ticket, todo
+
+**Inbox**:
+Where unsorted ideas wait: the `## Inbox` section at the top of an ideas file (`docs/IDEAS.md` in a project, `notes/ideas.md` here), plus open `idea` issues for the toolbox.
+_Avoid_: backlog (where sorted ideas go)
+
+**Triage** (of ideas):
+Sorting each inbox item into one place: a decision ticket, a comment on a ticket, fog in a map, the backlog, or drop. Run by `/idea` with no text.
