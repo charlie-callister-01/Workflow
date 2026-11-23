@@ -11,3 +11,7 @@ When a project uses one or several agents (Claude Code, Cursor, Codex, Copilot),
 ## Settled so far
 
 - 2026-11-22: the instruction file is `AGENTS.md`, with `CLAUDE.md` as the single line `@AGENTS.md` (decision 0006, on trial in `notes/trials.md` with Antigravity CLI). Still open: skills for other agents (Antigravity loads `.agents/skills/`), per-agent adapters, and `/refit-agents` vs a refit mode. The trial's verdict section feeds this ticket.
+
+## From 05 (2026-11-23)
+
+`/interrogate` (trial 3 in 05) could run as Claude plus Codex once this ticket settles how several agents work in one project.
