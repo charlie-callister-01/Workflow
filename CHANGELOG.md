@@ -3,6 +3,7 @@
 One line per change to the workflow, newest first: what changed and why. Bigger choices get a note in `notes/decisions/`.
 
 ## 2026-11-23
+- v2 planning: roadmap decision ticket 34, a meta-skill router (intent and lifecycle -> skill, discipline rules; Addy Osmani's `using-agent-skills` as the model); the "Entry points vs building blocks" fog graduates into it. Why: route work to the right skill without me naming it, and keep the discipline rules in one place.
 - v2 planning: research ticket 29 resolved, an analysis of my own notes on the three workflows plus gap research (loops, sandboxes and session hooks; verification and enforceable architecture). New decision tickets 30-33 (hooks, verification, checks in each project's code, principles in AGENTS.md); loops and sandboxes and the home repo as a workplace go to fog. Why: my takeaways all point to moving rules from prose into hooks, checks and verification, which no ticket covered yet.
 - v2 planning: research tickets 25-28 resolved (Addy Osmani on agent harness engineering and on agent-skills, AI Hero's home repo pattern, Flavio Copes on pstack), findings in `notes/research/2026-11-23 *.md`; ticket 05 (what to adopt) now waits on them too. Why: four more sources to weigh before choosing what to adopt.
 - v2 planning: roadmap decision ticket 24, leaner `/ship` and `/end-session` (one PR per session where possible, where the LOG line goes once the PR has merged, a docs-only fast path, trimming token use). Why: one session opened three small PRs (#12, #13 and the work PR), costing usage and review time.
