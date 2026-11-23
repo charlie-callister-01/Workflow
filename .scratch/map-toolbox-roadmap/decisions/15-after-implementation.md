@@ -20,3 +20,7 @@ Goal: as few PRs as a session needs and fewer tokens. Points carried over:
 6. **Cloud sessions** block GitHub GraphQL, so `/ship` needs a `gh api` fallback there (research 29).
 
 Related: 30 (hooks back the session skills), 21.
+
+## Moved in from 30: session hooks (2026-11-23)
+
+A SessionStart hook that feeds `/start-session` its git and PR facts (up to 10,000 characters; can't block), and a SessionEnd hook that leaves a note when `/end-session` was skipped (can't talk to the model; 1.5 s budget). Hooks back the session skills, never replace them (research 29). How hooks are shipped and trialled is 30's; 15 decides what these two do.

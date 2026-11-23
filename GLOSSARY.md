@@ -33,10 +33,17 @@ What kind of repo a project is (solo or team, platform, agents, whether it has p
 _Avoid_: repo type, category
 
 **Change flow**:
-The route one piece of work takes (start project, new feature, small feature, small change, bug fix, research or spike); chosen at the start of the work. Decides which skills run.
+The route one piece of work takes (start project, new feature, small feature, small change, bug fix or spike); proposed by the agent and confirmed by the owner at the start of the work. A fixed sequence of stages.
 _Avoid_: pipeline (for one change), mode
 
-The six change flows (being decided in roadmap decision ticket 13):
+**Stage**:
+One step of a change flow: define, plan, build, verify, review or ship. A flow may skip stages; each stage has a default skill that can be swapped without changing the flow.
+_Avoid_: phase (that is a slice of a project's plan)
+
+**Wayfinder first**:
+A step taken before start project or new feature when the decisions can't yet be listed; not a flow of its own.
+
+The six change flows (decided in roadmap decision ticket 13):
 
 - **Start project**: from an empty or new repo to a plan and a first spec.
 - **New feature**: work needing several decisions, sessions or PRs; spec plus work tickets.
