@@ -3,6 +3,7 @@
 Backlog of future plans and things to try. Move to `CHANGELOG.md` (and `decisions/` if needed) once adopted; strike through if dropped, with why.
 
 ## Inbox
+- 2026-11-24 · Workflow · Rework the install scripts so they work with any agent, not just Claude Code. Needed: `Install-Workflow.ps1` still copies skills into the project's `.claude/skills/` and writes the `CLAUDE.md` shim, and `Install-GlobalSkills.ps1` installs only into `~/.claude/skills`. Decisions 06 and 35 already removed both (projects carry `AGENTS.md` only and no skills; home's copy script fills `.agents/skills` plus a `.claude/skills` junction) but nothing is built yet. Feeds 23 (updating) and the global-skills side of 17 (`<skill>-beta` installs).
 - 2026-11-24 · Workflow · Rename the toolbox's `/ship` skill so it doesn't clash with Claude Code's built-in `/ship`: typing `/ship` ran the built-in (`ship-local`: always reviews, never commits). See issue #16; touches 15 and the copy script (36, work ticket 01).
 - 2026-11-23 · Workflow · Levels of autonomy set by the type of project: how much the agent may do unattended depends on the kind of project (ties to the repo profile, 07, and the loops fog).
 
