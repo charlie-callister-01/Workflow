@@ -35,11 +35,11 @@ The toolbox as it was imported from the first project (tag `v1.0`, described in 
 The toolbox the roadmap describes; being planned, and reaching `skills/` and `templates/` one change at a time (first: `AGENTS.md` as the instruction file, decision 0006).
 
 **Track**:
-Which copy of the toolbox a project runs: **production** (everything on `main` outside `beta/`, tagged per release) or **beta** (production with the `beta/` folder's trial copies laid on top).
+Which copy of the toolbox's templates a project runs: **production** (everything on `main` outside `beta/`) or **beta** (production with `beta/templates/` laid on top), recorded as `workflow_track`. Skills have no track: beta skills install next to the production ones.
 _Avoid_: channel, test branch
 
 **Trial**:
-One change being tried on the beta track in a real project before promotion, recorded as a row in `notes/trials.md` with its success check and verdict (keep, tune, drop).
+One change being tried before promotion, recorded as a row in `notes/trials.md` with its success check, review date and verdict (keep, tune, drop). A **skill trial** installs the beta copy side by side as `<skill>-beta`, used wherever it is typed; a **template trial** puts one project on the beta track.
 _Avoid_: experiment (that is a spike)
 
 ## Configuring a project

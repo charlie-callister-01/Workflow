@@ -19,3 +19,7 @@ The session project is named in each session's first line (36), so markers can b
 ## From 07 (2026-11-24)
 
 A candidate marker: how far a project's Checks lines and settings have drifted from its seed (07), per stakes value.
+
+## From 17 (2026-11-24)
+
+Success checks in `notes/trials.md` are free text until this ticket settles the markers. A skill trial compares `<skill>-beta` with `<skill>` side by side (both installed, chosen per use), so markers may need to say which version a session used; template trials compare one project on beta against production. Notes arrive as `trial:<slug>` lines in project LOGs.

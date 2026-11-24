@@ -38,3 +38,7 @@ Migration grows: remove a bare `@AGENTS.md` `CLAUDE.md` (projects carry `AGENTS.
 ## From 07 (2026-11-24)
 
 The repo profile is a seed recorded under `## Seeded from` in `workflow-settings.md`, read only by setup and refit. Updating includes the seed: when the owner changes the profile (spike to production, personal to shared), refit proposes a line-by-line diff of the seeded lines (Checks, the shared-only block), keeps lines edited since setup by default, and updates the seed record. v1 projects name a `preset:`; the migration maps it to a seed (`full` to `production` or `everyday`, `lite` to `spike` or `everyday`; ask).
+
+## From 17 (2026-11-24)
+
+Versions are `git describe` output, recorded in installed skill stamps and `## Seeded from`; tags only for deliberate releases. Refit takes `-Track beta | production` for template trials and records `workflow_track`; skills have no track (beta skills install side by side via home's copy script, which also removes skills whose source is gone). Updating must keep a project's beta template files until its trial ends.
