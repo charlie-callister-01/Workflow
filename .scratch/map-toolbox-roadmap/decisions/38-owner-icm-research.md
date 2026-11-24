@@ -10,3 +10,7 @@ Blocked by: none
 Charlie is researching Interpretable Context Methodology (ICM) personally, beyond the research ticket 03. Artifact organisation (10) waits for that research, because ICM's folder-per-stage layout and its `CONTEXT.md` contracts may shape where artifacts live and how they are found.
 
 Resolved when Charlie says the research is done. The answer records where the findings live and what they mean for 10.
+
+## Next (2026-11-24)
+
+When this resolves, ticket 40 grills the owner on the findings and is taken next, before anything else on the frontier. 10 now waits on 40, not on this ticket directly.

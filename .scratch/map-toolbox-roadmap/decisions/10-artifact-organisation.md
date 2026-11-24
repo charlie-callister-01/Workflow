@@ -3,7 +3,7 @@
 Type: grilling
 Style: interview
 Status: open
-Blocked by: 35, 38
+Blocked by: 35, 40
 
 ## Question
 
