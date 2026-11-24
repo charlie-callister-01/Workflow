@@ -18,3 +18,11 @@ Points to decide:
 6. **Fit with distribution:** if the toolbox later ships as a plugin, skills update themselves and only templates and settings are left. Decide whether this ticket assumes copies, or settles copies vs plugin as well (map fog: "Distribution and updates").
 
 Related: 17 (release tracks and promotion), 09 (evolution loop).
+
+## From 35 (2026-11-24)
+
+Point 6 is settled: copies, no plugin. Skills no longer live in projects (home copies them from the toolbox), so an update to a project is templates, settings and file moves only; updating skills is "pull the toolbox, rerun home's copy script". Shared and work repos carry only process files.
+
+## From 35, review (2026-11-24)
+
+Also: a one-time **migration** for projects primed before 35, which carry `.claude/skills/` copies: remove the copies the owner now gets from home, keep project-only skills, and for shared repos leave only process files. Points 1, 2 and 4 shrink accordingly, since skills no longer live in projects.

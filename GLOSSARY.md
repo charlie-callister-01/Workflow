@@ -5,8 +5,20 @@ The language of this repo: a personal toolbox of skills, templates and processes
 ## The toolbox
 
 **Toolbox**:
-This repo: the skills, templates, presets, platforms, tools and notes that make up the owner's way of working.
-_Avoid_: framework, kit
+This repo: the skills, templates, presets, platforms, tools and notes that make up the owner's way of working. Kept public-safe (no employer, customer or personal details); public or private is the owner's call.
+_Avoid_: framework, kit, skills repo
+
+**Home repo**:
+The owner's private repo where development sessions start: it pulls skills from the toolbox, holds pointers to every project repo and to the knowledge repo, and keeps scripts for the owner's private use. A separate repo, not part of the toolbox.
+_Avoid_: hub, workspace
+
+**Knowledge repo**:
+The owner's private repo of notes and learning, replacing the Obsidian vault; ideas reach it from the home repo. Learning is a folder inside it, not a repo of its own.
+_Avoid_: vault, learning repo
+
+**Project harness**:
+What one repo builds up for itself over time (its `AGENTS.md`, its own skills, scripts and hooks), focused only on that repo. Toolbox skills are not part of it. Every project repo has one, and so do the home and knowledge repos.
+_Avoid_: harness (alone: that is everything around the model, research 25)
 
 **Primed project**:
 A project the toolbox has been set up in by `/setup-workflow` or `/refit-workflow`; it records the toolbox commit it took as `workflow_version`.
