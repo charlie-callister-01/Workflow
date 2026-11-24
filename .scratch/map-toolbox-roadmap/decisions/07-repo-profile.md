@@ -15,3 +15,7 @@ Constraint: personal repos rely on the home repo for general rules and skills (`
 ## From 35, review (2026-11-24)
 
 Review: the "agent(s)" axis now only decides instruction-file shims (06); the main axis is **personal vs shared** (who opens the repo). Also decide whether the home and knowledge repos have profiles of their own, or sit outside setup.
+
+## From 06 (2026-11-24)
+
+The agent(s) axis is now only an `agents:` line in `workflow-settings.md` recording which agents a project expects; projects carry `AGENTS.md` only, and per-agent setup lives in home. A shared repo may need an agent-specific file for a teammate with no home: decide that with the personal vs shared axis.

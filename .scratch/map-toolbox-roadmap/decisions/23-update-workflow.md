@@ -2,7 +2,7 @@
 
 Type: grilling
 Status: open
-Blocked by: 35
+Blocked by: 35, 07
 
 ## Question
 
@@ -26,3 +26,11 @@ Point 6 is settled: copies, no plugin. Skills no longer live in projects (home c
 ## From 35, review (2026-11-24)
 
 Also: a one-time **migration** for projects primed before 35, which carry `.claude/skills/` copies: remove the copies the owner now gets from home, keep project-only skills, and for shared repos leave only process files. Points 1, 2 and 4 shrink accordingly, since skills no longer live in projects.
+
+## From 36 (2026-11-24)
+
+Updating every repo is a home sweep (36): home as the session project, one branch and PR per repo, one summary at the end. Decide here whether `/update-workflow` (or refit's update path) runs across home's `## Other repos` table, and which repos it skips (kind = shared).
+
+## From 06 (2026-11-24)
+
+Migration grows: remove a bare `@AGENTS.md` `CLAUDE.md` (projects carry `AGENTS.md` only), add the `agents:` line, and switch Claude Code from Matt's plugin to home's pinned copies (bare skill names in toolbox skills).

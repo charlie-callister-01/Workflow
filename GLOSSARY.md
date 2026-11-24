@@ -20,6 +20,10 @@ _Avoid_: vault, learning repo
 What one repo builds up for itself over time (its `AGENTS.md`, its own skills, scripts and hooks), focused only on that repo. Toolbox skills are not part of it. Every project repo has one, and so do the home and knowledge repos.
 _Avoid_: harness (alone: that is everything around the model, research 25)
 
+**Session project**:
+The one repo a session works on, fixed at the start of the session: a project, the toolbox, or the home repo itself (for work across several repos). The session's state (log line, status, next step) belongs to it, wherever the session was started.
+_Avoid_: current project, target repo, active repo
+
 **Primed project**:
 A project the toolbox has been set up in by `/setup-workflow` or `/refit-workflow`; it records the toolbox commit it took as `workflow_version`.
 _Avoid_: onboarded repo, installed project
