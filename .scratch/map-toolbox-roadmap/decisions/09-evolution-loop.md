@@ -1,10 +1,13 @@
-# The evolution loop
+# Evolution loop and evidence
 
 Type: grilling
+Style: interview
 Status: open
-Blocked by: 17, 10
+Blocked by: 17, 15
 
 ## Question
+
+_Narrowed by the map refit (2026-11-24, last section): where they differ, the refit note wins._
 
 How does the toolbox keep evolving: the research -> trial -> adopt -> retire loop, how ideas.md, roadmap, CHANGELOG and decisions relate, and when a cycle is a light refresh versus a new wayfinder map? Also: should `/end-session` in this repo refresh the README's "Where I'm up to" section (today nothing keeps it current)?
 
@@ -29,3 +32,13 @@ Correction to the "From 35" note: skill trials don't switch every project. Beta 
 ## From 23 (2026-11-24)
 
 Promotion and retirement now have a project side: a change that moves, renames or deletes a project file or retires a setting ships a migration (`migrations/NNNN-*.md`, check and rollback) in the same PR, and projects learn they are behind from a `/start-session` line and home's sweep. The loop should cover writing and retiring migrations.
+
+## From 30 (2026-11-24)
+
+The ratchet is how a rule moves from prose into a check: only after a recorded failure (30 point 1). Parked candidate: a `pre-commit` check against stray `.md` files, if they turn up in real PRs. Pruning applies to hooks and checks too.
+
+## Map refit (2026-11-24)
+
+Session F. Takes in **21** (read its question and notes): the markers are the loop's evidence. Also owns all of `retro` (cadence and trigger, and where it sits after `/ship`, from 15); 32's habit "every correction becomes a check"; agent hooks arriving only through the ratchet (30); and how the owner builds their own skills by picking from the primary sources (map Notes, Sources) and trials them (17). Blocked by 15 instead (where `retro` sits after `/ship` needs 15's answer). No longer blocked by 10: 35 fixed that lessons go to the knowledge repo; 10 decides only the layout inside.
+
+Moved out: how ideas, roadmap, CHANGELOG and decisions relate (10); light refresh vs new wayfinder map (14); the README "Where I'm up to" refresh (39); automating the `upstream.md` sync (answered by 30: stays a monthly step). Compound Engineering is parked.

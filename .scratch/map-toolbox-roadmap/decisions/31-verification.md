@@ -1,6 +1,7 @@
-# Verification: what "checked" means for a change
+# Verification and Checks lines
 
 Type: grilling
+Style: doubt
 Status: open
 Blocked by: 13
 
@@ -21,3 +22,17 @@ Prefer checks every agent obeys (tests and CI, the evidence `/ship` reads) over 
 ## From 07 (2026-11-24)
 
 Stakes (`spike | everyday | production`) seeds a **Checks** section in the project's `AGENTS.md`: the flow picks the stages, the Checks lines set how strict verify and review are. This ticket's answer feeds what each stakes value seeds (ticket 37).
+
+## From 30 (2026-11-24)
+
+Order of layers (30): CI and platform rules, then git hooks, then agent hooks as optional extras that only start existing scripts. A test-running Stop hook would be Claude-only; prefer tests in CI and a `pre-push` hook if a local gate is wanted.
+
+## Map refit (2026-11-24)
+
+Session A. Takes in, besides the question above:
+- **37 point 2:** the concrete Checks lines each stakes value seeds (evidence before ship, when review is required, when an ADR, what the agent may do unasked). 37 keeps the packaging.
+- **Release and deploy** (from 15): settle them here with the four stages (pre-merge, deploy, release, post-release); 15 no longer asks.
+- **High-risk paths** (from the deleted Risk levels fog): a Checks line triggered by what a change touches (auth, secrets, migrations: grill first, wait a day, second reviewer; `platforms/*.md` "Risk levels (to develop)"), and where 05's `doubt-driven-development` trial sits. Stakes (per repo) and flows (by size) don't cover this.
+- **`/goal`** for longer runs stays here; where unattended runs happen (cloud, dev container, WSL2) is a later roadmap item, not a decision for this map.
+
+32 (checks in code) moved to 37: which checks a project is seeded with is packaging.

@@ -1,10 +1,13 @@
-# After implementation: from merged PR to closed loop
+# Ship and after: from PR to clean branch
 
 Type: grilling
+Style: rounds
 Status: open
-Blocked by: 13, 36
+Blocked by: 13, 36, 31
 
 ## Question
+
+_Narrowed by the map refit (2026-11-24, last section): where they differ, the refit note wins._
 
 What happens after `/ship`: PR review and CI, merge, what `/end-session` updates, what happens to the spec folder and its work tickets (archive, or fold into living docs as OpenSpec does), lessons to the vault (link to 10), branch cleanup, and release or deploy where a project has one? Which parts belong in `/ship`, `/end-session` or a new step?
 
@@ -36,3 +39,19 @@ Sessions start in home (36 decides how the session skills act there). Lessons go
 ## From 36 (2026-11-24)
 
 Each session skill acts on the session project (36). Decide here: removing a worktree at `<project>/.worktrees/<branch>` after its PR merges; how a session that changed a second, named repo ships (one PR per repo, both listed in the session project's LOG line).
+
+## From 30 (2026-11-24)
+
+Script first (30 point 8): a step that does the same thing every run becomes a skill script in the skill's folder, called once, with plain commands as a fallback in the body. Decide here which steps of `/ship` and after merge become scripts (the start and end steps moved to 39 in the map refit). The owner's examples: a `session-facts` script (fetch, status, last commits, behind `origin/main`, open PRs, LOG tail, `core.hooksPath` check) that `/start-session` runs once and only reasons over; an `/end-session` script that writes the LOG line skeleton and checks for uncommitted work; a sync-main script after merge (switch to `main`, pull, delete merged branches, remove the worktree). Measure the saving with 20's markers. The SessionStart and SessionEnd hooks, if ever built, only start these same scripts (30 point 9).
+
+## Map refit (2026-11-24)
+
+Session C, narrowed to the PR lifecycle (read by `/ship` and the platform docs). Keeps: points 1, 3, 5 and 6 of the 24 merge-in; PR review and CI, the CI watcher and PR care (05); PRs for a second, named repo (36); a sync-main skill script after merge (switch to `main`, pull, delete merged branches) and worktree and branch cleanup. Blocked by 31: the evidence `/ship` reads and any docs-only skip are 31's answer.
+
+Moved out:
+- Point 2 (where the LOG line goes after merge), the start and end skill scripts and the lesson question: 39, session bookends.
+- Point 4 (token trimming): measurement with 20's markers, a roadmap item, not a decision.
+- Session hooks: answered by 30 (agent hooks only start existing scripts; none built now).
+- What happens to the spec folder and its work tickets: 14.
+- Release or deploy: 31.
+- Where `retro` sits after `/ship`: 09, which now owns all of `retro`.

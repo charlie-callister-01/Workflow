@@ -1,7 +1,8 @@
 # A status page for me
 
 Type: grilling
-Status: open
+Status: resolved
+Notes: merged into 39 (session bookends) in the map refit (2026-11-24); its points now live there.
 Blocked by: 36, 07
 
 ## Question

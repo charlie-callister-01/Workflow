@@ -1,6 +1,7 @@
-# A meta-skill router
+# Flow table: which skill, which model, which planning method
 
 Type: grilling
+Style: doubt
 Status: open
 Blocked by: 13, 36
 
@@ -29,3 +30,16 @@ Sessions start in home, so any intent -> skill table belongs in home's `AGENTS.m
 ## From 36 (2026-11-24)
 
 Session skills name the session project in their first line and read its `AGENTS.md` explicitly (36); a router in home's `AGENTS.md` routes to skills, not to repos.
+
+## From 30 (2026-11-24)
+
+Input, not decided: **portable agent hooks** (one script, plus a per-agent trigger file home's copy script writes for each agent that has hooks) would live in home and run for every session started there. Whether the router starts or lists them is a question here. 30 builds none now and says an agent hook only starts an existing script.
+
+## Map refit (2026-11-24)
+
+Session E: one table, change flow x stage -> skill **and model**. Takes in **19** (read its question and notes): which model each step and each subagent uses, set agent-neutrally. Take after 31, whose answer may pick the verify-stage default (`verify-this`); mark it "31's default" if 31 isn't resolved. Two new points:
+
+6. **Choosing a planning method:** how a question gets its method: a wayfinder map, a prototype, or a grilling style (`rounds`, `nail`, `interview`, `doubt`; map Notes). Options: a fixed table by signals (hard to reverse? fuzzy? small?), the meta-skill, or the prompt saying so. Owner's lean: a fixed table with a prompt override.
+7. **Research inside planning in projects:** whether project sessions send research subagents during grilling, as this map's sessions do.
+
+ICM (pending 40): leave a marked spot for a load / don't-load table per stage. Portable agent hooks are no longer a question here: they arrive only through 09's ratchet.

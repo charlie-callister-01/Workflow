@@ -97,6 +97,20 @@ Retired: v1's word for a bundle of profile and flow (`full`, `fast-lane`, `lite`
 **Platform**:
 Where pull requests, CI and boards live (`github` or `azure`).
 
+## Checks and hooks
+
+**Git hook**:
+A script git itself runs on its own events (commit, push), kept in the project's `.githooks/` folder. It applies to every agent and person working in that clone, and can refuse the commit or push.
+_Avoid_: hook (alone)
+
+**Agent hook**:
+A script one agent runs on that agent's own events (a tool call, the start or end of a session). It applies only to that agent, and only where its settings are loaded. In this workflow it only ever starts an existing script.
+_Avoid_: hook (alone), Claude hook
+
+**Skill script**:
+A script that ships inside a skill's folder and that the skill calls once for a step that does the same thing every run, so the agent only reasons over its output.
+_Avoid_: helper, tool
+
 ## Planning work
 
 **Map**:
@@ -109,6 +123,14 @@ What reaching the end of a map produces: a plan, a spec, a decision or a change.
 **Decision ticket**:
 One question on a map whose answer is a decision (research, prototype, grilling or task). Lives in a map's `decisions/` folder; never produces code.
 _Avoid_: ticket (alone), issue
+
+**Grilling style**:
+How a grilling ticket is questioned: `rounds` (a whole round of questions at a time, each with a recommendation; the default), `nail` (at most five questions, then a short summary to approve), `interview` (one question at a time until confident) or `doubt` (rounds, then a fresh reviewer tries to disprove the result). Set on the ticket; the owner may change it at the start.
+_Avoid_: grilling mode, planning style (that covers maps and prototypes too)
+
+**Primary source**:
+An outside method the owner draws on first (Pocock, Osmani, pstack / fstack, ICM). Other researched methods are **parked**: looked at only when the owner picks one. Findings reach a decision only through the owner's picks.
+_Avoid_: upstream (that is a pinned copy, `notes/upstream.md`)
 
 **Spec**:
 A description of one piece of work to build, written by `/to-spec`.

@@ -1,7 +1,8 @@
 # Measuring the workflow
 
 Type: grilling
-Status: open
+Status: resolved
+Notes: merged into 09 (evolution loop and evidence) in the map refit (2026-11-24); its points now live there.
 Blocked by: 20, 36
 
 ## Question
