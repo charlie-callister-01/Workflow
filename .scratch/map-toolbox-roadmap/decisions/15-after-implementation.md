@@ -7,6 +7,8 @@ Blocked by: 13, 36, 31
 
 ## Question
 
+_Narrowed by the map refit (2026-11-24, last section): where they differ, the refit note wins._
+
 What happens after `/ship`: PR review and CI, merge, what `/end-session` updates, what happens to the spec folder and its work tickets (archive, or fold into living docs as OpenSpec does), lessons to the vault (link to 10), branch cleanup, and release or deploy where a project has one? Which parts belong in `/ship`, `/end-session` or a new step?
 
 ## Merged in: 24, leaner /ship and /end-session (2026-11-23)
@@ -40,7 +42,7 @@ Each session skill acts on the session project (36). Decide here: removing a wor
 
 ## From 30 (2026-11-24)
 
-Script first (30 point 8): a step that does the same thing every run becomes a skill script in the skill's folder, called once, with plain commands as a fallback in the body. Decide here which steps of `/start-session`, `/end-session` and `/ship` become scripts. The owner's examples: a `session-facts` script (fetch, status, last commits, behind `origin/main`, open PRs, LOG tail, `core.hooksPath` check) that `/start-session` runs once and only reasons over; an `/end-session` script that writes the LOG line skeleton and checks for uncommitted work; a sync-main script after merge (switch to `main`, pull, delete merged branches, remove the worktree). Measure the saving with 20's markers. The SessionStart and SessionEnd hooks, if ever built, only start these same scripts (30 point 9).
+Script first (30 point 8): a step that does the same thing every run becomes a skill script in the skill's folder, called once, with plain commands as a fallback in the body. Decide here which steps of `/ship` and after merge become scripts (the start and end steps moved to 39 in the map refit). The owner's examples: a `session-facts` script (fetch, status, last commits, behind `origin/main`, open PRs, LOG tail, `core.hooksPath` check) that `/start-session` runs once and only reasons over; an `/end-session` script that writes the LOG line skeleton and checks for uncommitted work; a sync-main script after merge (switch to `main`, pull, delete merged branches, remove the worktree). Measure the saving with 20's markers. The SessionStart and SessionEnd hooks, if ever built, only start these same scripts (30 point 9).
 
 ## Map refit (2026-11-24)
 

@@ -7,4 +7,4 @@ Blocked by: none
 
 ## Question
 
-The owner is researching Interpretable Context Methodology (ICM) personally, beyond the research ticket 03. Artifact organisation (10) waits for that research, because ICM's folder-per-stage layout and its `CONTEXT.md` contracts may shape where artifacts live and how they are found.
+The owner is researching Interpretable Context Methodology (ICM) personally, beyond the research ticket 03. Artifact organisation (10) waited for that research (now via 40), because ICM's folder-per-stage layout and its `CONTEXT.md` contracts may shape where artifacts live and how they are found.

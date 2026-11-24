@@ -3,9 +3,11 @@
 Type: grilling
 Style: interview
 Status: open
-Blocked by: 17
+Blocked by: 17, 15
 
 ## Question
+
+_Narrowed by the map refit (2026-11-24, last section): where they differ, the refit note wins._
 
 How does the toolbox keep evolving: the research -> trial -> adopt -> retire loop, how ideas.md, roadmap, CHANGELOG and decisions relate, and when a cycle is a light refresh versus a new wayfinder map? Also: should `/end-session` in this repo refresh the README's "Where I'm up to" section (today nothing keeps it current)?
 
@@ -37,6 +39,6 @@ The ratchet is how a rule moves from prose into a check: only after a recorded f
 
 ## Map refit (2026-11-24)
 
-Session F. Takes in **21** (read its question and notes): the markers are the loop's evidence. Also owns all of `retro` (cadence and trigger, and where it sits after `/ship`, from 15); 32's habit "every correction becomes a check"; agent hooks arriving only through the ratchet (30); and how the owner builds their own skills by picking from the primary sources (map Notes, Sources) and trials them (17). No longer blocked by 10: 35 fixed that lessons go to the knowledge repo; 10 decides only the layout inside.
+Session F. Takes in **21** (read its question and notes): the markers are the loop's evidence. Also owns all of `retro` (cadence and trigger, and where it sits after `/ship`, from 15); 32's habit "every correction becomes a check"; agent hooks arriving only through the ratchet (30); and how the owner builds their own skills by picking from the primary sources (map Notes, Sources) and trials them (17). Blocked by 15 instead (where `retro` sits after `/ship` needs 15's answer). No longer blocked by 10: 35 fixed that lessons go to the knowledge repo; 10 decides only the layout inside.
 
 Moved out: how ideas, roadmap, CHANGELOG and decisions relate (10); light refresh vs new wayfinder map (14); the README "Where I'm up to" refresh (39); automating the `upstream.md` sync (answered by 30: stays a monthly step). Compound Engineering is parked.
