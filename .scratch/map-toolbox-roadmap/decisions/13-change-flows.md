@@ -43,3 +43,7 @@ Resolved 2026-11-23 (grilling, round 2 on top of round 1 above; round 1 points 1
 7. **For 05:** "what we're NOT doing", fstack's three-question check before ship, anti-rationalisation tables, `/goal` for long runs and the router are adoption candidates, noted on 05.
 
 Hooks split agreed in the same session: session hooks (SessionStart feeding `/start-session`, a SessionEnd note) go to 15; guard hooks and how hooks ship stay in 30; a Stop hook that runs tests goes to 31.
+
+## Revised by 07 (2026-11-24)
+
+Point 5: the change flows table is not in every project's `AGENTS.md`. Shared repos carry it in the template's shared-only block; personal repos get the flows from home. "Shape by repo profile" in the Start project row: PLAN and other state files are created when a flow first needs them, not chosen by profile.

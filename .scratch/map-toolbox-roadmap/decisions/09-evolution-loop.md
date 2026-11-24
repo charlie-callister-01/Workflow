@@ -17,3 +17,7 @@ The ratchet: `/end-session`'s lesson line goes to the inbox; Pocock's `retro` re
 ## From 35 (2026-11-24)
 
 Ideas now enter through home (`/idea` with project, toolbox and knowledge routes) and lessons learned go to the knowledge repo (10), so the loop spans three repos. Trials run through home's copy script, which affects every project at once (17), not one trial project.
+
+## From 07 (2026-11-24)
+
+Each repo's harness evolves for its own domain after setup: the profile is only a seed, recorded with date and toolbox version under `## Seeded from`. Input here: make that drift observable (seed vs today's `AGENTS.md` Checks and settings) and decide when a project's evolved lines feed back into the toolbox's seed files.

@@ -17,3 +17,7 @@ Related: 25, 26, 28, 29, 30 (a Stop hook), 15 (after implementation); research i
 ## From 35 (2026-11-24)
 
 Prefer checks every agent obeys (tests and CI, the evidence `/ship` reads) over a Claude-only Stop hook. Shared repos carry their checks as neutral process files (35).
+
+## From 07 (2026-11-24)
+
+Stakes (`spike | everyday | production`) seeds a **Checks** section in the project's `AGENTS.md`: the flow picks the stages, the Checks lines set how strict verify and review are. This ticket's answer feeds what each stakes value seeds (ticket 37).

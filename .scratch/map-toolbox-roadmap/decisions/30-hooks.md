@@ -29,3 +29,7 @@ Home is the default starting place and projects still work on their own (36). De
 ## From 06 (2026-11-24)
 
 Per-agent settings, permissions included, live in home (06); a project gets agent-specific config only for a shared repo's team need.
+
+## From 07 (2026-11-24)
+
+No hook or skill may read the profile to change behaviour: behaviour lives in concrete, editable lines. If stakes should turn on a hook (e.g. guard hooks for `production`), setup seeds the hook config as ordinary files, which the project then owns.
