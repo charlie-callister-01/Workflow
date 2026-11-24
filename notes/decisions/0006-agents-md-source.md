@@ -8,4 +8,6 @@ Over: keeping `CLAUDE.md` as the source (Claude-only, other agents get nothing),
 
 Trade-off: Antigravity doesn't expand a bare `@file`, so `CLAUDE.md` is meaningless to it, which is fine because it never reads that file. Skills are not covered: Antigravity loads them from `.agents/skills/`, not `.claude/skills/`, and the trial copies them there by hand. Whether the toolbox installs skills for other agents stays in roadmap decision ticket 06.
 
+Revised 2026-11-24 (roadmap decision ticket 06): `AGENTS.md` stays the one instruction file, but the `CLAUDE.md` shim goes. Claude Code reads `AGENTS.md` natively since v2.1.277 when there is no `CLAUDE.md`, so new projects carry `AGENTS.md` only; a `CLAUDE.md` exists only for a Claude-only need and starts with `@AGENTS.md`. Skills for other agents are settled too: home's copy script fills `.agents/skills`, with `.claude/skills` as a junction. Not yet in `templates/` or the install script: that is roadmap work.
+
 Reverse it if: the trial shows the second agent isn't worth keeping and the extra file confuses more than it helps, or Claude Code's import behaves differently from an inline `CLAUDE.md`.

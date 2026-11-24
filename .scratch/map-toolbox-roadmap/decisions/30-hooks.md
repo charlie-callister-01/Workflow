@@ -25,3 +25,7 @@ Reframed: the title says "Claude Code hooks", but the owner wants the workflow a
 ## From 36 (2026-11-24)
 
 Home is the default starting place and projects still work on their own (36). Decide when a session must start inside the project so its agent hooks run, or whether git hooks and CI make that unnecessary.
+
+## From 06 (2026-11-24)
+
+Per-agent settings, permissions included, live in home (06); a project gets agent-specific config only for a shared repo's team need.

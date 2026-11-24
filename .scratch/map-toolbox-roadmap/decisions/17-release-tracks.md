@@ -25,3 +25,7 @@ Problem this creates: if home copies skills once for every project, a beta skill
 ## From 36 (2026-11-24)
 
 Home's copy script takes skills from `origin/main` by default; trying a toolbox branch means naming it to the script, which switches every project until reset (36). Decide whether the beta track is that switch, or per session project.
+
+## From 06 (2026-11-24)
+
+Home's copy script fills `.agents/skills` (real copy) and a `.claude/skills` junction, and copies Matt's skills from a pinned clone. A beta overlay has to work through that same script.
