@@ -42,6 +42,14 @@ _Avoid_: channel, test branch
 One change being tried before promotion, recorded as a row in `notes/trials.md` with its success check, review date and verdict (keep, tune, drop). A **skill trial** installs the beta copy side by side as `<skill>-beta`, used wherever it is typed; a **template trial** puts one project on the beta track.
 _Avoid_: experiment (that is a spike)
 
+**Update**:
+Refit's path that brings a primed project's files in step with a later toolbox version: migrations first, then a three-way merge of the templates that keeps the project's own edits.
+_Avoid_: upgrade, sync
+
+**Migration**:
+One toolbox-authored change to a project's files that a diff can't express (move, rename, delete, retire a setting), with a check and a rollback; run once by an update, oldest first.
+_Avoid_: upgrade script, patch
+
 ## Configuring a project
 
 **Repo profile**:

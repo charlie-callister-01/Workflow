@@ -1,7 +1,7 @@
 # Updating the workflow in an older project
 
 Type: grilling
-Status: open
+Status: resolved
 Blocked by: 35, 07
 
 ## Question
@@ -42,3 +42,21 @@ The repo profile is a seed recorded under `## Seeded from` in `workflow-settings
 ## From 17 (2026-11-24)
 
 Versions are `git describe` output, recorded in installed skill stamps and `## Seeded from`; tags only for deliberate releases. Refit takes `-Track beta | production` for template trials and records `workflow_track`; skills have no track (beta skills install side by side via home's copy script, which also removes skills whose source is gone). Updating must keep a project's beta template files until its trial ends.
+
+## Answer
+
+Resolved 2026-11-24 (grilling, two rounds). Decision 0012.
+
+1. **One skill: `/refit-workflow`.** It picks its path from what it finds: no `## Seeded from` and no `workflow_version` -> **merge** (today's analysis, grill brief, decisions table; for repos with their own workflow); seeded -> **update** (list changes, propose one by one, no grill); profile changed -> **re-seed** (07). Refit already owns re-seeding (07) and `-Track` (17), so a separate `/update-workflow` would make three overlapping entry points across two skills.
+2. **Template changes merge three ways:** base = the template at the project's recorded version, theirs = the template now, ours = the project's file. Clean changes are proposed as a diff; lines the project edited since setup are kept by default (07); a real conflict is a question to the owner, never an overwrite. This covers point 4 (project edits).
+3. **What is offered:** every change on `origin/main` since the project's version, not tags only (tags are rare, 17). Found mechanically from the diff of `templates/` and `platforms/` between the two versions, with the matching `CHANGELOG.md` lines shown as the why. `beta/templates/` only when `workflow_track: beta`; a project on beta keeps its beta files until its trial ends. No new marker in `CHANGELOG.md`.
+4. **Migrations** for what a diff can't express (move, rename or delete a project file, retire a setting): one toolbox file per change, `migrations/NNNN-<slug>.md`, saying what and why, when it applies (from which version, which projects), the steps (`git mv` for renames), a check and a rollback. Refit runs every migration newer than the project's version, oldest first, one commit each, before the template merge. Migrations are toolbox files; nothing lands in projects.
+5. **Version bookkeeping:** the version line under `## Seeded from` means "this project's files are in step with the toolbox at X". Refit moves it forward after each update, last; it is the merge base (2) and the start point (3, 4). The profile values change only on a re-seed. v1's `workflow_version` line is retired by a migration.
+6. **Across repos:** refit works on one session project. Home's sweep (36) runs a cheap check per repo in `## Other repos` (is its seed version behind `origin/main` for project files?), lists the ones behind, and the owner picks; one branch and PR per repo. Shared repos are not skipped, but only ever get the neutral process files they carry (07's shared-only block), never home-only parts.
+7. **Finding out:** `/start-session` adds one line when project files have changed since the seed version ("toolbox: N changes for this project, run `/refit-workflow`"), from `git diff --stat` only. Nothing updates on its own.
+8. **The v2 migration** for projects primed before v2 is several small migrations, oldest first, one commit each: (a) drop toolbox skill copies: delete `.claude/skills/<name>` only where the name matches a toolbox skill or its description carries the `[wf` stamp; project-only skills stay; shared repos keep only neutral process files; (b) drop the `CLAUDE.md` shim only if its whole content is `@AGENTS.md`, else it becomes a merge question; (c) add the `agents:` line; (d) map `preset:` to a seed (ask stakes: `full` -> `production` or `everyday`, `lite` -> `spike` or `everyday`; ask audience), write `## Seeded from` with the version, retire `preset:` and `workflow_version`. Switching Claude Code from Matt's plugin to home's copies is done in home. Each has its own check and rollback.
+9. **v1 projects take the update path:** `workflow_version` without `## Seeded from` is read as "seeded at `workflow_version`"; refit runs the migrations (8), then the template merge. The merge path stays for repos never primed from the toolbox.
+10. **Authoring rule:** any toolbox change that moves, renames or deletes a project file, or retires a setting, ships its migration in the same PR, named in its `CHANGELOG.md` line (rule in `DEVELOPING.md`). A migration on trial lives in `beta/migrations/` and runs only on the beta track; its rollback is the rollback line 17 already requires, so `-Track production` runs it.
+11. **Script for the mechanics, skill for the talk:** an agent-neutral PowerShell script lists the changes and pending migrations since the version, does the three-way merges into `.scratch/workflow-update/`, and reports clean merges and conflicts. Refit's update path wraps it: shows the result, asks the conflict and migration questions, commits (one per migration, then one for the template merge), one PR per update, a project LOG line, seed version moved forward last.
+
+Glossary: Update, Migration.
