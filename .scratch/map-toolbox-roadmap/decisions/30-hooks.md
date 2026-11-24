@@ -18,6 +18,6 @@ Candidate: a hook that warns on edits outside the plan's Scope block (`Touch` / 
 
 Sessions start in the home repo, and a project's hooks don't run there (only when the session starts in, or `/cd`s into, the project). Decide whether must-hold hooks live in each project, in home (working for every project), or both. Prefer checks every agent obeys (git hooks, CI) over Claude-only ones.
 
-## From 35 (2026-11-24)
+## From 35, review (2026-11-24)
 
 Reframed: the title says "Claude Code hooks", but the owner wants the workflow agent-agnostic. Rank enforcement as git hooks and CI or branch protection first (every agent and teammate obeys them), agent hooks second (per agent, home or project). Shared repos get only neutral checks.

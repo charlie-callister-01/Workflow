@@ -86,4 +86,4 @@ Separate idea raised in this session (inbox, not part of 05): levels of autonomy
 
 ## From 35 (2026-11-24)
 
-The four Working rules follow 35's split: for personal projects they live in the home repo's `AGENTS.md`, not in each project; `templates/AGENTS.md` includes them only for public, shared or work repos (07 decides how).
+The four Working rules follow 35's split: for personal projects they live in the home repo's `AGENTS.md`, not in each project. Whether shared repos carry them depends on whether they are team process (neutral, fine in a shared repo) or the owner's practice (home only); 07 decides.

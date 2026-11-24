@@ -3,6 +3,7 @@
 Backlog of future plans and things to try. Move to `CHANGELOG.md` (and `decisions/` if needed) once adopted; strike through if dropped, with why.
 
 ## Inbox
+- 2026-11-24 · Workflow · Rename the toolbox's `/ship` skill so it doesn't clash with Claude Code's built-in `/ship`: typing `/ship` ran the built-in (`ship-local`: always reviews, never commits). See issue #16; touches 15 and the copy script (36, work ticket 01).
 - 2026-11-23 · Workflow · Levels of autonomy set by the type of project: how much the agent may do unattended depends on the kind of project (ties to the repo profile, 07, and the loops fog).
 
 ## Direction
@@ -23,7 +24,7 @@ Backlog of future plans and things to try. Move to `CHANGELOG.md` (and `decision
 - [x] **Install script**: done as `tools/Install-Workflow.ps1` + `/setup-workflow` (2026-11-22).
 - [ ] **Test `refit-workflow` on a real existing repo**: PoReader first, in its own session.
 - [ ] **Update flow**: use `workflow_version` so `refit-workflow` can pull toolbox changes into primed repos.
-- [ ] **Package as a plugin**: so skills update in one place instead of being copied.
+- [ ] ~~**Package as a plugin**: so skills update in one place instead of being copied.~~ Dropped 2026-11-24: decision 0009 (no plugin; home copies skills in, agent-agnostic).
 
 ## Skills
 - [ ] **Skill chaining**: how Matt Pocock's skills link together. The model can call any skill through the Skill tool unless it has `disable-model-invocation: true`; his user-only "entry" skills (wayfinder, grill-with-docs, to-spec, to-tickets, implement) compose model-callable "building blocks" (grilling, domain-modeling, research, prototype, tdd, code-review, pr). Ideas: let `/refit-workflow` run grilling + domain-modeling itself instead of handing over a line; decide which of my skills should be entry points vs building blocks.
