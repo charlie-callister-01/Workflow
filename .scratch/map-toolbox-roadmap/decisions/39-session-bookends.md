@@ -15,6 +15,6 @@ What do `/start-session` and `/end-session` read and write, and how does the own
 4. **A status page for the owner** (16, merged in; read its notes): a cross-project page in home reading each project's LOG and PRs, versus a human-first STATUS per project; which projects get it.
 5. **The toolbox README's "Where I'm up to"** (from 09): whether `/end-session` keeps it current.
 
-ICM (pending 38): leave a marked spot for what a session loads at start.
+ICM (pending 40): leave a marked spot for what a session loads at start.
 
 Created in the map refit (2026-11-24) from parts of 15, 16 and 09. Related: 24 (merged into 15), 20 (markers for the saving), 36 (session project).

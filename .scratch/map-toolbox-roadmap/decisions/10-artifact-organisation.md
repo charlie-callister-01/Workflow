@@ -23,4 +23,4 @@ Review: now three places, not one repo plus a vault: each project's artifacts, t
 
 ## Map refit (2026-11-24)
 
-Session G, opened with the owner's ICM findings (38). Takes in from 09: how `ideas.md` / the inbox, the roadmap, `CHANGELOG.md` and the decision records relate. The directory map page is no longer a fog patch: once this resolves, writing it is a roadmap item.
+Session G, opened with what 40 took from the owner's ICM research. Takes in from 09: how `ideas.md` / the inbox, the roadmap, `CHANGELOG.md` and the decision records relate. The directory map page is no longer a fog patch: once this resolves, writing it is a roadmap item.
