@@ -25,3 +25,7 @@ Each repo's harness evolves for its own domain after setup: the profile is only 
 ## From 17 (2026-11-24)
 
 Correction to the "From 35" note: skill trials don't switch every project. Beta skills install side by side as `<skill>-beta` and are used only when typed; template trials put one project on the beta track. Trial notes arrive as `trial:<slug>` lines in project LOGs and are swept at each trial's Review-by date (default 1 week), so the loop's evidence lives in project LOGs.
+
+## From 23 (2026-11-24)
+
+Promotion and retirement now have a project side: a change that moves, renames or deletes a project file or retires a setting ships a migration (`migrations/NNNN-*.md`, check and rollback) in the same PR, and projects learn they are behind from a `/start-session` line and home's sweep. The loop should cover writing and retiring migrations.

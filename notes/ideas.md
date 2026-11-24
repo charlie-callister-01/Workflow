@@ -32,6 +32,6 @@ Backlog of future plans and things to try. Move to `CHANGELOG.md` (and `decision
 ## Skills
 - [ ] **Skill chaining**: how Matt Pocock's skills link together. The model can call any skill through the Skill tool unless it has `disable-model-invocation: true`; his user-only "entry" skills (wayfinder, grill-with-docs, to-spec, to-tickets, implement) compose model-callable "building blocks" (grilling, domain-modeling, research, prototype, tdd, code-review, pr). Ideas: let `/refit-workflow` run grilling + domain-modeling itself instead of handing over a line; decide which of my skills should be entry points vs building blocks.
 - [ ] **Customise wayfinder starts**: per-project destinations and ticket types for the project-start map (decision 0005); keep or drop after the first try.
-- [ ] **`-Force` re-sync** for `Install-Workflow.ps1`: refresh copied skills from the toolbox (needed where a repo carries copies, e.g. the Workflow repo itself).
+- [ ] **`-Force` re-sync** for `Install-Workflow.ps1`: refresh copied skills from the toolbox (needed where a repo carries copies, e.g. the Workflow repo itself). Absorbed 2026-11-24: skills come from home's copy script (35); project files update through refit's update path and migrations (roadmap 23).
 - [ ] **Learning skill**: opt-in teaching mode (explain a change or concept at a chosen depth).
 - [ ] **Weekly roll-up** for `day-log` (`Logs/YYYY-Wnn.md`).
