@@ -83,3 +83,7 @@ Resolved 2026-11-23 (grilling, two rounds plus a look at how agent-skills keeps 
 | ICM stage folders | 03 | nothing | - | - | skills hold process here, not folders | - |
 
 Separate idea raised in this session (inbox, not part of 05): levels of autonomy set by the type of project.
+
+## From 35 (2026-11-24)
+
+The four Working rules follow 35's split: for personal projects they live in the home repo's `AGENTS.md`, not in each project; `templates/AGENTS.md` includes them only for public, shared or work repos (07 decides how).

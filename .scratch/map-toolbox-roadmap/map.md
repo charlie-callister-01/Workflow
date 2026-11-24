@@ -9,7 +9,7 @@ Started: 2026-11-22
 
 ## Notes
 
-- Domain: this repo, Charlie's personal toolbox of skills, presets, platforms, templates and notes, used to set up new projects and bring existing ones in line. Evolve it; never start a second repo.
+- Domain: this repo, Charlie's personal toolbox of skills, presets, platforms, templates and notes, used to set up new projects and bring existing ones in line. Evolve it. Since 35 it has two private neighbours, the home repo (where sessions start) and the knowledge repo (replacing the vault), set up outside this map.
 - Plan, don't do: tickets produce decisions. Changes happen afterwards through `feature/...` -> `/ship`.
 - Override: research findings are kept, not thrown away. Each research ticket writes `notes/research/YYYY-MM-DD <topic>.md` (format in `notes/research/README.md`) on the map's branch; no `research/` branches.
 - Claude Code is the main agent for now, but a project may use other agents (Cursor, Codex, Copilot), several at once.
@@ -41,11 +41,12 @@ Started: 2026-11-22
 - [Matt Pocock v1.3.2 and main](decisions/11-pocock-sync.md): mirror two setup changes (git remote check before a GitHub tracker, offer the `CONTEXT.md` -> `GLOSSARY` rename) and the "fresh context, not a fork" subagent wording; his tracker changes are GitHub Issues-only, so nothing for the local-markdown tracker; `retro` and `chief-of-staff` feed 09, 15, 34 and 35. The installed plugin sits between tags: diff against releases.
 - [Change flows](decisions/13-change-flows.md): six flows (start project, new feature, small feature, small change, bug fix, spike), each a sequence of stages (define, plan, build, verify, review, ship) with default skills 05 may swap; verify is a stage in every code flow with its check line written at define; the table lives in `templates/AGENTS.md` pointing at `docs/agents/change-flows.md`; flows end at ship, the rest is 15.
 - [What to adopt from the researched methods](decisions/05-what-to-adopt.md): borrow ideas, don't install packs; Pocock and built-ins win, with conflicts kept in an adoption table; `notes/upstream.md` pins outside sources; borrowed skills trialled one at a time (doubt-driven, security, `/interrogate`); a Scope block at plan, a three-question check in `/ship`, four Working rules in `AGENTS.md` (cap ~60 lines), Verification checklists in own skills; `retro` reviews the ratchet.
+- [Home repo or toolbox](decisions/35-home-repo-or-toolbox.md): three repos: this public-safe toolbox, a private home repo where every session starts (pointers to sibling repos, practices, private scripts; AI Hero's home repo pattern) and a private knowledge repo replacing the vault; agent-agnostic, no plugin; home copies toolbox skills in per agent, so no project carries skill copies; personal repos rely on home, shared and work repos stand alone with neutral process files. Decision 0009.
 
 ## Not yet specified
 
 - **Preset rework**: `full` and `team` reshaped around the change flows (13), with GSD Core, Spec Kit's customisation layers and BMAD's planning-path picker as inputs; includes the **Team preset** (`presets/team.md`) and **Azure team mode** (Boards mirror, work-item links, reviewers by path or risk). Waits on the repo profile (07).
-- **Directory map and flow**: one page showing every folder, what lives there, which skill reads or writes it, and an ICM-style load / don't-load table per change flow (from 05). Graduates once 10 and 35 settle where things live.
+- **Directory map and flow**: one page showing every folder, what lives there, which skill reads or writes it, and an ICM-style load / don't-load table per change flow (from 05). Graduates once 10 settles where things live (35 is settled).
 - **Risk levels**: process that varies by the type and risk of a change (drafts in `platforms/*.md`).
 - **Deep dives** on the survey shortlist: superpowers (vs `/ship` and `/end-session`, transcript diagnosis), Compound Engineering (lessons that carry forward, post-PR care), Spec Kit (customisation layers, before the update flow), OpenSpec (what happens to `.scratch/` specs after merge). Ticket each when the question it feeds (05, 09, 10, distribution) needs it.
 - **Autonomous loops and sandboxes**: whether the toolbox supports unattended runs (`/goal`, Ralph-style loops) and where they run (cloud sessions, dev container, WSL2 sandbox). Waits on 30 and 31 (research in ticket 29).
@@ -54,3 +55,4 @@ Started: 2026-11-22
 ## Out of scope
 
 - Making the changes the roadmap lists (normal `/ship` flow).
+- Setting up the home and knowledge repos and their harnesses (from 35): done in those repos; this map only fixes the boundary with the toolbox.

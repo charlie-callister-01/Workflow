@@ -2,6 +2,9 @@
 
 One line per change to the workflow, newest first: what changed and why. Bigger choices get a note in `notes/decisions/`.
 
+## 2026-11-24
+- v2 planning: resolved roadmap decision ticket 35, home repo or toolbox: this repo stays the public-safe toolbox; a private home repo (where sessions start) and a private knowledge repo (replacing the vault) are set up outside the map, after AI Hero's home repo pattern (decision 0009). Agent-agnostic, no plugin; home copies toolbox skills in, so projects carry none; shared repos stand alone with neutral process files. Notes added to 05, 07, 10, 17, 23 and 30. Glossary: Home repo, Knowledge repo, Project harness. Why: the repo's role decides how skills reach projects, which 06, 10 and 23 were waiting on.
+
 ## 2026-11-23
 - v2 planning: resolved roadmap decision ticket 05, what to adopt (with 33, principles, merged in): an adoption table with a conflicts column; borrow ideas rather than install packs, Pocock and built-ins win (decision 0008); `notes/upstream.md` to pin outside sources; borrowed skills trialled one at a time (doubt-driven, security, `/interrogate`); a Scope block at plan, a three-question check in `/ship`, four Working rules in `templates/AGENTS.md`, `retro` as the ratchet's review. New fog: Directory map and flow, Preset rework. Glossary: Scope block, Working rules, Ratchet. Why: decide what to take from the research before Phase 1 is sliced.
 - v2 planning: resolved roadmap decision ticket 13, change flows: six flows, each a sequence of stages (define, plan, build, verify, review, ship) with default skills that ticket 05 may swap; verify is its own stage; the table goes in `templates/AGENTS.md`. Session hooks moved from 30 to 15, the test-running Stop hook to 31. Glossary: Stage, Wayfinder first. Why: flows needed a fixed shape so choosing skills (05) can happen separately.

@@ -13,3 +13,7 @@ Related: 15 (after implementation, with 24 merged in), 25, 29; research in `note
 ## From 05 (2026-11-23)
 
 Candidate: a hook that warns on edits outside the plan's Scope block (`Touch` / `Never`). Possibly: automating the `notes/upstream.md` sync.
+
+## From 35 (2026-11-24)
+
+Sessions start in the home repo, and a project's hooks don't run there (only when the session starts in, or `/cd`s into, the project). Decide whether must-hold hooks live in each project, in home (working for every project), or both. Prefer checks every agent obeys (git hooks, CI) over Claude-only ones.

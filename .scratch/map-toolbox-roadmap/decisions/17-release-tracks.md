@@ -13,3 +13,7 @@ How do the agreed release tracks work in practice? Settled already (grill, 2026-
 - Skill descriptions start `[wf]`; the install stamps `[wf vX.Y]` or `[wf vX.Y beta]`.
 
 Success checks use the markers decided in 21 (Measuring the workflow). Left to decide: the `Install-Workflow.ps1` / `/setup-workflow` / `/refit-workflow` changes (`-Track beta` overlay, stamping the label, recording `workflow_track`, rollback); how promotion and drop run (move the copy over, archive, tag, `trials.md` verdict); how a beta copy is kept in step when production changes during a trial; the `/end-session` reminders (this repo: trials without notes; a beta project: "anything to note?" written into `trials.md`); version numbering between tags.
+
+## From 35 (2026-11-24)
+
+No plugin: skills reach the owner through a copy script in the home repo, and projects carry no toolbox skills. The beta track then mostly means "home's copy script takes `beta/` over production"; templates still reach projects as copies.
