@@ -15,3 +15,7 @@ All sessions now start in home, so Claude Code's transcripts for every project l
 ## From 36 (2026-11-24)
 
 The session project is named in each session's first line (36), so markers can be split per project from the transcript.
+
+## From 07 (2026-11-24)
+
+A candidate marker: how far a project's Checks lines and settings have drifted from its seed (07), per stakes value.

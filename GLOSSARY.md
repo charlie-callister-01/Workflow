@@ -45,8 +45,23 @@ _Avoid_: experiment (that is a spike)
 ## Configuring a project
 
 **Repo profile**:
-What kind of repo a project is (solo or team, platform, agents, whether it has phases and state files); chosen once at setup, changed by refit. Decides where things live and how much ceremony surrounds them.
-_Avoid_: repo type, category
+What kind of repo a project is when it is set up: its audience, stakes, platform and agents. A seed, not a switch: only setup and refit read it, to choose the project's starting files; after that the project's own rules and settings are what count, and they evolve for its domain.
+_Avoid_: repo type, category, preset
+
+**Seed**:
+The profile values and toolbox version a project's files were set up from, kept with the project so refit can tell what it started from and how far it has moved.
+
+**Audience**:
+Who opens a repo: **personal** (only the owner, working from home) or **shared** (teammates who may not use this workflow, so the repo stands alone).
+_Avoid_: solo, team (as profile values)
+
+**Stakes**:
+How much rides on a repo's work: **spike** (throwaway), **everyday** (real, low risk) or **production** (ships to users). Seeds how strict the project's checks start out.
+_Avoid_: risk level (that is per change), depth
+
+**Checks**:
+The plain lines in a project's `AGENTS.md` saying what a change must show before ship, when review and ADRs are needed, and what the agent may do without asking. Seeded from the stakes, then edited like any other rule.
+_Avoid_: verification (that is the stage)
 
 **Change flow**:
 The route one piece of work takes (start project, new feature, small feature, small change, bug fix or spike); proposed by the agent and confirmed by the owner at the start of the work. A fixed sequence of stages.
@@ -69,7 +84,7 @@ The six change flows (decided in roadmap decision ticket 13):
 - **Spike**: work whose output is knowledge, not merged code. _Avoid_: experiment, POC
 
 **Preset**:
-v1's word for a bundle of profile and flow (`full`, `fast-lane`, `lite`, `team`). Being replaced by repo profile plus change flow.
+Retired: v1's word for a bundle of profile and flow (`full`, `fast-lane`, `lite`, `team`). Replaced by the repo profile (a seed) plus the change flow; `fast-lane` is the small change flow.
 
 **Platform**:
 Where pull requests, CI and boards live (`github` or `azure`).
