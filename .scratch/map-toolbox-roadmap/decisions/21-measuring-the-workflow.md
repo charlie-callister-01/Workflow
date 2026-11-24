@@ -2,7 +2,7 @@
 
 Type: grilling
 Status: open
-Blocked by: 20
+Blocked by: 20, 36
 
 ## Question
 
@@ -11,3 +11,7 @@ Which few markers does the toolbox track, collected automatically only (no self-
 ## From 35 (2026-11-24)
 
 All sessions now start in home, so Claude Code's transcripts for every project land under home's folder; markers must be split per project from the session itself (e.g. the project chosen at start, 36). The transcript source is Claude-only; note what other agents would lose.
+
+## From 36 (2026-11-24)
+
+The session project is named in each session's first line (36), so markers can be split per project from the transcript.

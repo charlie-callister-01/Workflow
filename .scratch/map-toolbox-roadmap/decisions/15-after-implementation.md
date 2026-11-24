@@ -32,3 +32,7 @@ Where `retro` sits after `/ship` (05 adopted it as the ratchet's review step); `
 ## From 35 (2026-11-24)
 
 Sessions start in home (36 decides how the session skills act there). Lessons go to the knowledge repo, not the vault. The SessionStart and SessionEnd hooks would be home's, not each project's, and are Claude-only: prefer an agent-neutral form where one exists. A home session that touches several repos means one PR per repo, which affects "one branch per session".
+
+## From 36 (2026-11-24)
+
+Each session skill acts on the session project (36). Decide here: removing a worktree at `<project>/.worktrees/<branch>` after its PR merges; how a session that changed a second, named repo ships (one PR per repo, both listed in the session project's LOG line).

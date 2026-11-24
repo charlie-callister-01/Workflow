@@ -2,7 +2,7 @@
 
 Type: grilling
 Status: open
-Blocked by: 13
+Blocked by: 13, 36
 
 ## Question
 
@@ -25,3 +25,7 @@ Point 4 decided: the Working rules live in `AGENTS.md`, not in a router. The rou
 ## From 35 (2026-11-24)
 
 Sessions start in home, so any intent -> skill table belongs in home's `AGENTS.md` (agent-neutral), not in each project; a router skill would be one of home's copies. Point 5's portability weighs more now that the workflow is agent-agnostic.
+
+## From 36 (2026-11-24)
+
+Session skills name the session project in their first line and read its `AGENTS.md` explicitly (36); a router in home's `AGENTS.md` routes to skills, not to repos.

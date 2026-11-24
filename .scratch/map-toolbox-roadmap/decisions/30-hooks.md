@@ -2,7 +2,7 @@
 
 Type: grilling
 Status: open
-Blocked by: none
+Blocked by: 36, 07
 
 ## Question
 
@@ -21,3 +21,7 @@ Sessions start in the home repo, and a project's hooks don't run there (only whe
 ## From 35, review (2026-11-24)
 
 Reframed: the title says "Claude Code hooks", but the owner wants the workflow agent-agnostic. Rank enforcement as git hooks and CI or branch protection first (every agent and teammate obeys them), agent hooks second (per agent, home or project). Shared repos get only neutral checks.
+
+## From 36 (2026-11-24)
+
+Home is the default starting place and projects still work on their own (36). Decide when a session must start inside the project so its agent hooks run, or whether git hooks and CI make that unnecessary.

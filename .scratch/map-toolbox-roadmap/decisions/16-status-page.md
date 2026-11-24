@@ -2,7 +2,7 @@
 
 Type: grilling
 Status: open
-Blocked by: 36
+Blocked by: 36, 07
 
 ## Question
 
@@ -11,3 +11,7 @@ How does the owner see, without asking an agent, what got done last time, where 
 ## From 35 (2026-11-24)
 
 Reframed by 35: "a status page for me" is naturally a **cross-project page in home** (what got done across all projects, what's next), with each project keeping its own short state for others. `/day-log`'s digest goes to the knowledge repo, not the vault. Blocked by 36, which decides where sessions log.
+
+## From 36 (2026-11-24)
+
+Home writes nothing per session (36): a cross-project page reads each project's LOG and PRs from home's `## Other repos` table, so no fact is written twice. Home has its own LOG only for sessions where home is the session project.

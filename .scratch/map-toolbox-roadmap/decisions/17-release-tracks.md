@@ -2,7 +2,7 @@
 
 Type: grilling
 Status: open
-Blocked by: none
+Blocked by: 36
 
 ## Question
 
@@ -21,3 +21,7 @@ No plugin: skills reach the owner through a copy script in the home repo, and pr
 ## From 35, review (2026-11-24)
 
 Problem this creates: if home copies skills once for every project, a beta skill can no longer be trialled in **one** project while others stay on production; the beta track becomes per machine, not per project. Options: home switches tracks as a whole; beta skills copied side by side under another name; or a per-project track that home's script reads when the session picks a project (36). `workflow_track` and the `[wf vX.Y]` stamp then apply to home's copies; projects record only their template version.
+
+## From 36 (2026-11-24)
+
+Home's copy script takes skills from `origin/main` by default; trying a toolbox branch means naming it to the script, which switches every project until reset (36). Decide whether the beta track is that switch, or per session project.
