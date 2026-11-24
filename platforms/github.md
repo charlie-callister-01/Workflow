@@ -8,7 +8,7 @@ Copy this file into the project as `docs/agents/platform.md`.
 
 - pr_command: `gh pr create --base main --title "<title>" --body-file <file>` (see `tools/gh-pr.md`)
 - pr_list_command: `gh pr list --state open --json number,title,headRefName --jq '.[] | [.number,.title,.headRefName] | @tsv'`
-- CI: `.github/workflows/*.yml`; add `.github/` to `code_pattern`.
+- CI: `.github/workflows/*.yml`; `.github/` is in the default `code_pattern`.
 - Merge type: squash for docs-only, merge commit for code. GitHub sets the merge method when the PR is merged, not when it is opened: choose it in the merge button (or `gh pr merge --squash|--merge`).
 - Text: GitHub keeps Unicode, so no ASCII rule.
 

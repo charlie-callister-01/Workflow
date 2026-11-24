@@ -18,7 +18,7 @@ Delete a line to use the default shown in `CUSTOMISING.md`.
 - commit_format: type(scope): message (phase N)
 - test_command: <e.g. dotnet test MySolution.slnx | npm test>
 - format_command: <e.g. dotnet format MySolution.slnx | npm run lint -- --fix>
-- code_pattern: ^(src|tests|tools)/|\.(csproj|props|slnx)$|^azure-pipelines\.yml$|^\.github/   # what counts as a code change
+- code_pattern: ^(src|tests|tools)/|\.(sln|slnx|csproj|props)$|^azure-pipelines\.yml$|^\.editorconfig$|^\.github/   # what counts as a code change; the only copy (New-AzurePr.ps1 reads it)
 
 ## State files (presets full and fast-lane)
 
