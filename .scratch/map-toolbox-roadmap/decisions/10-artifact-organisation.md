@@ -1,6 +1,7 @@
 # Artifact organisation and export
 
 Type: grilling
+Style: interview
 Status: open
 Blocked by: 35, 38
 
@@ -19,3 +20,7 @@ The Obsidian vault is replaced by a private **knowledge repo** (learning is a fo
 ## From 35, review (2026-11-24)
 
 Review: now three places, not one repo plus a vault: each project's artifacts, the toolbox's `notes/`, and the knowledge repo. The directory map fog spans all three.
+
+## Map refit (2026-11-24)
+
+Session G, opened with the owner's ICM findings (38). Takes in from 09: how `ideas.md` / the inbox, the roadmap, `CHANGELOG.md` and the decision records relate. The directory map page is no longer a fog patch: once this resolves, writing it is a roadmap item.

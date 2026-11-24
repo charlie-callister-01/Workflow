@@ -1,6 +1,7 @@
-# After wayfinder: finishing a map and handing over
+# Closing work: maps and specs
 
 Type: grilling
+Style: nail
 Status: open
 Blocked by: 13, 10
 
@@ -11,3 +12,7 @@ When a map's frontier is empty: who writes the destination, when the map branch 
 ## From 35 (2026-11-24)
 
 A map for an effort that spans repos (like setting up home and knowledge) may live in home rather than a project; decide where maps live and how decision 0005's scope ("`full` project starts only") changes.
+
+## Map refit (2026-11-24)
+
+Session H. Takes in from 15: what happens to a spec folder and its work tickets after merge (archive, or fold into living docs). From 09: when a cycle is a light refresh versus a new wayfinder map. OpenSpec is parked, not a research ticket.

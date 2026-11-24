@@ -1,7 +1,8 @@
 # Model selection
 
 Type: grilling
-Status: open
+Status: resolved
+Notes: merged into 34 (flow table) in the map refit (2026-11-24); its points now live there.
 Blocked by: 18, 13, 06
 
 ## Question

@@ -124,6 +124,14 @@ What reaching the end of a map produces: a plan, a spec, a decision or a change.
 One question on a map whose answer is a decision (research, prototype, grilling or task). Lives in a map's `decisions/` folder; never produces code.
 _Avoid_: ticket (alone), issue
 
+**Grilling style**:
+How a grilling ticket is questioned: `rounds` (a whole round of questions at a time, each with a recommendation; the default), `nail` (at most five questions, then a short summary to approve), `interview` (one question at a time until confident) or `doubt` (rounds, then a fresh reviewer tries to disprove the result). Set on the ticket; the owner may change it at the start.
+_Avoid_: grilling mode, planning style (that covers maps and prototypes too)
+
+**Primary source**:
+An outside method the owner draws on first (Pocock, Osmani, pstack / fstack, ICM). Other researched methods are **parked**: looked at only when the owner picks one. Findings reach a decision only through the owner's picks.
+_Avoid_: upstream (that is a pinned copy, `notes/upstream.md`)
+
 **Spec**:
 A description of one piece of work to build, written by `/to-spec`.
 

@@ -1,7 +1,8 @@
 # Checks in each project's code
 
 Type: grilling
-Status: open
+Status: resolved
+Notes: merged into 37 (seed files); the habit "every correction becomes a check" into 09 in the map refit (2026-11-24); its points now live there.
 Blocked by: 07
 
 ## Question

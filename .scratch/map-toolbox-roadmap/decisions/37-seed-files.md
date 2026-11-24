@@ -1,6 +1,7 @@
 # Seed files: reworking presets into profile seeds
 
 Type: grilling
+Style: rounds
 Status: open
 Blocked by: 31
 
@@ -25,3 +26,7 @@ Updates three-way merge each seeded file against the template at the project's s
 ## From 30 (2026-11-24)
 
 Stakes `everyday` and `production` seed `templates/.githooks/` (`pre-commit`, `pre-push`: refuse `main` / `master`); `spike` seeds none. Setup and refit set `core.hooksPath .githooks`. Branch protection where the platform allows it belongs in the setup guide for those stakes.
+
+## Map refit (2026-11-24)
+
+Session B. Point 2 (the Checks lines per stakes) moved to 31; this ticket packages 31's answer. Takes in **32** (read its question and notes): which code checks per stack (lint severities, architecture tests, comment guideline) are seeded as templates and which are suggestions at setup. 32's habit "every correction becomes a check" went to 09. Also seeds the git hooks (from 30). The Spec Kit input in point 5 is parked (map Notes, Sources).
