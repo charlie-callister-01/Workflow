@@ -24,4 +24,4 @@ Each repo's harness evolves for its own domain after setup: the profile is only 
 
 ## From 17 (2026-11-24)
 
-Correction to the note above: skill trials don't switch every project. Beta skills install side by side as `<skill>-beta` and are used only when typed; template trials put one project on the beta track. Trial notes arrive as `trial:<slug>` lines in project LOGs and are swept at each trial's Review-by date (default 1 week), so the loop's evidence lives in project LOGs.
+Correction to the "From 35" note: skill trials don't switch every project. Beta skills install side by side as `<skill>-beta` and are used only when typed; template trials put one project on the beta track. Trial notes arrive as `trial:<slug>` lines in project LOGs and are swept at each trial's Review-by date (default 1 week), so the loop's evidence lives in project LOGs.
