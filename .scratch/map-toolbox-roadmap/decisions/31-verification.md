@@ -21,3 +21,7 @@ Prefer checks every agent obeys (tests and CI, the evidence `/ship` reads) over 
 ## From 07 (2026-11-24)
 
 Stakes (`spike | everyday | production`) seeds a **Checks** section in the project's `AGENTS.md`: the flow picks the stages, the Checks lines set how strict verify and review are. This ticket's answer feeds what each stakes value seeds (ticket 37).
+
+## From 30 (2026-11-24)
+
+Order of layers (30): CI and platform rules, then git hooks, then agent hooks as optional extras that only start existing scripts. A test-running Stop hook would be Claude-only; prefer tests in CI and a `pre-push` hook if a local gate is wanted.

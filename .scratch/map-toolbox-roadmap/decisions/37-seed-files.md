@@ -21,3 +21,7 @@ Graduated from the map's "Preset rework" fog by 07 (2026-11-24). Related: 23 (re
 ## From 23 (2026-11-24)
 
 Updates three-way merge each seeded file against the template at the project's seed version, so seed files stay plain templates whose history is the merge base. Retiring `presets/` and the `preset:` line is migration (d) of the v2 migration; moving or renaming seed files later needs its own migration file (`migrations/NNNN-*.md`).
+
+## From 30 (2026-11-24)
+
+Stakes `everyday` and `production` seed `templates/.githooks/` (`pre-commit`, `pre-push`: refuse `main` / `master`); `spike` seeds none. Setup and refit set `core.hooksPath .githooks`. Branch protection where the platform allows it belongs in the setup guide for those stakes.

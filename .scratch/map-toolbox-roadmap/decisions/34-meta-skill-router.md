@@ -29,3 +29,7 @@ Sessions start in home, so any intent -> skill table belongs in home's `AGENTS.m
 ## From 36 (2026-11-24)
 
 Session skills name the session project in their first line and read its `AGENTS.md` explicitly (36); a router in home's `AGENTS.md` routes to skills, not to repos.
+
+## From 30 (2026-11-24)
+
+Input, not decided: **portable agent hooks** (one script, plus a per-agent trigger file home's copy script writes for each agent that has hooks) would live in home and run for every session started there. Whether the router starts or lists them is a question here. 30 builds none now and says an agent hook only starts an existing script.

@@ -36,3 +36,7 @@ Sessions start in home (36 decides how the session skills act there). Lessons go
 ## From 36 (2026-11-24)
 
 Each session skill acts on the session project (36). Decide here: removing a worktree at `<project>/.worktrees/<branch>` after its PR merges; how a session that changed a second, named repo ships (one PR per repo, both listed in the session project's LOG line).
+
+## From 30 (2026-11-24)
+
+Script first (30 point 8): a step that does the same thing every run becomes a skill script in the skill's folder, called once, with plain commands as a fallback in the body. Decide here which steps of `/start-session`, `/end-session` and `/ship` become scripts. The owner's examples: a `session-facts` script (fetch, status, last commits, behind `origin/main`, open PRs, LOG tail, `core.hooksPath` check) that `/start-session` runs once and only reasons over; an `/end-session` script that writes the LOG line skeleton and checks for uncommitted work; a sync-main script after merge (switch to `main`, pull, delete merged branches, remove the worktree). Measure the saving with 20's markers. The SessionStart and SessionEnd hooks, if ever built, only start these same scripts (30 point 9).

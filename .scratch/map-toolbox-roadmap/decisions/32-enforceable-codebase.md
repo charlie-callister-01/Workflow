@@ -13,3 +13,7 @@ Related: 02, 28, 29, 07 (repo profile decides the stack); research in `notes/res
 ## From 35 (2026-11-24)
 
 Fits 35: these neutral checks (lint severities, architecture tests) are exactly what shared and work repos carry instead of the owner's skills.
+
+## From 30 (2026-11-24)
+
+Order of layers (30): platform rules and CI, then git hooks, then agent hooks; a check is added only after a recorded failure. Candidate here: a CI diff check against the plan's Scope block (`Touch` / `Never`) if scope creep keeps getting past `/ship`'s three-question check.

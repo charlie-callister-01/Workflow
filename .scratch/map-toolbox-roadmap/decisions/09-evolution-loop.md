@@ -29,3 +29,7 @@ Correction to the "From 35" note: skill trials don't switch every project. Beta 
 ## From 23 (2026-11-24)
 
 Promotion and retirement now have a project side: a change that moves, renames or deletes a project file or retires a setting ships a migration (`migrations/NNNN-*.md`, check and rollback) in the same PR, and projects learn they are behind from a `/start-session` line and home's sweep. The loop should cover writing and retiring migrations.
+
+## From 30 (2026-11-24)
+
+The ratchet is how a rule moves from prose into a check: only after a recorded failure (30 point 1). Parked candidate: a `pre-commit` check against stray `.md` files, if they turn up in real PRs. Pruning applies to hooks and checks too.

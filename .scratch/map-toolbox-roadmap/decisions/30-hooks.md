@@ -1,7 +1,7 @@
 # Hooks: the toolbox's enforcement layer
 
 Type: grilling
-Status: open
+Status: resolved
 Blocked by: 36, 07
 
 ## Question
@@ -33,3 +33,21 @@ Per-agent settings, permissions included, live in home (06); a project gets agen
 ## From 07 (2026-11-24)
 
 No hook or skill may read the profile to change behaviour: behaviour lives in concrete, editable lines. If stakes should turn on a hook (e.g. guard hooks for `production`), setup seeds the hook config as ordinary files, which the project then owns.
+
+## Answer
+
+Resolved 2026-11-24 (grilling, three rounds). No decision record: the hard-to-reverse part (agent-agnostic enforcement) is decision 0009.
+
+1. **Layers, in order:** platform rules and CI (GitHub branch protection or rulesets, Azure branch policies) first; **git hooks** in the project second; **agent hooks** (Claude `PreToolUse`, `SessionStart`, ...) third, as optional extras. A rule moves from prose into a check only when a recorded failure shows it's needed (25, 26), never because a hook could enforce it.
+2. **Guard against committing to `main`:** `pre-commit` and `pre-push` git hooks refuse `main` / `master` and name the fix ("create a branch: `feature/<name>`"), backed by branch protection where the platform allows it. This repo's `main` has none today (checked 2026-11-24): turning it on is a roadmap item. No agent hook does this job.
+3. **Dropped candidates:** blocking edits to `.claude/skills/` (no repo carries skill copies after 35 and 06; the toolbox's own copies go in the v2 migration, 23); the `.md` allow-list (no recorded failure; returns as a `pre-commit` check only through 09's ratchet); the Scope-block warning from 05 (`/ship`'s three-question check covers it; 32 may make it a CI diff check); automating the `notes/upstream.md` sync (stays 05's monthly step, at most a script that prints the upstream diff since the pinned commit).
+4. **Where a session starts doesn't matter for enforcement:** must-hold rules are git hooks, which fire for every agent, person and starting folder, so a session never has to start inside the project for its rules to hold.
+5. **Hooks in the project harness:** git hooks are seeded by stakes (point 6). Agent hooks get into a project only when the owner adds them or a shared repo's team needs them (06 point 5); either way the project owns and edits them, and refit keeps its edits (23).
+6. **Shipping git hooks:** `templates/.githooks/` holds them as small POSIX `sh` scripts (git runs them with its own `sh` on every OS, so a teammate's Mac works too; the logic stays in `sh`). Seeded for stakes `everyday` and `production`, none for `spike` (37). `/setup-workflow` and `/refit-workflow` run `git config core.hooksPath .githooks`; that setting doesn't travel with a clone, so `/start-session`'s facts check spots it missing and offers to set it.
+7. **Trial:** a template trial (17), `beta/templates/.githooks/`, on this toolbox plus one personal project with `-Track beta`. Rollback: unset `core.hooksPath` and delete `.githooks/`. Review after 1 week.
+8. **Script first, agent for judgement:** a step that does the same thing every run is a **skill script** the skill calls once, not a string of agent tool calls; the skill keeps only proposing, summarising and asking. Skill scripts live in the skill's folder (`skills/<skill>/scripts/`, part of the Agent Skills format), so home's copy script brings them and no project carries them; the skill body names the plain commands as a fallback. Principle goes in `DEVELOPING.md`. Which steps become scripts (session facts for `/start-session`, the LOG line for `/end-session`, switching to `main`, pulling and deleting merged branches after merge) is 15's, with the saving measured by 20's markers. For a one-off, the owner can type `! git switch main; git pull`, which costs no model reasoning.
+9. **Agent hooks only start scripts:** none are built now. Later, an agent hook (e.g. a `SessionStart` in home running the same session-facts script as `/start-session`) only starts an existing script and holds no logic of its own. **Portable agent hooks** (one script, plus a per-agent trigger file home's copy script writes for each agent that has hooks) are fog, waiting on 34 and on a failure that needs one.
+10. **Skipping hooks (`--no-verify`):** no new rule. Agents are already told not to; the hook's refusal message gives the proper route; branch protection catches the rest.
+11. **Languages:** POSIX `sh` for git hooks; PowerShell 5.1 for home's agent hooks and the toolbox's other scripts.
+
+Glossary: Git hook, Agent hook, Skill script.

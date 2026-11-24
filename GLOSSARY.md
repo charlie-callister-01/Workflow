@@ -97,6 +97,20 @@ Retired: v1's word for a bundle of profile and flow (`full`, `fast-lane`, `lite`
 **Platform**:
 Where pull requests, CI and boards live (`github` or `azure`).
 
+## Checks and hooks
+
+**Git hook**:
+A script git itself runs on its own events (commit, push), kept in the project's `.githooks/` folder. It applies to every agent and person working in that clone, and can refuse the commit or push.
+_Avoid_: hook (alone)
+
+**Agent hook**:
+A script one agent runs on that agent's own events (a tool call, the start or end of a session). It applies only to that agent, and only where its settings are loaded. In this workflow it only ever starts an existing script.
+_Avoid_: hook (alone), Claude hook
+
+**Skill script**:
+A script that ships inside a skill's folder and that the skill calls once for a step that does the same thing every run, so the agent only reasons over its output.
+_Avoid_: helper, tool
+
 ## Planning work
 
 **Map**:
