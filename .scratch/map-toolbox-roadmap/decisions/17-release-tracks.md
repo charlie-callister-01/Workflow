@@ -17,3 +17,7 @@ Success checks use the markers decided in 21 (Measuring the workflow). Left to d
 ## From 35 (2026-11-24)
 
 No plugin: skills reach the owner through a copy script in the home repo, and projects carry no toolbox skills. The beta track then mostly means "home's copy script takes `beta/` over production"; templates still reach projects as copies.
+
+## From 35 (2026-11-24)
+
+Problem this creates: if home copies skills once for every project, a beta skill can no longer be trialled in **one** project while others stay on production; the beta track becomes per machine, not per project. Options: home switches tracks as a whole; beta skills copied side by side under another name; or a per-project track that home's script reads when the session picks a project (36). `workflow_track` and the `[wf vX.Y]` stamp then apply to home's copies; projects record only their template version.

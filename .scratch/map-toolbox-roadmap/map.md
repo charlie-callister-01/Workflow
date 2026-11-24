@@ -12,12 +12,12 @@ Started: 2026-11-22
 - Domain: this repo, Charlie's personal toolbox of skills, presets, platforms, templates and notes, used to set up new projects and bring existing ones in line. Evolve it. Since 35 it has two private neighbours, the home repo (where sessions start) and the knowledge repo (replacing the vault), set up outside this map.
 - Plan, don't do: tickets produce decisions. Changes happen afterwards through `feature/...` -> `/ship`.
 - Override: research findings are kept, not thrown away. Each research ticket writes `notes/research/YYYY-MM-DD <topic>.md` (format in `notes/research/README.md`) on the map's branch; no `research/` branches.
-- Claude Code is the main agent for now, but a project may use other agents (Cursor, Codex, Copilot), several at once.
+- Claude Code is the main agent for now, but a project may use other agents (Cursor, Codex, Copilot), several at once. Since 35: agent-agnostic by default (plain files, scripts, git hooks and CI first; no plugins; Claude-only settings only as an optional extra).
 - Grilling tickets: call the grilling and domain-modeling skills. Decisions with a real trade-off go to `notes/decisions/NNNN-*.md`.
 - Open items in `notes/ideas.md` are absorbed here (tickets or fog); `ideas.md` stays the inbox for new ideas.
 - Vocabulary is in `GLOSSARY.md` (decision ticket vs work ticket, repo profile vs change flow, ...). Grilling tickets add to it as terms settle.
 - Pace: slow and tested. v2 changes reach projects as trials on the beta track (`beta/` overlay folder, `notes/trials.md`), then get promoted to production. Principles in `DEVELOPING.md`, "Pace and release tracks"; mechanics in decision ticket 17.
-- Projects must never end up carrying files or skills they don't use: every v2 proposal says what lands in a project and why.
+- Projects must never end up carrying files or skills they don't use: every v2 proposal says what lands in a project and why. Since 35, no project carries toolbox skills (home copies them in), and every session starts in home: proposals say how they work from there (36).
 - Tracker: local markdown (`docs/agents/issue-tracker.md`, "Wayfinding operations"). Decision tickets are `decisions/NN-*.md` (never `issues/`, which holds work tickets from `/to-tickets`).
 
 ## Decisions so far
@@ -45,10 +45,10 @@ Started: 2026-11-22
 
 ## Not yet specified
 
-- **Preset rework**: `full` and `team` reshaped around the change flows (13), with GSD Core, Spec Kit's customisation layers and BMAD's planning-path picker as inputs; includes the **Team preset** (`presets/team.md`) and **Azure team mode** (Boards mirror, work-item links, reviewers by path or risk). Waits on the repo profile (07).
-- **Directory map and flow**: one page showing every folder, what lives there, which skill reads or writes it, and an ICM-style load / don't-load table per change flow (from 05). Graduates once 10 settles where things live (35 is settled).
+- **Preset rework**: `full` and `team` reshaped around the change flows (13), with GSD Core, Spec Kit's customisation layers and BMAD's planning-path picker as inputs; includes the **Team preset** (`presets/team.md`, since 35 only neutral process files, no toolbox skills) and **Azure team mode** (Boards mirror, work-item links, reviewers by path or risk). Waits on the repo profile (07).
+- **Directory map and flow**: one page showing every folder, what lives there, which skill reads or writes it, and an ICM-style load / don't-load table per change flow (from 05). Spans the toolbox, home and knowledge repos and each project; graduates once 10 and 36 settle where things live.
 - **Risk levels**: process that varies by the type and risk of a change (drafts in `platforms/*.md`).
-- **Deep dives** on the survey shortlist: superpowers (vs `/ship` and `/end-session`, transcript diagnosis), Compound Engineering (lessons that carry forward, post-PR care), Spec Kit (customisation layers, before the update flow), OpenSpec (what happens to `.scratch/` specs after merge). Ticket each when the question it feeds (05, 09, 10, distribution) needs it.
+- **Deep dives** on the survey shortlist: superpowers (vs `/ship` and `/end-session`, transcript diagnosis), Compound Engineering (lessons that carry forward, post-PR care), Spec Kit (customisation layers, before the update flow), OpenSpec (what happens to `.scratch/` specs after merge). Ticket each when the question it feeds (09, 10, 15, 23) needs it; distribution is settled (35).
 - **Autonomous loops and sandboxes**: whether the toolbox supports unattended runs (`/goal`, Ralph-style loops) and where they run (cloud sessions, dev container, WSL2 sandbox). Waits on 30 and 31 (research in ticket 29).
 - **Roadmap phases**: the ordering of everything above into phases; graduates once 05-16 are resolved.
 

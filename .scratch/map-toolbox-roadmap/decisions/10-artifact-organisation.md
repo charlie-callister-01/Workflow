@@ -15,3 +15,7 @@ Where coding practices, learning notes and book notes (see 12) live, what shape 
 ## From 35 (2026-11-24)
 
 The Obsidian vault is replaced by a private **knowledge repo** (learning is a folder in it); it is the LLM-kept wiki. This repo's `notes/` stays the toolbox's own record. Organise and export both here; ideas reach the knowledge repo from the home repo.
+
+## From 35 (2026-11-24)
+
+Review: now three places, not one repo plus a vault: each project's artifacts, the toolbox's `notes/`, and the knowledge repo. The directory map fog spans all three.
