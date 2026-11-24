@@ -13,3 +13,7 @@ Related: 25, 26, 28, 29, 30 (a Stop hook), 15 (after implementation); research i
 ## From 05 (2026-11-23)
 
 `/ship` starts with a three-question check; "does it work" reads the verify evidence 31 defines. Every toolbox skill that writes or ships ends in a Verification checklist. `verify-this` (team kit) is a candidate verify-stage default.
+
+## From 35 (2026-11-24)
+
+Prefer checks every agent obeys (tests and CI, the evidence `/ship` reads) over a Claude-only Stop hook. Shared repos carry their checks as neutral process files (35).

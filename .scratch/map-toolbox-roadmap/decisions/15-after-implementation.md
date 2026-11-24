@@ -2,7 +2,7 @@
 
 Type: grilling
 Status: open
-Blocked by: 13
+Blocked by: 13, 36
 
 ## Question
 
@@ -28,3 +28,7 @@ A SessionStart hook that feeds `/start-session` its git and PR facts (up to 10,0
 ## From 05 (2026-11-23)
 
 Where `retro` sits after `/ship` (05 adopted it as the ratchet's review step); `/end-session` gains the lesson question. The CI watcher and PR care (team kit, Compound Engineering) are candidates here.
+
+## From 35 (2026-11-24)
+
+Sessions start in home (36 decides how the session skills act there). Lessons go to the knowledge repo, not the vault. The SessionStart and SessionEnd hooks would be home's, not each project's, and are Claude-only: prefer an agent-neutral form where one exists. A home session that touches several repos means one PR per repo, which affects "one branch per session".

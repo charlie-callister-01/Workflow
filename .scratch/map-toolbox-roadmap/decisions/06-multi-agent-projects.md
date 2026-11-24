@@ -15,3 +15,7 @@ When a project uses one or several agents (Claude Code, Cursor, Codex, Copilot),
 ## From 05 (2026-11-23)
 
 `/interrogate` (trial 3 in 05) could run as Claude plus Codex once this ticket settles how several agents work in one project.
+
+## From 35 (2026-11-24)
+
+Reframed by 35: projects carry no toolbox skills, so per-agent skill adapters are built once, by home's copy script (`.claude/skills/`, `.agents/skills/`, ...), not per project. What is left per project is the instruction file (`AGENTS.md` plus thin shims such as `CLAUDE.md`), and for shared repos only neutral process files. The "agent refit" shrinks to adding shims; `/refit-agents` may not be needed. Still open: several agents in one project or one session, and which agents home's script supports.
