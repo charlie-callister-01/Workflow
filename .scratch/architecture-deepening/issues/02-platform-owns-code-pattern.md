@@ -20,3 +20,4 @@ Notes: Live bug. The two `code_pattern` regexes disagree today.
 Related: issue #16, which asks `/ship` to skip review on docs-only changes and needs a correct `code_pattern`.
 
 ## Comments
+- 2026-11-24: fixed on `fix/code-pattern`, PR #18. Left: merge type still restated in AGENTS.md, DEVELOPING.md, USING.md, CUSTOMISING.md:49, tools/gh-pr.md, platform risk tables; this repo's docs/agents/platform.md still says "add .github/ to code_pattern".
