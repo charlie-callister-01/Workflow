@@ -3,6 +3,7 @@
 One line per change to the workflow, newest first: what changed and why. Bigger choices get a note in `notes/decisions/`.
 
 ## 2026-11-24
+- Fix: `code_pattern` now lives only in `workflow-settings.md` (default is the union of the two old regexes, adding `.sln` and `.editorconfig`); `New-AzurePr.ps1` reads it from there, keeps `-CodePattern` as a one-run override and gains `-DryRun`; `/ship` and `/end-session` point at the project's `docs/agents/platform.md`, which alone states the merge type and text rules. Why: the template and the Azure script disagreed on what counts as code, and a project may not know where the toolbox is (decision 0009).
 - v2 planning: resolved roadmap decision ticket 35, home repo or toolbox: this repo stays the public-safe toolbox; a private home repo (where sessions start) and a private knowledge repo (replacing the vault) are set up outside the map, after AI Hero's home repo pattern (decision 0009). Agent-agnostic, no plugin; home copies toolbox skills in, so projects carry none; shared repos stand alone with neutral process files. Notes added to 05, 07, 10, 17, 23 and 30. Glossary: Home repo, Knowledge repo, Project harness. Then reviewed every open ticket against 35: new ticket 36 (session skills working from home), which now blocks 15 and 16; notes on 06, 09, 14-16, 19, 21, 31, 32 and 34; the beta-per-project problem flagged on 17; map Notes and fog updated. Why: the repo's role decides how skills reach projects, which 06, 10 and 23 were waiting on, and it moves every session into home.
 
 ## 2026-11-23

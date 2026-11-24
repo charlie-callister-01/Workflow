@@ -27,7 +27,7 @@ Three layers, from cheapest to most work:
 | `vault_folder` | empty = off | day-log, vault-note, pr-explainer | where vault notes go |
 | `vault_project_link`, `vault_workspace_note`, `vault_plan_note` | (optional) | day-log, vault-note | Obsidian links and tracker notes |
 
-Keep `code_pattern` and the `-CodePattern` passed to `New-AzurePr.ps1` the same.
+`code_pattern` lives only in `workflow-settings.md`: `New-AzurePr.ps1` reads it from there (its optional `-CodePattern` overrides it for one run).
 
 ## 2. Presets and platforms
 

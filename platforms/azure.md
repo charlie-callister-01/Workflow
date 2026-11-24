@@ -7,7 +7,7 @@ Copy this file into the project as `docs/agents/platform.md`.
 ## Settings for `workflow-settings.md`
 
 - azure_org, azure_project, azure_repo: your organisation URL, project and repo names.
-- pr_command: `powershell -File tools/New-AzurePr.ps1 -Organization <azure_org> -Project "<azure_project>" -Repository "<azure_repo>" -Title "<title>" -BodyFile <file>` (copy `tools/New-AzurePr.ps1` into the project's `tools/`).
+- pr_command: `powershell -File tools/New-AzurePr.ps1 -Organization <azure_org> -Project "<azure_project>" -Repository "<azure_repo>" -Title "<title>" -BodyFile <file>` (copy `tools/New-AzurePr.ps1` into the project's `tools/`). The script reads `code_pattern` from `docs/agents/workflow-settings.md`; add `-DryRun` to see the merge type and matched files without opening a PR.
 - pr_list_command: `az repos pr list --organization <azure_org> --project "<azure_project>" --status active --query "[].[pullRequestId,title,sourceRefName]" -o tsv` (PowerShell; Git Bash may need a new terminal to find `az`).
 - CI: `azure-pipelines.yml`, required as build validation on `main` by a branch policy.
 - Merge type: the script sets squash for docs-only diffs and a normal merge for code, and deletes the source branch on completion.
