@@ -24,3 +24,5 @@ Created 2026-11-25 at the owner's request, taken straight after 40. Related: 22 
 ## From the inbox (2026-11-25)
 
 From the inbox triage grilling: `/idea` capture must not interrupt the session's context. Two routes to weigh under question 2: a routed hook script (a prompt hook catches `idea ...`, appends the line and stops the prompt before the model sees it; Claude-only, so an optional extra under decision 0009) or a fresh-context subagent that writes the line and returns only "noted" (portable, costs a little context).
+
+An **inbox triaging skill** (idea 2026-11-25, in the Inbox): the 2026-11-25 triage grilling, done by hand, is the worked example: each idea checked against the open tickets, a destination and its effect on them recommended, the owner confirms, notes written, Inbox cleared, one PR. Decide whether triage becomes its own skill or stays the no-text form of `/idea` (22 point 5). Its shape depends on this ticket's automatic routing and on 10's final directory structure.

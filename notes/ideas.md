@@ -3,6 +3,7 @@
 Backlog of future plans and things to try. Move to `CHANGELOG.md` (and `decisions/` if needed) once adopted; strike through if dropped, with why.
 
 ## Inbox
+- 2026-11-25 · Workflow · An inbox triaging skill: run what today's inbox triage grilling did by hand (each idea against the open tickets, a recommended destination and its effect on those tickets, owner confirms, notes written, Inbox cleared, one PR). Depends on 41 (how much routing is automatic, what still needs the owner) and 10 (the final directory structure ideas are filed into). Linked as an input on 41.
 
 ## Direction
 - [ ] **Find the best workflow for me**: research other ways of working and other people's workflows (findings in `research/`), try them as presets, keep what works. Everything here is a base to improve on.
