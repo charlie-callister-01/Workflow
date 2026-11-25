@@ -43,3 +43,10 @@ Session E: one table, change flow x stage -> skill **and model**. Takes in **19*
 7. **Research inside planning in projects:** whether project sessions send research subagents during grilling, as this map's sessions do.
 
 ICM (pending 40): leave a marked spot for a load / don't-load table per stage. Portable agent hooks are no longer a question here: they arrive only through 09's ratchet.
+
+## From the inbox (2026-11-25)
+
+Two complementary review skills to place in the flow table, each its own fresh context and angle (the owner's principle: complementary reviewers, plus doubt-driven design; map Main takeaways):
+
+- **Architecture review on plans:** Pocock's `codebase-design` (was `improve-codebase-architecture`, used in `.scratch/architecture-deepening/`) applied to a spec, map or roadmap before code exists: deep modules and seams in the design being planned. Candidate for the plan stage of start project and new feature; trialled (17) once placed.
+- **A strict review of written work** (to build; backlog in `notes/ideas.md`, Skills): thermo-nuclear's ambition applied to plans, specs, maps, decision tickets, `AGENTS.md`, skills, templates, docs and research: one source per rule, no duplication or contradiction, no bloat, every task has a check, one-way links, vague prose called out, restructuring moves. Candidate for the review stage of docs-only and planning work. `thermo-nuclear-code-quality-review` stays as it is for code.
