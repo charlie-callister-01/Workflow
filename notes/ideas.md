@@ -3,6 +3,7 @@
 Backlog of future plans and things to try. Move to `CHANGELOG.md` (and `decisions/` if needed) once adopted; strike through if dropped, with why.
 
 ## Inbox
+- 2026-11-25 · Workflow · A quick update-docs skill: refresh STATUS and HANDOFF (in `lite`, the LOG line) mid-session without running the whole `/end-session` (no branch sweep, no reminders, no commit offer beyond the docs). Ties to 39 (session bookends: what start and end read and write, skill scripts) and 15.
 - 2026-11-25 · Workflow · An easier way to start new sessions, likely part of home's router: pick the project and the next step and launch a CLI session there in one go. Plus keeping track of the other CLI sessions running (which repo, branch or worktree, what each is on, which are idle or finished). Ties to 42 (home), 34 (router), 39 (session bookends, status page) and 36 (worktrees for parallel sessions).
 - 2026-11-25 · Workflow · An inbox triaging skill: run what today's inbox triage grilling did by hand (each idea against the open tickets, a recommended destination and its effect on those tickets, owner confirms, notes written, Inbox cleared, one PR). Depends on 41 (how much routing is automatic, what still needs the owner) and 10 (the final directory structure ideas are filed into). Linked as an input on 41.
 
