@@ -23,7 +23,7 @@ A phase that starts foggy can also begin with a map. See `notes/decisions/0005-w
   -> /mattpocock-skills:implement   ticket by ticket (or implement-spec for 3+ independent tickets)
   -> /mattpocock-skills:code-review
   -> size check   (fix work > 160k tokens: suggest a fix spec; > 200k: make one)
-  -> /ship   (explainer for code PRs; PR via the platform)
+  -> /open-pr   (explainer for code PRs; PR via the platform)
   -> /end-session   (STATUS, HANDOFF, LOG, re-slice Specs)
 end of day:   /day-log      (optional)
 end of phase: /thermo-nuclear-code-quality-review -> docs/REFACTOR.md; archive .scratch; branch sweep

@@ -46,7 +46,7 @@ A project's work flows like this. How much of it you use depends on the **preset
   /to-spec, /to-tickets   plan: one spec, small tickets in .scratch/
   /implement              build: ticket by ticket, test first
   /code-review            check: standards + spec
-  /ship                   PR: body, explainer for code, platform PR command
+  /open-pr                PR: body, explainer for code, platform PR command
 /end-session              STATUS, HANDOFF, one LOG line
 /day-log                  (optional) end-of-day note in the vault
 ```
@@ -73,7 +73,7 @@ Preset and platform are chosen separately. Details: `presets/`, `platforms/`.
 |---|---|---|
 | `start-session` | core | Branch check, read STATUS + HANDOFF, open PRs, propose the next step |
 | `end-session` | core | Update STATUS + HANDOFF, one LOG line, re-slice the phase |
-| `ship` | core | The one way to open a PR: body, explainer for code, platform PR command |
+| `open-pr` | core | The one way to open a PR: body, explainer for code, platform PR command |
 | `pr-explainer` | optional | HTML explainer of a branch as an Artifact |
 | `thermo-nuclear-code-quality-review` | optional | Very strict maintainability review at the end of a phase |
 | `day-log` | optional | End-of-day note in an Obsidian vault |

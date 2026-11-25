@@ -5,12 +5,12 @@ For: docs, config, and fixes under ~30 lines, inside a project that otherwise ru
 ## Pipeline
 
 ```
-/start-session -> branch (fix/ or chore/) -> change -> /ship -> /end-session
+/start-session -> branch (fix/ or chore/) -> change -> /open-pr -> /end-session
 ```
 
 ## Drops
 - Grilling, spec and tickets.
-- The explainer for docs-only PRs (`/ship` decides from `code_pattern`).
+- The explainer for docs-only PRs (`/open-pr` decides from `code_pattern`).
 
 ## Keeps
 - Never commit to `main`; every change goes through a PR and CI.

@@ -10,7 +10,7 @@ Started: 2026-11-22
 ## Notes
 
 - Domain: this repo, Charlie's personal toolbox of skills, presets, platforms, templates and notes, used to set up new projects and bring existing ones in line. Evolve it. Since 35 it has two private neighbours, the home repo (where sessions start) and the knowledge repo (replacing the vault), set up outside this map.
-- Plan, don't do: tickets produce decisions. Changes happen afterwards through `feature/...` -> `/ship`.
+- Plan, don't do: tickets produce decisions. Changes happen afterwards through `feature/...` -> `/open-pr`.
 - Override: research findings are kept, not thrown away. Each research ticket writes `notes/research/YYYY-MM-DD <topic>.md` (format in `notes/research/README.md`) on the map's branch; no `research/` branches. Since the refit (2026-11-24), research mostly runs **inside** a grilling session: a subagent limited to the primary sources fetches the fact a question needs and returns a short summary, with a research note only when the findings are worth keeping.
 - **Sources.** Primary: **Pocock** (the base), **Osmani**, **pstack / fstack** (with Flavio Copes), **ICM** (from 40). Parked, ticketed only when the owner picks one: superpowers, Spec Kit, OpenSpec, Compound Engineering, BMAD, GSD Core, anthropics/skills, the two books. 05's adoption table stays the record of what was adopted; picks add rows to it.
 - **Main takeaways** (the owner's must-haves, to use across the workflow; guidance, not a checklist every task must tick, and not the only things worth taking):
@@ -28,6 +28,7 @@ Started: 2026-11-22
 - Projects must never end up carrying files or skills they don't use: every v2 proposal says what lands in a project and why. Since 35, no project carries toolbox skills (home copies them in), and every session starts in home: proposals say how they work from there (36).
 - Order (refit 2026-11-24; foundations 36, 06, 07, 17, 23, 30 done): **40 the owner's ICM research and what to take from it, next** (38 merged in); then 31 verification and Checks lines; 15 ship and after; 34 flow table; 37 seed files; 39 session bookends; 09 evolution loop and evidence; then 10 artifact organisation (after 40) and 14 closing work; last, the roadmap itself (fog: Roadmap phases). Blocked-by lines hold only real dependencies, so pick from the frontier in this order, not first number first. The refit merged 32 into 37, 19 into 34, 16 into 39 and 21 into 09, split 15 (PR lifecycle) from 39 (session state), and removed fog that was answered or is doing rather than deciding (see Roadmap phases).
 - Tracker: local markdown (`docs/agents/issue-tracker.md`, "Wayfinding operations"). Decision tickets are `decisions/NN-*.md` (never `issues/`, which holds work tickets from `/to-tickets`).
+- Since 2026-11-25 the toolbox's `/ship` skill is `/open-pr` (it clashed with Claude Code's built-in `/ship`, issue #16). Tickets written earlier still say `/ship`; read it as `/open-pr`. Topic names such as "15 ship and after" and the ship stage keep the word.
 
 ## Decisions so far
 
@@ -66,5 +67,5 @@ Removed in the refit: **Risk levels** (into 31), **Deep dives** (sources parked,
 
 ## Out of scope
 
-- Making the changes the roadmap lists (normal `/ship` flow).
+- Making the changes the roadmap lists (normal `/open-pr` flow).
 - Setting up the home and knowledge repos and their harnesses (from 35): done in those repos; this map only fixes the boundary with the toolbox.

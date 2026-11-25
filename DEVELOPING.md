@@ -15,7 +15,7 @@ idea  ->  research  ->  decide  ->  change  ->  try on a project  ->  keep, tune
 1. **Idea:** a line in [notes/ideas.md](notes/ideas.md). That file is the inbox; anything goes.
 2. **Research** (if needed): a note in [notes/research/](notes/research/), one file per topic, `YYYY-MM-DD <topic>.md`. `/mattpocock-skills:research` writes these.
 3. **Decide:** grill it (`/mattpocock-skills:grilling`). A real trade-off gets a short note in [notes/decisions/](notes/decisions/).
-4. **Change:** edit the skill, template, preset or platform on a branch, add a line to [CHANGELOG.md](CHANGELOG.md), `/ship`.
+4. **Change:** edit the skill, template, preset or platform on a branch, add a line to [CHANGELOG.md](CHANGELOG.md), `/open-pr`.
 5. **Try it** on a real project. Keep it, tune it, or strike it through in `ideas.md` with why.
 
 Bigger or foggy questions go through a **wayfinder map** instead of one grill: see below.
@@ -27,7 +27,7 @@ Slow and tested, so the workflow never gets overwhelming. Agreed 2026-11-22; the
 - **Trials board:** every change being tried is a row in [notes/trials.md](notes/trials.md): what it should improve (the success check), the trial project, notes, and a verdict (keep, tune, drop). It's there to see what's in flight and to prompt notes, not to cap how many.
 - **Two tracks:**
   - **Production:** everything on `main` outside `beta/`, tagged per release (`v1.0`, `v1.1`, ...). What projects get by default.
-  - **Beta:** the `beta/` folder mirrors the repo and holds **full copies** of anything on trial (`beta/skills/ship/SKILL.md` next to `skills/ship/SKILL.md`), so wording changes are visible with a diff. A trial project installs production with `beta/` laid on top.
+  - **Beta:** the `beta/` folder mirrors the repo and holds **full copies** of anything on trial (`beta/skills/open-pr/SKILL.md` next to `skills/open-pr/SKILL.md`), so wording changes are visible with a diff. A trial project installs production with `beta/` laid on top.
 - **Promote:** move the beta copy over production, tag a release, `CHANGELOG.md` line, verdict "keep". **Drop:** move the beta copy to `notes/archive/`, verdict "drop" with why.
 - **Switching a project mid-way:** only the files the beta changes are replaced; the project's own work (specs, code, STATUS, LOG) is untouched. Going back to production restores those files. A beta change that **creates or moves project files** must write its rollback in `trials.md` first, or it doesn't go on trial mid-project.
 - **Labels:** my skills' descriptions start `[wf]`, so they stand out in the `/` menu. Installed copies will be stamped `[wf v1.0]` or `[wf v1.1 beta]`.
@@ -69,7 +69,7 @@ It picks the first open ticket (or name one), works it with you, records the ans
    - Changed `setup-workflow` or `refit-workflow`: `powershell -File tools/Install-GlobalSkills.ps1`
    - Changed a core skill: delete its copy in `.claude/skills/`, then `powershell -File tools/Install-Workflow.ps1 -Project . -Preset lite -Platform github -Skills core`
    - Changed the install script: dry run into an empty temp folder with `-DryRun`.
-5. `/ship`. Merge with **squash** for notes and docs, **merge commit** for `skills/`, `tools/`, `templates/`.
+5. `/open-pr`. Merge with **squash** for notes and docs, **merge commit** for `skills/`, `tools/`, `templates/`.
 6. `/end-session`.
 
 ## How changes reach projects

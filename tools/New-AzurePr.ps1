@@ -1,6 +1,6 @@
 <#
 .SYNOPSIS
-  Opens a pull request on Azure DevOps for the current branch. Used by the /ship skill (platform: azure).
+  Opens a pull request on Azure DevOps for the current branch. Used by the /open-pr skill (platform: azure).
 .DESCRIPTION
   Checks the branch is pushed and clean, decides the merge type from the diff:
   docs-only -> squash; anything matching code_pattern -> normal merge (no fast-forward).

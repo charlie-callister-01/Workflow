@@ -12,7 +12,7 @@ First use: Antigravity CLI (`agy`), for the trial "AGENTS.md as the main file" i
 
 Antigravity reads `AGENTS.md` (and `GEMINI.md`, `.agents/rules/*.md`) and skills from `.agents/skills/<name>/SKILL.md`. It does not read `CLAUDE.md` or `.claude/skills/`. Its global files live in `~/.gemini/`.
 
-1. **Instruction file.** If the project still has `CLAUDE.md` only, run `/refit-workflow` (it moves the file), or switch it by hand on a `chore/` branch, then `/ship` it:
+1. **Instruction file.** If the project still has `CLAUDE.md` only, run `/refit-workflow` (it moves the file), or switch it by hand on a `chore/` branch, then `/open-pr` it:
    ```powershell
    git mv CLAUDE.md AGENTS.md
    git commit -m "chore(workflow): move CLAUDE.md to AGENTS.md"   # alone, so git records a rename
@@ -50,7 +50,7 @@ One row per skill used in Antigravity. Typical breakers: Claude tool names (`Ask
 |---|---|---|---|
 | start-session | | | |
 | end-session | | | |
-| ship | | | |
+| open-pr | | | |
 
 ## 4. Instruction file
 
