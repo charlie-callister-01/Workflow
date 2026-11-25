@@ -10,7 +10,7 @@ Started: 2026-11-22
 ## Notes
 
 - Domain: this repo, Charlie's personal toolbox of skills, presets, platforms, templates and notes, used to set up new projects and bring existing ones in line. Evolve it. Since 35 it has two private neighbours, the home repo (where sessions start) and the knowledge repo (replacing the vault), set up outside this map.
-- Plan, don't do: tickets produce decisions. Changes happen afterwards through `feature/...` -> `/ship`.
+- Plan, don't do: tickets produce decisions. Changes happen afterwards through `feature/...` -> `/open-pr`.
 - Override: research findings are kept, not thrown away. Each research ticket writes `notes/research/YYYY-MM-DD <topic>.md` (format in `notes/research/README.md`) on the map's branch; no `research/` branches. Since the refit (2026-11-24), research mostly runs **inside** a grilling session: a subagent limited to the primary sources fetches the fact a question needs and returns a short summary, with a research note only when the findings are worth keeping.
 - **Sources.** Primary: **Pocock** (the base), **Osmani**, **pstack / fstack** (with Flavio Copes), **ICM** (from 40). Parked, ticketed only when the owner picks one: superpowers, Spec Kit, OpenSpec, Compound Engineering, BMAD, GSD Core, anthropics/skills, the two books. 05's adoption table stays the record of what was adopted; picks add rows to it.
 - **Main takeaways** (the owner's must-haves, to use across the workflow; guidance, not a checklist every task must tick, and not the only things worth taking):
@@ -67,5 +67,5 @@ Removed in the refit: **Risk levels** (into 31), **Deep dives** (sources parked,
 
 ## Out of scope
 
-- Making the changes the roadmap lists (normal `/ship` flow).
+- Making the changes the roadmap lists (normal `/open-pr` flow).
 - Setting up the home and knowledge repos and their harnesses (from 35): done in those repos; this map only fixes the boundary with the toolbox.

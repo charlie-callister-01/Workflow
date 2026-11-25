@@ -39,7 +39,7 @@ Not sure which preset a project uses? Look at `preset:` in `docs/agents/workflow
 /to-tickets           slice it into small tickets
 /implement            build ticket by ticket, test first
 /code-review          check against the coding standards and the spec
-/open-pr                 open the PR
+/open-pr              open the PR
 ```
 
 Small changes in a `full` project (docs, config, fixes under about 30 lines) skip straight to `/open-pr`: that is the `fast-lane` preset.

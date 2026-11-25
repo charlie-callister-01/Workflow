@@ -46,7 +46,7 @@ A project's work flows like this. How much of it you use depends on the **preset
   /to-spec, /to-tickets   plan: one spec, small tickets in .scratch/
   /implement              build: ticket by ticket, test first
   /code-review            check: standards + spec
-  /open-pr                   PR: body, explainer for code, platform PR command
+  /open-pr                PR: body, explainer for code, platform PR command
 /end-session              STATUS, HANDOFF, one LOG line
 /day-log                  (optional) end-of-day note in the vault
 ```

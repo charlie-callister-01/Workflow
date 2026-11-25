@@ -7,7 +7,7 @@ Notes: Live bug. The two `code_pattern` regexes disagree today.
 
 - `templates/docs/agents/workflow-settings.md:21` includes `^\.github/`. `tools/New-AzurePr.ps1:19` has its own default, which adds `.sln` and `.editorconfig` and leaves out `.github/`. The `pr_command` in `platforms/azure.md:10` never passes `-CodePattern`, although `CUSTOMISING.md:30` says to keep them the same.
 - Make the settings file the one source: `New-AzurePr.ps1` reads `code_pattern` from `docs/agents/workflow-settings.md` and keeps no default of its own.
-- The platform file (`platforms/<platform>.md`, copied to `docs/agents/platform.md`) owns `pr_command`, the merge type and the text rules. `skills/ship` and `skills/end-session` call `pr_command` and point at the project's `docs/agents/platform.md`, not at "the Workflow repo" (`ship:7`, `end-session:16`).
+- The platform file (`platforms/<platform>.md`, copied to `docs/agents/platform.md`) owns `pr_command`, the merge type and the text rules. `skills/open-pr` (was `ship`) and `skills/end-session` call `pr_command` and point at the project's `docs/agents/platform.md`, not at "the Workflow repo" (`open-pr:7`, `end-session:16`).
 - Cut the restatements: `pr_list_command` appears in 12 files, "squash" in 15 and the ASCII rule in 8. Keep one home for each.
 
 ## Done when
