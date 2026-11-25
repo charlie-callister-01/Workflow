@@ -36,3 +36,9 @@ Session A. Takes in, besides the question above:
 - **`/goal`** for longer runs stays here; where unattended runs happen (cloud, dev container, WSL2) is a later roadmap item, not a decision for this map.
 
 32 (checks in code) moved to 37: which checks a project is seeded with is packaging.
+
+## From the inbox (2026-11-25)
+
+Levels of autonomy by type of project: how much the agent may do unattended is set by stakes, in the Checks lines this ticket owns ("what the agent may do unasked"): `spike` loose, `everyday` in between, `production` asks first. `/goal` runs respect the same level. 37 packages the answer into seed files.
+
+Can a plan be verified, not only code? Candidate: a design review as the plan's check (the architecture review on plans, placed by 34), run from a fresh context.

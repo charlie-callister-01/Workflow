@@ -16,3 +16,7 @@ A map for an effort that spans repos (like setting up home and knowledge) may li
 ## Map refit (2026-11-24)
 
 Session H. Takes in from 15: what happens to a spec folder and its work tickets after merge (archive, or fold into living docs). From 09: when a cycle is a light refresh versus a new wayfinder map. OpenSpec is parked, not a research ticket.
+
+## From the inbox (2026-11-25)
+
+Before the roadmap hands over to change flows, review its design: the architecture review on plans (34's inbox note) applied to the roadmap before Phase 1 is sliced, ideally with a doubt-driven pass from a separate context.

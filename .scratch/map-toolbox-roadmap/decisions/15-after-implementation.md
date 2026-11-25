@@ -55,3 +55,7 @@ Moved out:
 - What happens to the spec folder and its work tickets: 14.
 - Release or deploy: 31.
 - Where `retro` sits after `/ship`: 09, which now owns all of `retro`.
+
+## From the inbox (2026-11-25)
+
+The docs-only fast path (point 3): issue #16 asked for "at most a cheap consistency pass" on docs-only changes. A light mode of the planned strict review of written work (see 34's inbox note) is a candidate for that pass.
