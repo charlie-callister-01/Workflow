@@ -33,3 +33,7 @@ Resolved 2026-11-23 (grilling).
 7. **Boundary with 09:** this ticket owns everything up to and including routing an inbox item; 09 owns what happens to it afterwards (backlog, roadmap, CHANGELOG, decisions, the trial loop).
 
 Lands in a project: nothing until the first `/idea`, then only `docs/IDEAS.md`. Lands in this repo: the `idea` label, an `## Inbox` section in `notes/ideas.md`, the `/idea` skill in `skills/`, one line in `start-session`. Built later through `feature/...` -> `/ship`; trial on the beta track per 17.
+
+## Reopened in part (2026-11-25)
+
+Points 3, 5 and 6 (where it lands, triage, clearing) are reopened by 41, idea routing and auto-organisation: the owner wants routing and organisation to be largely automatic. Capture (points 1 and 2) stands.
