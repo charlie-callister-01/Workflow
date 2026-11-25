@@ -12,17 +12,17 @@ Three layers, from cheapest to most work:
 |---|---|---|---|
 | `owner` | (required) | all | who approves; who the skills wait for |
 | `preset` | `full` | start/end-session | which state files exist and which steps run |
-| `platform` | `github` | ship, start/end-session | PR and CI commands, text rules |
+| `platform` | `github` | open-pr, start/end-session | PR and CI commands, text rules |
 | `workflow_version` | set by setup/refit | refit-workflow | the toolbox commit the project last took; refit shows changes since |
 | `workflow_repo` | set by setup | refit-workflow | where the Workflow repo is on this machine |
 | `main_branch` | `main` | all | the protected branch |
 | `branch_prefixes` | `feature/ fix/ chore/ throwaway/ research/` | end-session sweep | naming and what gets tagged before delete |
-| `commit_format` | `type(scope): message (phase N)` | ship | PR titles and commits |
+| `commit_format` | `type(scope): message (phase N)` | open-pr | PR titles and commits |
 | `test_command` | (required) | end-session, pr-explainer | how tests run |
 | `format_command` | (optional) | AGENTS.md | formatting gate |
-| `code_pattern` | `src/ tests/ tools/` + build files | ship, New-AzurePr.ps1 | what counts as code: explainer, review, merge type |
+| `code_pattern` | `src/ tests/ tools/` + build files | open-pr, New-AzurePr.ps1 | what counts as code: explainer, review, merge type |
 | `status_file` ... `explainer_dir` | `docs/...` | all | where state lives |
-| `pr_command`, `pr_list_command` | per platform | ship, start/end-session, day-log | how PRs are opened and listed |
+| `pr_command`, `pr_list_command` | per platform | open-pr, start/end-session, day-log | how PRs are opened and listed |
 | `azure_org`, `azure_project`, `azure_repo` | (azure only) | New-AzurePr.ps1 | which Azure DevOps project |
 | `vault_folder` | empty = off | day-log, vault-note, pr-explainer | where vault notes go |
 | `vault_project_link`, `vault_workspace_note`, `vault_plan_note` | (optional) | day-log, vault-note | Obsidian links and tracker notes |
@@ -46,7 +46,7 @@ Numbers and rules you might tune per project or per person:
 | Implement mode | `implement` by default; `implement-spec` for 3+ independent tickets | AGENTS.md |
 | File size | ~500 lines | coding standards, thermo review |
 | STATUS / HANDOFF length | ~40 / ~10 lines | end-session |
-| Merge type | squash for docs, normal merge for code | ship, platform |
+| Merge type | squash for docs, normal merge for code | open-pr, platform |
 | Boards mirror | phases + specs, one way, by hand | platforms/azure.md |
 | Phase-end review | thermo review -> refactor backlog | end-session |
 

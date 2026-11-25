@@ -2,7 +2,7 @@
 
 How work flows from an idea to `main`, which skill does what, where every file lives, and how agents keep their context small. First written for the PoReader project (2026-11-20, preset `full`, platform `azure`); kept here as the starting point. A project's `CLAUDE.md` is what agents follow; this is the human map of it.
 
-> **The short version.** **Start** with `/start-session`. **Think** with `/grill-with-docs`. **Plan** with `/to-spec` and `/to-tickets`. **Build** with `/implement`. **Check** with `/code-review`. **Ship** with `/ship`. **Close** with `/end-session`. At the end of the day, `/day-log`.
+> **The short version.** **Start** with `/start-session`. **Think** with `/grill-with-docs`. **Plan** with `/to-spec` and `/to-tickets`. **Build** with `/implement`. **Check** with `/code-review`. **Ship** with `/open-pr`. **Close** with `/end-session`. At the end of the day, `/day-log`.
 
 ---
 
@@ -18,7 +18,7 @@ flowchart LR
     PH["docs/phases/P-NN.md<br/>phase + Specs list"]
     SC[".scratch/pNN-slug/<br/>spec + tickets"]
     AD["docs/adr/<br/>decisions"]
-    SK[".claude/skills/<br/>start, end, ship,<br/>day-log, vault-note"]
+    SK[".claude/skills/<br/>start, end, open-pr,<br/>day-log, vault-note"]
   end
   subgraph PF["Platform (Azure DevOps or GitHub)"]
     PR["Pull requests"]
@@ -31,18 +31,18 @@ flowchart LR
     AR["Artifacts<br/>explainer copies + index"]
     PA["Project Archive"]
   end
-  SK -->|"/ship opens"| PR
+  SK -->|"/open-pr opens"| PR
   PR -->|"must pass"| PL
   SC -.->|"reminder to mirror"| BO
   SK -->|"/day-log, /vault-note"| NO
   SK -->|"/day-log"| LO
-  SK -->|"/ship copies explainer"| AR
+  SK -->|"/open-pr copies explainer"| AR
 ```
 
 | Where | What lives there | Who writes it |
 |---|---|---|
 | Repo | Rules, state, plans, specs, tickets, decisions, code | Agents (I review the diff) |
-| Platform | PRs, builds, board items | `/ship` opens PRs; I approve and complete; boards by hand |
+| Platform | PRs, builds, board items | `/open-pr` opens PRs; I approve and complete; boards by hand |
 | Vault, agent folder | Lessons, decision summaries, day logs, explainer copies, archive | Agents, only in that folder |
 | Vault, my notes | My own notes, hours and status | Me |
 
@@ -63,7 +63,7 @@ sequenceDiagram
   A-->>Me: branch current? PRs, next step (under 10 lines)
   Me->>A: go
   A->>R: work on a branch (never main)
-  A->>P: /ship opens PR
+  A->>P: /open-pr opens PR
   P-->>Me: build result on the PR
   Me->>P: approve + complete
   Me->>A: /end-session
@@ -93,7 +93,7 @@ flowchart TD
   EST -->|"under 160k tokens"| FIX["Fix in place"]
   EST -->|"over 160k: suggest<br/>over 200k: must"| FIXSPEC["New fix spec<br/>in the phase Specs list"]
   FIXSPEC --> SPEC
-  FIX --> SHIP["/ship"]
+  FIX --> SHIP["/open-pr"]
   SHIP --> CODE{"code_pattern matched?"}
   CODE -->|yes| EXP["/pr-explainer<br/>+ vault copy + index row"]
   CODE -->|no| BODY
@@ -172,8 +172,8 @@ flowchart TD
 | `/to-spec`, `/to-tickets` | Planning a spec | `.scratch/pNN-slug/` |
 | `/implement` / `implement-spec` | Building | Code, tests, commits |
 | `/code-review` | Before every code PR | Review findings + size estimate |
-| `/ship` | Opening any PR | PR body, explainer (code only), PR |
-| `/pr-explainer` | Called by `/ship`, or on request | explainer HTML + vault copy + index row |
+| `/open-pr` | Opening any PR | PR body, explainer (code only), PR |
+| `/pr-explainer` | Called by `/open-pr`, or on request | explainer HTML + vault copy + index row |
 | `/end-session` | End of a session | STATUS, HANDOFF, one LOG line, Specs list |
 | `/thermo-nuclear-code-quality-review` | End of a phase | Findings in `docs/REFACTOR.md` |
 | `/day-log` | End of the day | `Logs/YYYY-MM-DD.md` |
@@ -186,7 +186,7 @@ flowchart TD
 
 ## 7. Tips
 - If STATUS and git disagree, trust git and the platform; `/start-session` says so.
-- Open PRs only with `/ship`; it checks the branch is pushed and picks squash or merge.
+- Open PRs only with `/open-pr`; it checks the branch is pushed and picks squash or merge.
 - On Azure, PR text must be plain ASCII; the CLI drops other characters.
 - Archive, never delete: repo `.scratch/archive/`, `docs/archive/`; vault `Project Archive`.
 - Keep vault paths short (under ~200 characters); OneDrive and Windows choke on long ones.

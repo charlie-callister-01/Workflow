@@ -22,7 +22,7 @@ How to put this workflow into a project. About 15 minutes.
 
 1. **Pick a preset and a platform** (`presets/`, `platforms/`). Unsure: `lite` + `github` for personal, `full` + `azure` for work.
 2. **Copy the skills** you want into the project's `.claude/skills/`:
-   - always: `start-session`, `end-session`, `ship`
+   - always: `start-session`, `end-session`, `open-pr`
    - optional: `pr-explainer`, `thermo-nuclear-code-quality-review`, `day-log`, `vault-note`
 3. **Copy the templates:**
    - `templates/AGENTS.md` -> project root; fill in the `<...>` parts. Keep it under ~120 lines.
@@ -35,12 +35,12 @@ How to put this workflow into a project. About 15 minutes.
 5. **Platform tools:** `azure` -> copy `tools/New-AzurePr.ps1` into the project's `tools/`. `pr-explainer` with a vault -> also copy `tools/Export-StandaloneHtml.ps1`.
 6. **Coding standards:** add a short `CODING_STANDARDS.md` (the code-review skill reads it).
 7. **Protect `main`:** require CI on PRs (branch protection on GitHub, branch policy on Azure).
-8. Commit on a `chore/workflow-setup` branch and open the first PR with `/ship`. That tests the whole chain.
+8. Commit on a `chore/workflow-setup` branch and open the first PR with `/open-pr`. That tests the whole chain.
 
 ## 3. Check it works
 
 - `/start-session` reports the branch, open PRs and the next step in under 10 lines.
-- `/ship` on a docs-only change opens a PR and says "squash".
+- `/open-pr` on a docs-only change opens a PR and says "squash".
 - `/end-session` writes a LOG line.
 
 ## Agent memory habits (optional)

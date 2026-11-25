@@ -1,13 +1,13 @@
 # Opening a PR on GitHub (`gh`)
 
-Used by `/ship` when `platform: github`. Needs the GitHub CLI (`winget install GitHub.cli`, then `gh auth login`).
+Used by `/open-pr` when `platform: github`. Needs the GitHub CLI (`winget install GitHub.cli`, then `gh auth login`).
 
 ```
 git push -u origin <branch>
 gh pr create --base main --head <branch> --title "<type(scope): message>" --body-file <file>
 ```
 
-Before running it, `/ship` has already checked: not on `main`, clean tree, branch pushed, and the kind of change (code vs docs-only via `code_pattern`).
+Before running it, `/open-pr` has already checked: not on `main`, clean tree, branch pushed, and the kind of change (code vs docs-only via `code_pattern`).
 
 Merging (you, not the agent):
 

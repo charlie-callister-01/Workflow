@@ -13,7 +13,7 @@ param(
     [string]$Project = '.',
     [ValidateSet('full', 'fast-lane', 'lite')][string]$Preset = 'full',
     [ValidateSet('github', 'azure')][string]$Platform = 'github',
-    # 'core' = start-session, end-session, ship. Add optional skill names after it.
+    # 'core' = start-session, end-session, open-pr. Add optional skill names after it.
     [string[]]$Skills = @('core'),
     [string]$WorkflowRepo = (Split-Path -Parent $PSScriptRoot),
     [switch]$DryRun
@@ -28,7 +28,7 @@ if ($src -eq $dst) { Write-Output 'note: priming the Workflow repo itself (skill
 $Skills = @($Skills | ForEach-Object { $_ -split ',' } | ForEach-Object { $_.Trim() } | Where-Object { $_ })
 $skillNames = New-Object System.Collections.Generic.List[string]
 foreach ($s in $Skills) {
-    if ($s -eq 'core') { 'start-session', 'end-session', 'ship' | ForEach-Object { $skillNames.Add($_) } }
+    if ($s -eq 'core') { 'start-session', 'end-session', 'open-pr' | ForEach-Object { $skillNames.Add($_) } }
     else { $skillNames.Add($s) }
 }
 

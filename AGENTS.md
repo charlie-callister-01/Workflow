@@ -21,7 +21,7 @@ Charlie's toolbox for a software development and AI workflow: Claude Code skills
 
 ## Workflow (preset: lite, see presets/lite.md)
 - Branch `feature/<name>`, `chore/` or `fix/`; never commit to `main`. Commits: `type(scope): message`.
-- Change -> `/ship` (PR via `gh`) -> Charlie merges: squash for notes/docs, merge commit for `skills/`, `tools/`, `templates/`.
+- Change -> `/open-pr` (PR via `gh`) -> Charlie merges: squash for notes/docs, merge commit for `skills/`, `tools/`, `templates/`.
 - Every change to the toolbox gets a `CHANGELOG.md` line; a real trade-off also gets `notes/decisions/NNNN-*.md`.
 - `/end-session`: one line in `docs/LOG.md`.
 

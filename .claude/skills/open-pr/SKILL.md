@@ -1,5 +1,5 @@
 ---
-name: ship
+name: open-pr
 description: "[wf] Open a pull request the one approved way: PR body via /mattpocock-skills:pr, an explainer only for code changes, then the platform's PR command. Use whenever a branch is ready for a PR."
 tier: core
 ---

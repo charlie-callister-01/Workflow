@@ -23,8 +23,8 @@ The project's instructions live in `AGENTS.md`. `CLAUDE.md` is the single line `
    - `AGENTS.md`: replace the `<...>` placeholders from what you explored; delete lines that do not apply to the preset. Keep it under ~120 lines. Leave `CLAUDE.md` as the single line `@AGENTS.md`.
    - Preset `full`/`fast-lane`: a first `docs/STATUS.md` (today, "workflow set up", next action) and `docs/HANDOFF.md`; `docs/LOG.md` first line.
    - If `AGENTS.md` was **skipped because `CLAUDE.md` exists**: edit neither file; step 7 offers `/refit-workflow`, which moves `CLAUDE.md` to `AGENTS.md`.
-   - If `AGENTS.md` was **skipped because it existed**: do not edit it; propose a short `## Workflow` section (pointer to `docs/agents/workflow-settings.md`, the pipeline line for the preset, `/ship` as the only PR route) and add it only after a yes. If `CLAUDE.md` existed too, step 7 offers `/refit-workflow` to make it the `@AGENTS.md` pointer.
-6. **Show** `git status` and the diff summary; commit after a yes: `chore: set up the workflow (<preset>, <platform>)`. Offer `/ship`; do not push without a yes.
+   - If `AGENTS.md` was **skipped because it existed**: do not edit it; propose a short `## Workflow` section (pointer to `docs/agents/workflow-settings.md`, the pipeline line for the preset, `/open-pr` as the only PR route) and add it only after a yes. If `CLAUDE.md` existed too, step 7 offers `/refit-workflow` to make it the `@AGENTS.md` pointer.
+6. **Show** `git status` and the diff summary; commit after a yes: `chore: set up the workflow (<preset>, <platform>)`. Offer `/open-pr`; do not push without a yes.
 7. **Existing workflow?** If step 1 found one, or step 4 skipped `AGENTS.md` because `CLAUDE.md` exists, or skipped anything beyond `AGENTS.md`, report what was skipped in one short list and offer `/refit-workflow` to merge the two without bloat.
 8. **Plugin check** once: if no `mattpocock-skills:*` skills are in your skill list, print these lines for the owner to type (only the user can install plugins), then restart Claude Code:
    `/plugin install mattpocock-skills@claude-plugins-official`

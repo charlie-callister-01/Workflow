@@ -8,7 +8,7 @@ For: a small personal project, a spike, or a weekend build. No phases, no vault,
 (optional) /mattpocock-skills:grilling   for the idea
   -> branch -> /mattpocock-skills:tdd or just build
   -> /mattpocock-skills:code-review   (when it matters)
-  -> /ship   (or commit straight to a branch and merge yourself)
+  -> /open-pr   (or commit straight to a branch and merge yourself)
   -> /end-session   (LOG line only)
 ```
 

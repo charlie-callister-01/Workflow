@@ -14,13 +14,13 @@
 ## Commands (run from repo root)
 - Build/test: `<test_command>` (warnings are errors?). Format: `<format_command>`; CI fails on drift?
 - CI: `<pipeline file>` on <platform>; PRs into `main` must pass it.
-- Open PRs only with `/ship`.
+- Open PRs only with `/open-pr`.
 
 ## Workflow (preset: <full | fast-lane | lite>, see the Workflow repo's presets/)
 - Branch `feature/<name>`, `chore/` or `fix/` (`throwaway/` for test PRs); never commit to `main`. Commits: `type(scope): message (phase N)`.
-- **Normal change:** `/mattpocock-skills:grill-with-docs` -> `/mattpocock-skills:to-spec` + `/mattpocock-skills:to-tickets` (`.scratch/pNN-<slug>/`) -> `/mattpocock-skills:implement` ticket by ticket -> `/mattpocock-skills:code-review` -> size check -> `/ship` -> `/end-session`.
+- **Normal change:** `/mattpocock-skills:grill-with-docs` -> `/mattpocock-skills:to-spec` + `/mattpocock-skills:to-tickets` (`.scratch/pNN-<slug>/`) -> `/mattpocock-skills:implement` ticket by ticket -> `/mattpocock-skills:code-review` -> size check -> `/open-pr` -> `/end-session`.
 - **Size check after review:** estimate the fix work (lines to read or change x ~12 tokens + ~20k). Over 160k: suggest a fix spec; over 200k: make it a fix spec.
-- **Fast lane:** docs, config or fixes under ~30 lines skip grilling, spec and tickets: branch, change, `/ship`.
+- **Fast lane:** docs, config or fixes under ~30 lines skip grilling, spec and tickets: branch, change, `/open-pr`.
 - **Phases are sliced as you go:** a short Specs list in `docs/phases/P-NN.md` (`next` / `planned` / `done` / `dropped`, plus `fix:` lines); only the `next` spec is detailed.
 - **End of phase:** `/thermo-nuclear-code-quality-review` over the phase diff -> `docs/REFACTOR.md`; archive `.scratch/pNN-*`; branch sweep (`/end-session`).
 

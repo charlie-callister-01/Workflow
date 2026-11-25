@@ -11,7 +11,7 @@ How to work in a project once `/setup-workflow` has primed it. For setting it up
 | `docs/agents/workflow-settings.md` | Your answers from setup: preset, platform, owner, test command, PR commands | all |
 | `docs/agents/*.md` | Where tickets live, triage labels, domain docs, platform rules (read by Matt Pocock's skills) | all |
 | `docs/LOG.md` | One line per session | all |
-| `.claude/skills/` | `start-session`, `end-session`, `ship`, plus any optional skills you picked | all |
+| `.claude/skills/` | `start-session`, `end-session`, `open-pr`, plus any optional skills you picked | all |
 | `docs/STATUS.md` | Where the project is right now (about 40 lines) | `full` |
 | `docs/HANDOFF.md` | What the next session should read first (about 10 lines) | `full` |
 | `docs/PLAN.md`, `docs/phases/P-NN.md` | The plan, and each phase's Specs list | `full` |
@@ -26,10 +26,10 @@ Not sure which preset a project uses? Look at `preset:` in `docs/agents/workflow
 
 1. `/start-session`: checks the branch is current, shows open PRs and suggests the next step.
 2. Do the work (see below).
-3. `/ship` when a change is ready: it writes the PR body and opens the PR. You merge it.
+3. `/open-pr` when a change is ready: it writes the PR body and opens the PR. You merge it.
 4. `/end-session`: writes one line in `docs/LOG.md` (and in `full`, updates STATUS and HANDOFF).
 
-**`lite` project:** idea -> branch -> build (`/mattpocock-skills:tdd` if it has tests) -> `/ship` -> merge -> `/end-session`.
+**`lite` project:** idea -> branch -> build (`/mattpocock-skills:tdd` if it has tests) -> `/open-pr` -> merge -> `/end-session`.
 
 **`full` project:**
 
@@ -39,10 +39,10 @@ Not sure which preset a project uses? Look at `preset:` in `docs/agents/workflow
 /to-tickets           slice it into small tickets
 /implement            build ticket by ticket, test first
 /code-review          check against the coding standards and the spec
-/ship                 open the PR
+/open-pr                 open the PR
 ```
 
-Small changes in a `full` project (docs, config, fixes under about 30 lines) skip straight to `/ship`: that is the `fast-lane` preset.
+Small changes in a `full` project (docs, config, fixes under about 30 lines) skip straight to `/open-pr`: that is the `fast-lane` preset.
 
 ## What do I do when...
 
@@ -64,7 +64,7 @@ Small changes in a `full` project (docs, config, fixes under about 30 lines) ski
 ## Rules that always hold
 
 - Never commit to `main`. Branches are `feature/`, `fix/`, `chore/`.
-- Open PRs only with `/ship`. It picks squash (docs) or merge commit (code).
+- Open PRs only with `/open-pr`. It picks squash (docs) or merge commit (code).
 - If STATUS and git disagree, trust git.
 - Agents read only what they need: `AGENTS.md`, STATUS and the files HANDOFF lists. Everything else on demand.
 - Archive, don't delete.
