@@ -24,3 +24,7 @@ Review: now three places, not one repo plus a vault: each project's artifacts, t
 ## Map refit (2026-11-24)
 
 Session G, opened with what 40 took from the owner's ICM research. Takes in from 09: how `ideas.md` / the inbox, the roadmap, `CHANGELOG.md` and the decision records relate. The directory map page is no longer a fog patch: once this resolves, writing it is a roadmap item.
+
+## From 40 (2026-11-26)
+
+New point for this session: **design the planning stage-folder layout** (grill, spec, tickets for one effort, each stage with a `CONTEXT.md` contract: load / don't load, outputs, checkpoint; a human review at each boundary; code untouched) and run it as a beta trial (17) on one real feature, with 40's pass/fail test (edit the earliest affected stage, re-run only downstream, each stage output committed; fail if contracts go stale, the load table is ignored, or the ceremony outweighs a small change). Conventions to adopt: one-way links, one canonical home per fact (grep test), docs over outputs. Learning (from 08) moves out: the knowledge repo decides its own layout from `## For knowledge` in `notes/ideas.md`; this ticket keeps only what the toolbox and projects export to it.

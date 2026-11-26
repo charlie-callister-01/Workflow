@@ -132,6 +132,13 @@ _Avoid_: grilling mode, planning style (that covers maps and prototypes too)
 An outside method the owner draws on first (Pocock, Osmani, pstack / fstack, ICM). Other researched methods are **parked**: looked at only when the owner picks one. Findings reach a decision only through the owner's picks.
 _Avoid_: upstream (that is a pinned copy, `notes/upstream.md`)
 
+**Context layer**:
+One of ICM's five levels of context an agent reads top-down, stopping when it has enough: 0 `AGENTS.md`, 1 routing (settings, LOG or STATUS, the active map), 2 the stage contract, 3 reference (`docs/agents/*.md`, glossary, decisions), 4 working artifacts (specs, tickets, code). Layers 3 and 4 load only when the contract lists them.
+
+**Stage contract**:
+What a stage loads, doesn't load, outputs and checks before handing on. In the toolbox it is the skill for that stage; in a planning stage folder on trial (ticket 10) it is a `CONTEXT.md`.
+_Avoid_: CONTEXT.md (alone; Pocock used that name for the glossary)
+
 **Spec**:
 A description of one piece of work to build, written by `/to-spec`.
 

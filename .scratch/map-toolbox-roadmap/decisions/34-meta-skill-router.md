@@ -42,7 +42,7 @@ Session E: one table, change flow x stage -> skill **and model**. Takes in **19*
 6. **Choosing a planning method:** how a question gets its method: a wayfinder map, a prototype, or a grilling style (`rounds`, `nail`, `interview`, `doubt`; map Notes). Options: a fixed table by signals (hard to reverse? fuzzy? small?), the meta-skill, or the prompt saying so. Owner's lean: a fixed table with a prompt override.
 7. **Research inside planning in projects:** whether project sessions send research subagents during grilling, as this map's sessions do.
 
-ICM (pending 40): leave a marked spot for a load / don't-load table per stage. Portable agent hooks are no longer a question here: they arrive only through 09's ratchet.
+**From 40 (2026-11-26), load tables:** each flow table row (flow x stage -> skill) gets a **Load / Don't load** column, and each skill a short Inputs table (source, section, why; section scope, not whole files). In the toolbox the skill is the stage contract (ICM layer 2), so the tables live in skills and the flow table, not in a `CONTEXT.md` everywhere. Portable agent hooks are no longer a question here: they arrive only through 09's ratchet.
 
 ## From the inbox (2026-11-25)
 
