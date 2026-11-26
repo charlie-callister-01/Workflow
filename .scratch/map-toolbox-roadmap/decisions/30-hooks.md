@@ -55,3 +55,7 @@ Glossary: Git hook, Agent hook, Skill script.
 ## From 41 (2026-11-26)
 
 `/idea` is the first **portable agent hook**: a thin per-agent trigger that starts the `idea` script, justified by saving usage and context rather than by a recorded failure (an exception to this ticket's rule, made by the owner). Home's `pre-commit` hook allows a direct commit to `main` for `inbox/` only.
+
+## From 42 (2026-11-26)
+
+Two more checks, built in home's stage E: the toolbox clone's pre-push hook greps the outgoing diff against home's private deny-list (`../home/private-terms.txt`, a no-op when absent), and a secret scanner (e.g. gitleaks) runs in the toolbox's CI.
