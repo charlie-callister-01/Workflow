@@ -37,3 +37,7 @@ Lands in a project: nothing until the first `/idea`, then only `docs/IDEAS.md`. 
 ## Reopened in part (2026-11-25)
 
 Points 3, 5 and 6 (where it lands, triage, clearing) are reopened by 41, idea routing and auto-organisation: the owner wants routing and organisation to be largely automatic. Capture (points 1 and 2) stands.
+
+## Revised by 41 (2026-11-26)
+
+Points 3, 5 and 6 replaced by 41's answer: capture goes by script to home's `inbox/<machine>.md` (committed and pushed at once), not the project's `docs/IDEAS.md` or a GitHub issue; triage is the idea batch (repo chosen automatically, place proposed, one approval); drops are kept in `## Dropped`, not deleted. Decision 0013 supersedes 0007.

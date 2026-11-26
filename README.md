@@ -32,7 +32,7 @@ What `skills/`, `templates/`, `presets/` and `platforms/` hold now is v1 plus th
 The rest is being charted as a wayfinder map: [.scratch/map-toolbox-roadmap/map.md](.scratch/map-toolbox-roadmap/map.md), ending in `notes/roadmap.md`.
 
 - **Done:** research on Addy Osmani's agent-skills, Cursor's pstack and team kit, ICM, a survey of other skill sets, and two books (The Pragmatic Programmer, Domain-Driven Design), and the owner's ICM research (context layers, planning stage folders on trial). Vocabulary in [GLOSSARY.md](GLOSSARY.md).
-- **Next decisions:** idea routing; setting up home; updating the workflow in older projects; change flows (start project, new feature, small feature, small change, bug fix, spike) and repo profiles in place of presets; what happens after wayfinder and after implementation; what to adopt from the research; projects with more than one agent; a learning section; organising and exporting research and lessons; a status page I can read.
+- **Next decisions:** setting up home; updating the workflow in older projects; change flows (start project, new feature, small feature, small change, bug fix, spike) and repo profiles in place of presets; what happens after wayfinder and after implementation; what to adopt from the research; projects with more than one agent; a learning section; organising and exporting research and lessons; a status page I can read.
 
 To continue: `/mattpocock-skills:wayfinder .scratch/map-toolbox-roadmap/map.md`.
 

@@ -51,3 +51,7 @@ Resolved 2026-11-24 (grilling, three rounds). No decision record: the hard-to-re
 11. **Languages:** POSIX `sh` for git hooks; PowerShell 5.1 for home's agent hooks and the toolbox's other scripts.
 
 Glossary: Git hook, Agent hook, Skill script.
+
+## From 41 (2026-11-26)
+
+`/idea` is the first **portable agent hook**: a thin per-agent trigger that starts the `idea` script, justified by saving usage and context rather than by a recorded failure (an exception to this ticket's rule, made by the owner). Home's `pre-commit` hook allows a direct commit to `main` for `inbox/` only.

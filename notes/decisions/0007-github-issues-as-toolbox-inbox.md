@@ -1,6 +1,6 @@
 # Toolbox ideas captured from other projects go to GitHub issues
 
-Status: **accepted** (2026-11-23), roadmap decision ticket 22 (A fast ideas inbox). Not built yet.
+Status: **superseded** by [0013](0013-ideas-captured-into-home.md) (2026-11-26); was accepted 2026-11-23, roadmap decision ticket 22 (A fast ideas inbox). Not built yet.
 
 `/idea wf <text>`, run in any project, opens a GitHub issue labelled `idea` on the Workflow repo instead of editing `notes/ideas.md`. Triage in the Workflow repo reads open `idea` issues alongside the `## Inbox` lines, routes each one, and closes the issue with a comment naming where it went. Project ideas (no `wf`) stay in the project's own `docs/IDEAS.md`, which travels with that project's commits.
 
