@@ -132,6 +132,13 @@ _Avoid_: grilling mode, planning style (that covers maps and prototypes too)
 An outside method the owner draws on first (Pocock, Osmani, pstack / fstack, ICM). Other researched methods are **parked**: looked at only when the owner picks one. Findings reach a decision only through the owner's picks.
 _Avoid_: upstream (that is a pinned copy, `notes/upstream.md`)
 
+**Idea batch**:
+The run of `/idea` with no text: a fresh-context subagent routes each captured idea to its repo without asking, proposes its place (decision ticket, ticket note, fog, backlog, drop) for one approval, and logs every move.
+_Avoid_: triage skill (it is the no-text form of `/idea`)
+
+**Platform route**:
+An optional per-repo extra that also sends ideas to the platform's tracker (GitHub issue, Azure DevOps work item). The core route is always the inbox file.
+
 **Context layer**:
 One of ICM's five levels of context an agent reads top-down, stopping when it has enough: 0 `AGENTS.md`, 1 routing (settings, LOG or STATUS, the active map), 2 the stage contract, 3 reference (`docs/agents/*.md`, glossary, decisions), 4 working artifacts (specs, tickets, code). Layers 3 and 4 load only when the contract lists them.
 

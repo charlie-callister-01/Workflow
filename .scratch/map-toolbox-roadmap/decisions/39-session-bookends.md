@@ -18,3 +18,7 @@ What do `/start-session` and `/end-session` read and write, and how does the own
 **From 40 (2026-11-26), what a session loads at start:** ICM's layers, read top-down, stopping when there is enough. `/start-session` reads layer 0 (`AGENTS.md`) and layer 1 (`workflow-settings.md`, the LOG tail or STATUS, the active map) and stops there: it names the next step without opening layer 3 (`docs/agents/*.md`, `GLOSSARY.md`, decisions) or layer 4 (specs, tickets, code).
 
 Created in the map refit (2026-11-24) from parts of 15, 16 and 09. Related: 24 (merged into 15), 20 (markers for the saving), 36 (session project).
+
+## From 41 (2026-11-26)
+
+`/start-session` shows idea counts from the `idea` script (`Ideas: <project> N · toolbox N · knowledge N`) and offers the idea batch at 5 or more. Decide here whether an end-of-day step (e.g. `/day-log` or `/end-session`) also runs the batch.

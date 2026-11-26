@@ -42,3 +42,7 @@ The ratchet is how a rule moves from prose into a check: only after a recorded f
 Session F. Takes in **21** (read its question and notes): the markers are the loop's evidence. Also owns all of `retro` (cadence and trigger, and where it sits after `/ship`, from 15); 32's habit "every correction becomes a check"; agent hooks arriving only through the ratchet (30); and how the owner builds their own skills by picking from the primary sources (map Notes, Sources) and trials them (17). Blocked by 15 instead (where `retro` sits after `/ship` needs 15's answer). No longer blocked by 10: 35 fixed that lessons go to the knowledge repo; 10 decides only the layout inside.
 
 Moved out: how ideas, roadmap, CHANGELOG and decisions relate (10); light refresh vs new wayfinder map (14); the README "Where I'm up to" refresh (39); automating the `upstream.md` sync (answered by 30: stays a monthly step). Compound Engineering is parked.
+
+## From 41 (2026-11-26)
+
+41 owns ideas up to and including routing (the idea batch); this ticket owns what happens after. Two values to tune from evidence: the batch offer threshold (5) and the backlog age that triggers keep / drop (60 days).

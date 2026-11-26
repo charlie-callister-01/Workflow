@@ -26,3 +26,7 @@ Created 2026-11-25 in the inbox triage grilling, at the owner's request: this re
 ## From 40 (2026-11-26)
 
 The knowledge repo gets its own starting checklist, `## For knowledge` in `notes/ideas.md` (as `## For home` is home's). Point 4 changes: the learning layout is decided in the knowledge repo itself, using ICM's ideas (layers, injection, reviewable stage outputs), not in 10.
+
+## From 41 (2026-11-26)
+
+Home holds the `idea` script (`sh` + `ps1`, with a `check` mode), the per-agent hook triggers that start it, `inbox/<machine>.md` (one per machine) and the `pre-commit` exception for `inbox/`. On build, move this repo's `notes/ideas.md` Inbox into home's inbox. Knowledge ideas route to the knowledge repo's ideas file.
