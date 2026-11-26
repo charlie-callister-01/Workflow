@@ -4,6 +4,7 @@ Backlog of future plans and things to try. Move to `CHANGELOG.md` (and `decision
 
 ## Inbox
 - 2026-11-25 · Workflow · A quick update-docs skill: refresh STATUS and HANDOFF (in `lite`, the LOG line) mid-session without running the whole `/end-session` (no branch sweep, no reminders, no commit offer beyond the docs). Ties to 39 (session bookends: what start and end read and write, skill scripts) and 15.
+- 2026-11-26 · Workflow · A quick skill or script to add or update the LOG line in one step (append today's line, or amend it if one exists) without running `/end-session`. Overlaps the update-docs idea above; ties to 39 (session bookends, skill scripts) and 15 (the LOG line rides on the session branch).
 - 2026-11-25 · Workflow · An easier way to start new sessions, likely part of home's router: pick the project and the next step and launch a CLI session there in one go. Plus keeping track of the other CLI sessions running (which repo, branch or worktree, what each is on, which are idle or finished). Ties to 42 (home), 34 (router), 39 (session bookends, status page) and 36 (worktrees for parallel sessions).
 
 ## Direction

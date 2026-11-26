@@ -83,6 +83,14 @@ _Avoid_: pipeline (for one change), mode
 One step of a change flow: define, plan, build, verify, review or ship. A flow may skip stages; each stage has a default skill that can be swapped without changing the flow.
 _Avoid_: phase (that is a slice of a project's plan)
 
+**Flow table**:
+`docs/agents/change-flows.md`: one short section per change flow, a row per stage with its skill, model tier, who starts it and what to load (pointers only). The agent reads only the chosen flow's section; there is no router skill.
+_Avoid_: router, meta-skill
+
+**Model tier**:
+`frontier`, `standard` or `light`: how capable a model a stage or subagent needs. Home's per-agent setup maps each tier to that agent's real model.
+_Avoid_: naming a model (models don't carry between vendors)
+
 **Wayfinder first**:
 A step taken before start project or new feature when the decisions can't yet be listed; not a flow of its own.
 
@@ -114,6 +122,12 @@ _Avoid_: hook (alone), Claude hook
 **Skill script**:
 A script that ships inside a skill's folder and that the skill calls once for a step that does the same thing every run, so the agent only reasons over its output.
 _Avoid_: helper, tool
+
+**Session branch**:
+The one branch a session's docs and notes go on, shipped as one PR with the LOG line; code, a second repo or a wanted mid-session merge get their own PR.
+
+**Show / Ask**:
+How a PR waits: **Show** is opened and merged by the owner without waiting for review (docs-only); **Ask** waits for review (code). Ship, straight to `main`, is not used.
 
 ## Planning work
 

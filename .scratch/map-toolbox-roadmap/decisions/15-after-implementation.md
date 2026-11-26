@@ -2,7 +2,7 @@
 
 Type: grilling
 Style: rounds
-Status: open
+Status: resolved
 Blocked by: 13, 36, 31
 
 ## Question
@@ -63,3 +63,45 @@ The docs-only fast path (point 3): issue #16 asked for "at most a cheap consiste
 ## From 31 (2026-11-26)
 
 `/open-pr` runs a runnable `Check:` itself and writes a `## Verification` section in the PR body: the evidence (command and output tail, or screenshot path) and the Checks lines in force. It refuses a code-changing PR (per `code_pattern`) without it. Release and deploy are settled in 31 (the `deploy` setting, off unless the project deploys).
+
+## Answer
+
+Resolved 2026-11-26 (grilling, `rounds`: two rounds). Built under the owner's staged, modular principle (map Main takeaways): every part below is a module with settings, a trace and an evaluation, and all of it will be tuned per repo over time.
+
+### Picks
+
+| Source | Taken | Dismissed or parked |
+|---|---|---|
+| Pocock | The `pr` skill writes code PR bodies (summary, evidence, merge danger). | `retro` placement: 09. |
+| Osmani | Small, atomic PRs. | An extra pre-launch checklist: covered by 05's three-question check and 31's evidence. |
+| pstack / team kit | A CI loop with a finish condition. | The PR-care canvas parked. |
+| ICM | The PR body and the LOG line are the stage's reviewable files. | - |
+| Built-ins, research | Ship / Show / Ask (Fowler); a `gh api` REST fallback for cloud sessions (29). | Ship (straight to `main`): 30's guard refuses it. `/steward`: an optional Claude-only extra (06, 35). |
+
+Evidence that drove it: this session alone opened four PRs (#31 to #34) plus an end-session PR; on docs-only work most of the shipping cost is ceremony.
+
+### Decisions
+
+1. **One branch per session.** A session's docs and notes (ticket answers, notes, CHANGELOG, the LOG line) go on one branch and one PR. A separate PR only for code (merge commit, not squash), a second repo, or when the owner wants something merged mid-session; the branch then carries on from the updated `main`.
+2. **Show and Ask.** Docs-only PRs are Show (opened, merged by the owner without waiting for review); code PRs are Ask. Ship is rejected (30).
+3. **Docs-only fast path.** No explainer, a short body (summary and changed files) instead of a full `/pr` run. A cheap consistency pass (light mode of the strict review of written work) once that skill exists (34). Auto-merge after CI is available but off.
+4. **When `/open-pr` runs.** Offered when a unit of code work passes verify, and at session end for the session branch. Whether it opens unasked follows 31's `autonomy` (loose opens; normal and ask-first offer in one line). To be tuned over time.
+5. **Watching CI.** Where the repo has CI, `/open-pr` ends by watching the checks; on a failure it fixes, pushes and watches again, up to `ship.ci_tries` (3), then stops and reports. Review comments only when the owner asks. Repo-specific and expected to evolve.
+6. **After merge.** A `sync-main` skill script: switch to `main`, pull, delete the merged local branch (squash merges detected through the platform), remove its worktree, prune. Run when the owner says "merged", and by `/start-session` when the current branch's PR has merged. The periodic branch sweep (archive tags for unmerged branches) moves from `/end-session` to `sync-main --sweep`.
+7. **A second repo.** One PR per repo, each opened by `/open-pr` against that repo's path, linking each other; the session project's LOG line lists both. Leans on home's session-project mechanics (36), where most cross-repo work runs.
+8. **Scripts.** `pr-facts` (branch, clean tree, pushed, code or docs-only per `code_pattern`, open PR), `ci-watch` (pass or fail) and `sync-main`. POSIX `sh` plus `ps1` (30, 42). They try `gh pr ...` first and fall back to `gh api` REST where GraphQL is blocked. Writing the body stays with the model.
+9. **Settings** (in the Checks section, form from 31): `ship.mode` (show / ask; default show for docs-only, ask for code), `ship.automerge.docs` (off), `ship.ci_watch` (on where CI exists), `ship.ci_tries` (3). None seeded: defaults live in `/open-pr` and its guide, and a project adds a line only to change one. **Observable:** `/open-pr` writes the ship settings in force into the PR's `## Verification` section beside 31's Checks lines.
+10. **Cheap on usage and context.** Scripts print summaries, never raw logs: `pr-facts` about 6 lines, `sync-main` one line per action, `ci-watch` `pass`, or the failing checks' names and the last ~30 lines of the failing log. The model fetches more only when a failure needs it. The trial measures tokens per `/open-pr` run and per session with 20's markers.
+11. **Staged rollout.** Stage 1: one branch per session plus the docs-only fast path (no new scripts), trialled in this repo. Stage 2: `pr-facts` and `sync-main`. Stage 3: `ci-watch`, on a project with CI. Each stage runs about a week, watched for PRs per session, tokens per ship and anything lost (a branch deleted early, a change left unmerged). Stage 1 passes when docs-only sessions end with one PR (two if a mid-session merge was wanted) and nothing is lost. **Open, from the owner:** whether trials should be per module rather than `<skill>-beta` copies (17's mechanism); noted on 09 and the Roadmap phases fog.
+12. **Modules** (each switchable on its own, all staying observable and configurable): session-branch (depends on nothing), docs fast path (`code_pattern`), ci-watch (CI on the platform), sync-main (the platform CLI), cross-repo PRs (home's session project, 36). One guide, **Shipping**, covers all five: what each does, its settings, how to tell it is working, its evaluation.
+
+### Handed on
+
+- **09**: the evaluation of each stage (markers, pass conditions, keep / tune / drop); the owner's question whether trials go per module rather than per `<skill>-beta` copy.
+- **10**: where the Shipping guide lives.
+- **34**: the consistency pass for docs-only PRs (light mode of the strict written-work review).
+- **37**: no ship lines seeded; the guide documents the defaults.
+- **39**: the LOG line goes on the session branch (point 1 settles point 2 of the 24 merge-in for the usual case); `/start-session` runs `sync-main` when the current branch's PR has merged; `/end-session` loses the branch sweep.
+- **Roadmap items**: the three scripts, the Shipping guide, and the three-stage trial.
+
+Decision 0015.

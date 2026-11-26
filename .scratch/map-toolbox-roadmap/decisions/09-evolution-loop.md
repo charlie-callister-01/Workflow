@@ -54,3 +54,11 @@ The Checks section starts with four settings on (`verify.check_line`, `verify.ev
 ## Owner principle (2026-11-26)
 
 The owner's new standing principle (map Main takeaways): every module is built in stages with a guide, settings, a trace and an **evaluation**. This ticket owns the evaluation part: what each trial watches (20's markers), its pass condition, where what was learned is written, and the keep / tune / drop call that promotes a module or sends it back.
+
+## From 15 (2026-11-26)
+
+Shipping rolls out in three stages (15 point 11), each watched for about a week on PRs per session, tokens per ship and anything lost; this ticket owns how those evaluations run and decide. **Owner's open question (2026-11-26):** should trials be per module (a module switched on for a project, evaluated, promoted) rather than per `<skill>-beta` copy (17)? Decide here, revising 17 if so.
+
+## From 34 (2026-11-26)
+
+Routing stage 1 (34 point 13) is evaluated on how often the owner corrects the agent's first proposed flow, skill or method, plus tokens; decide how corrections are counted (39 owns any LOG-line marker). Recurring "no skill fits" gaps arrive as `/idea` lines for the ratchet to turn into a skill or a table row.

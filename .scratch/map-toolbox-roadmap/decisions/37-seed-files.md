@@ -38,3 +38,11 @@ Session B. Point 2 (the Checks lines per stakes) moved to 31; this ticket packag
 ## From 31 (2026-11-26)
 
 Package 31's answer: seed four settings by stakes (`verify.check_line`, `verify.evidence`, `review`, `autonomy`; table in 31 point 7) into every repo's `## Checks` (personal and shared, revising 07 point 4); document the off-by-default settings (`plan.review`, `adr`, `high_risk`, `gate.pre_push`, `deploy`) without seeding them, with `deploy` asked at setup only if the project deploys; shared repos also get a `## Verification` section in their PR template. `gate.pre_push` stays off until a recorded failure; 30's `main` guard is unchanged.
+
+## From 15 (2026-11-26)
+
+No `ship.*` lines are seeded (`ship.mode`, `ship.automerge.docs`, `ship.ci_watch`, `ship.ci_tries`); the defaults live in `/open-pr` and the Shipping guide.
+
+## From 34 (2026-11-26)
+
+`docs/agents/change-flows.md` is a plain template copy (changes go through Checks lines, `<stage>.skill[.flow]` and `<stage>.tier[.flow]`, none seeded). Shared repos get 13's six-line flow and size table in the shared-only block; personal repos get it from home's `AGENTS.md`.
