@@ -36,3 +36,7 @@ The owner's new standing principle (map Main takeaways): every module ships with
 ## From 15 (2026-11-26)
 
 15 adds one guide, **Shipping** (five modules: session-branch, docs fast path, ci-watch, sync-main, cross-repo PRs). Decide where it lives with the other module guides.
+
+## From 34 (2026-11-26)
+
+34 adds the **Flows and routing** guide (flow table, method signals, who starts, tiers, per-project changes). Decide where it lives with the other module guides.

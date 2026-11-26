@@ -26,3 +26,7 @@ Created in the map refit (2026-11-24) from parts of 15, 16 and 09. Related: 24 (
 ## From 15 (2026-11-26)
 
 One branch per session (15 point 1): the LOG line goes on the session branch, settling the usual case of "where the LOG line goes". `/start-session` runs the `sync-main` script when the current branch's PR has merged. The periodic branch sweep leaves `/end-session` for `sync-main --sweep`.
+
+## From 34 (2026-11-26)
+
+`/start-session` reads layer 0 only for routing (13's six-line flow and size table in `AGENTS.md`), never `change-flows.md`. If 09 wants owner corrections of the first proposed flow counted, the LOG line may carry a marker; its format is this ticket's.

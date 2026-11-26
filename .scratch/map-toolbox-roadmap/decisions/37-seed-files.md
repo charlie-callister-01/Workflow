@@ -42,3 +42,7 @@ Package 31's answer: seed four settings by stakes (`verify.check_line`, `verify.
 ## From 15 (2026-11-26)
 
 No `ship.*` lines are seeded (`ship.mode`, `ship.automerge.docs`, `ship.ci_watch`, `ship.ci_tries`); the defaults live in `/open-pr` and the Shipping guide.
+
+## From 34 (2026-11-26)
+
+`docs/agents/change-flows.md` is a plain template copy (changes go through Checks lines, `<stage>.skill[.flow]` and `<stage>.tier[.flow]`, none seeded). Shared repos get 13's six-line flow and size table in the shared-only block; personal repos get it from home's `AGENTS.md`.

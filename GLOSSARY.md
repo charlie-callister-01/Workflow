@@ -83,6 +83,14 @@ _Avoid_: pipeline (for one change), mode
 One step of a change flow: define, plan, build, verify, review or ship. A flow may skip stages; each stage has a default skill that can be swapped without changing the flow.
 _Avoid_: phase (that is a slice of a project's plan)
 
+**Flow table**:
+`docs/agents/change-flows.md`: one short section per change flow, a row per stage with its skill, model tier, who starts it and what to load (pointers only). The agent reads only the chosen flow's section; there is no router skill.
+_Avoid_: router, meta-skill
+
+**Model tier**:
+`frontier`, `standard` or `light`: how capable a model a stage or subagent needs. Home's per-agent setup maps each tier to that agent's real model.
+_Avoid_: naming a model (models don't carry between vendors)
+
 **Wayfinder first**:
 A step taken before start project or new feature when the decisions can't yet be listed; not a flow of its own.
 
