@@ -64,3 +64,7 @@ Glossary: Update, Migration.
 ## From the inbox (2026-11-25)
 
 The install scripts still copy skills into a project's `.claude/skills/` and `Install-GlobalSkills.ps1` installs only into `~/.claude/skills`, although 06 and 35 removed both. Rebuilding them agent-neutral (home's copy script filling `.agents/skills`) is a Phase 1 roadmap item, ordered first. Until then refit's step 5 deletes retired skill copies (`.claude/skills/ship`, renamed `open-pr` on 2026-11-25, PR #25); that clean-up moves to home's copy script once it exists.
+
+## From 42 (2026-11-26)
+
+Home's stage B removes toolbox skill copies from personal projects on branches (AI Hero's step 4): a migration file under this ticket's mechanism, run by refit's update path.
