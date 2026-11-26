@@ -22,3 +22,7 @@ Decide:
 Starting checklist: `## For home` in `notes/ideas.md`.
 
 Created 2026-11-25 in the inbox triage grilling, at the owner's request: this repo acts as home until 42 is built. Related: 35, 36, 06, 10, 22, 23, 39 (the cross-project status page lives in home), 41.
+
+## From 40 (2026-11-26)
+
+The knowledge repo gets its own starting checklist, `## For knowledge` in `notes/ideas.md` (as `## For home` is home's). Point 4 changes: the learning layout is decided in the knowledge repo itself, using ICM's ideas (layers, injection, reviewable stage outputs), not in 10.

@@ -20,3 +20,7 @@ Session H. Takes in from 15: what happens to a spec folder and its work tickets 
 ## From the inbox (2026-11-25)
 
 Before the roadmap hands over to change flows, review its design: the architecture review on plans (34's inbox note) applied to the roadmap before Phase 1 is sliced, ideally with a doubt-driven pass from a separate context.
+
+## From 40 (2026-11-26)
+
+If 10's planning stage-folder trial is kept, closing a piece of work means archiving its effort folder as one unit (all stages and their contracts together).
