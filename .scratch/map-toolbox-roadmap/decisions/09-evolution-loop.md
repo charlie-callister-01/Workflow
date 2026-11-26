@@ -50,3 +50,7 @@ Moved out: how ideas, roadmap, CHANGELOG and decisions relate (10); light refres
 ## From 31 (2026-11-26)
 
 The Checks section starts with four settings on (`verify.check_line`, `verify.evidence`, `review`, `autonomy`); `plan.review`, `adr`, `high_risk`, `gate.pre_push` and `deploy` exist but are off. This ticket owns the ratchet that switches them on (a recorded failure, an experiment or research) and off (pruning), the commit-message format for a Checks change (31 suggested `chore(checks): <setting> <old> -> <new> because <reason>`), and adding new settings, values and autonomy levels. Evidence for it: each PR's `## Verification` section lists the Checks lines in force.
+
+## Owner principle (2026-11-26)
+
+The owner's new standing principle (map Main takeaways): every module is built in stages with a guide, settings, a trace and an **evaluation**. This ticket owns the evaluation part: what each trial watches (20's markers), its pass condition, where what was learned is written, and the keep / tune / drop call that promotes a module or sends it back.

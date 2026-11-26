@@ -28,3 +28,7 @@ Session G, opened with what 40 took from the owner's ICM research. Takes in from
 ## From 40 (2026-11-26)
 
 New point for this session: **design the planning stage-folder layout** (grill, spec, tickets for one effort, each stage with a `CONTEXT.md` contract: load / don't load, outputs, checkpoint; a human review at each boundary; code untouched) and run it as a beta trial (17) on one real feature, with 40's pass/fail test (edit the earliest affected stage, re-run only downstream, each stage output committed; fail if contracts go stale, the load table is ignored, or the ceremony outweighs a small change). Conventions to adopt: one-way links, one canonical home per fact (grep test), docs over outputs. Learning (from 08) moves out: the knowledge repo decides its own layout from `## For knowledge` in `notes/ideas.md`; this ticket keeps only what the toolbox and projects export to it.
+
+## Owner principle (2026-11-26)
+
+The owner's new standing principle (map Main takeaways): every module ships with a **guide** (what, why, how to use, how to configure, how to tell it is working). Decide where guides live in the toolbox and how they are indexed (possibly the planned directory map page), and whether they also serve as the learning material 08 merged in here.
