@@ -22,3 +22,7 @@ Created in the map refit (2026-11-24) from parts of 15, 16 and 09. Related: 24 (
 ## From 41 (2026-11-26)
 
 `/start-session` shows idea counts from the `idea` script (`Ideas: <project> N · toolbox N · knowledge N`) and offers the idea batch at 5 or more. Decide here whether an end-of-day step (e.g. `/day-log` or `/end-session`) also runs the batch.
+
+## From 15 (2026-11-26)
+
+One branch per session (15 point 1): the LOG line goes on the session branch, settling the usual case of "where the LOG line goes". `/start-session` runs the `sync-main` script when the current branch's PR has merged. The periodic branch sweep leaves `/end-session` for `sync-main --sweep`.

@@ -54,3 +54,7 @@ Two complementary review skills to place in the flow table, each its own fresh c
 ## From 31 (2026-11-26)
 
 Place two fresh-context reviews that 31 defines as settings: `plan.review` (`design-review` or `doubt` on a spec before tickets; off until a skill for that kind is promoted) and the doubt review a `high_risk` change gets. 31 also puts one line in `docs/agents/change-flows.md`: a ticket that adds or changes a status field gets a Mermaid state diagram and a transition-table test.
+
+## From 15 (2026-11-26)
+
+Docs-only PRs get a cheap consistency pass once the strict review of written work exists (its light mode); place it in the ship stage of docs-only work.

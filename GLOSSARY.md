@@ -115,6 +115,12 @@ _Avoid_: hook (alone), Claude hook
 A script that ships inside a skill's folder and that the skill calls once for a step that does the same thing every run, so the agent only reasons over its output.
 _Avoid_: helper, tool
 
+**Session branch**:
+The one branch a session's docs and notes go on, shipped as one PR with the LOG line; code, a second repo or a wanted mid-session merge get their own PR.
+
+**Show / Ask**:
+How a PR waits: **Show** is opened and merged by the owner without waiting for review (docs-only); **Ask** waits for review (code). Ship, straight to `main`, is not used.
+
 ## Planning work
 
 **Map**:

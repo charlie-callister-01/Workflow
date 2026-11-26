@@ -32,3 +32,7 @@ New point for this session: **design the planning stage-folder layout** (grill, 
 ## Owner principle (2026-11-26)
 
 The owner's new standing principle (map Main takeaways): every module ships with a **guide** (what, why, how to use, how to configure, how to tell it is working). Decide where guides live in the toolbox and how they are indexed (possibly the planned directory map page), and whether they also serve as the learning material 08 merged in here.
+
+## From 15 (2026-11-26)
+
+15 adds one guide, **Shipping** (five modules: session-branch, docs fast path, ci-watch, sync-main, cross-repo PRs). Decide where it lives with the other module guides.
