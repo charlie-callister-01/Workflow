@@ -34,3 +34,7 @@ Session B. Point 2 (the Checks lines per stakes) moved to 31; this ticket packag
 ## From the inbox (2026-11-25)
 
 31 now also sets autonomy levels by stakes (what the agent may do unattended, `/goal` runs included); the seed files package them with the Checks lines.
+
+## From 31 (2026-11-26)
+
+Package 31's answer: seed four settings by stakes (`verify.check_line`, `verify.evidence`, `review`, `autonomy`; table in 31 point 7) into every repo's `## Checks` (personal and shared, revising 07 point 4); document the off-by-default settings (`plan.review`, `adr`, `high_risk`, `gate.pre_push`, `deploy`) without seeding them, with `deploy` asked at setup only if the project deploys; shared repos also get a `## Verification` section in their PR template. `gate.pre_push` stays off until a recorded failure; 30's `main` guard is unchanged.

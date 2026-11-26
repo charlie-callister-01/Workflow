@@ -59,3 +59,7 @@ Moved out:
 ## From the inbox (2026-11-25)
 
 The docs-only fast path (point 3): issue #16 asked for "at most a cheap consistency pass" on docs-only changes. A light mode of the planned strict review of written work (see 34's inbox note) is a candidate for that pass.
+
+## From 31 (2026-11-26)
+
+`/open-pr` runs a runnable `Check:` itself and writes a `## Verification` section in the PR body: the evidence (command and output tail, or screenshot path) and the Checks lines in force. It refuses a code-changing PR (per `code_pattern`) without it. Release and deploy are settled in 31 (the `deploy` setting, off unless the project deploys).

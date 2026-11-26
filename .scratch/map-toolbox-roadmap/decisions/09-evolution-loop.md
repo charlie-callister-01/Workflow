@@ -46,3 +46,7 @@ Moved out: how ideas, roadmap, CHANGELOG and decisions relate (10); light refres
 ## From 41 (2026-11-26)
 
 41 owns ideas up to and including routing (the idea batch); this ticket owns what happens after. Two values to tune from evidence: the batch offer threshold (5) and the backlog age that triggers keep / drop (60 days).
+
+## From 31 (2026-11-26)
+
+The Checks section starts with four settings on (`verify.check_line`, `verify.evidence`, `review`, `autonomy`); `plan.review`, `adr`, `high_risk`, `gate.pre_push` and `deploy` exist but are off. This ticket owns the ratchet that switches them on (a recorded failure, an experiment or research) and off (pruning), the commit-message format for a Checks change (31 suggested `chore(checks): <setting> <old> -> <new> because <reason>`), and adding new settings, values and autonomy levels. Evidence for it: each PR's `## Verification` section lists the Checks lines in force.

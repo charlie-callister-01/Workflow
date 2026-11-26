@@ -50,3 +50,7 @@ Two complementary review skills to place in the flow table, each its own fresh c
 
 - **Architecture review on plans:** Pocock's `codebase-design` (was `improve-codebase-architecture`, used in `.scratch/architecture-deepening/`) applied to a spec, map or roadmap before code exists: deep modules and seams in the design being planned. Candidate for the plan stage of start project and new feature; trialled (17) once placed.
 - **A strict review of written work** (to build; backlog in `notes/ideas.md`, Skills): thermo-nuclear's ambition applied to plans, specs, maps, decision tickets, `AGENTS.md`, skills, templates, docs and research: one source per rule, no duplication or contradiction, no bloat, every task has a check, one-way links, vague prose called out, restructuring moves. Candidate for the review stage of docs-only and planning work. `thermo-nuclear-code-quality-review` stays as it is for code.
+
+## From 31 (2026-11-26)
+
+Place two fresh-context reviews that 31 defines as settings: `plan.review` (`design-review` or `doubt` on a spec before tickets; off until a skill for that kind is promoted) and the doubt review a `high_risk` change gets. 31 also puts one line in `docs/agents/change-flows.md`: a ticket that adds or changes a status field gets a Mermaid state diagram and a transition-table test.

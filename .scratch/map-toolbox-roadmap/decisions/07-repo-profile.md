@@ -36,3 +36,7 @@ Resolved 2026-11-24 (grilling, four rounds). Decision 0010.
 10. **"Preset" retires as a term.** `full` and `lite` become starting stakes sets, `fast-lane` is already the small change flow (13). The "Preset rework" fog graduates into ticket 37. Seeing drift from the seed goes to 09 and 21 as input.
 
 Glossary: Repo profile (redefined), Audience, Stakes, Seed, Checks; Preset marked retired.
+
+## From 31 (2026-11-26)
+
+**Revises point 4:** every repo, personal or shared, carries its own `## Checks` section (inline in `AGENTS.md`, or one pointer line to `docs/agents/checks.md`), because Checks are project-specific. The shared-only block keeps change flows and Working rules, not Checks.
