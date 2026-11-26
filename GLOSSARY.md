@@ -68,8 +68,12 @@ How much rides on a repo's work: **spike** (throwaway), **everyday** (real, low 
 _Avoid_: risk level (that is per change), depth
 
 **Checks**:
-The plain lines in a project's `AGENTS.md` saying what a change must show before ship, when review and ADRs are needed, and what the agent may do without asking. Seeded from the stakes, then edited like any other rule.
+The `## Checks` section every project carries (in `AGENTS.md`, or behind one pointer line in `docs/agents/checks.md`): plain `stage.knob[.flow]: value` lines saying what a change must show before ship, when review and ADRs are needed, and what the agent may do without asking. Seeded from the stakes, then owned and edited by the project; skills read only these lines.
 _Avoid_: verification (that is the stage)
+
+**Check line**:
+The one `Check:` line written at define for a unit of code-changing work: a command, a test name, or manual or smoke steps with the expected result. Verify runs it; its output is the evidence the PR shows.
+_Avoid_: acceptance criteria (a ticket may list several; the check line is the one that is run)
 
 **Change flow**:
 The route one piece of work takes (start project, new feature, small feature, small change, bug fix or spike); proposed by the agent and confirmed by the owner at the start of the work. A fixed sequence of stages.
