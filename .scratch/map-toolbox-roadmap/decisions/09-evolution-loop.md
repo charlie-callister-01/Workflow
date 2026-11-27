@@ -70,3 +70,7 @@ Turning an agent's mistake into a lint rule or check is part of the workflow (ps
 ## From 39 (2026-11-27)
 
 LOG lines carry an optional `Flow: <flow>` tail with `(corrected from <flow>)` when the owner changed the first proposed flow. `/end-session`'s lesson answers arrive as `/idea` lines tagged `lesson`; `retro`'s cadence on the worst sessions is decided here. The session-bookends trial counts tokens per start and end, re-explanations after `/clear`, and missed-save flags.
+
+## From the idea inbox (2026-11-27)
+
+A first recorded failure for the ratchet: a private project ran out of GitHub Actions minutes because every push, docs and notes included, ran the full CI and build. 31 says CI runs `test_command` on every PR, and 15 cut docs-only PRs to one per session but leaves CI as it is. Decide whether a CI that skips docs-only changes (keyed on `code_pattern`; `paths` filter, or a "changes" job when the build is a required check; `concurrency` cancel-in-progress; Linux runners) is offered at setup like 37's code checks or seeded for private repos, and whether usage (Actions minutes, as well as tokens) is a marker the evolution loop watches. Building the template is a roadmap item.

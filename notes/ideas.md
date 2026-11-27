@@ -3,7 +3,6 @@
 Backlog of future plans and things to try. Move to `CHANGELOG.md` (and `decisions/` if needed) once adopted; strike through if dropped, with why.
 
 ## Inbox
-- [ ] **CI minutes on private repos** (idea 2026-11-27 · a private project): the GitHub Actions minutes ran out because every push, docs and notes included, ran the full CI and build. Workflows the toolbox seeds or suggests should skip docs-only changes using the same rule as `code_pattern`: a `paths` filter, or a small "changes" job that skips the build so required checks still report. Also cancel superseded runs (`concurrency` with `cancel-in-progress`), skip draft PRs, and cache dependencies. Fallbacks: a self-hosted runner for private repos, or a spending limit. Ties to 15 (one PR per session, CI watching), 31 (checks) and 37 (code checks offered, never seeded).
 
 ## Direction
 - [ ] **Find the best workflow for me**: research other ways of working and other people's workflows (findings in `research/`), try them as presets, keep what works. Everything here is a base to improve on.
