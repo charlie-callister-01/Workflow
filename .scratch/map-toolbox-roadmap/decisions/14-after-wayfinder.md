@@ -24,3 +24,7 @@ Before the roadmap hands over to change flows, review its design: the architectu
 ## From 40 (2026-11-26)
 
 If 10's planning stage-folder trial is kept, closing a piece of work means archiving its effort folder as one unit (all stages and their contracts together).
+
+## From 10 (2026-11-27)
+
+Plan levels are now fixed for every repo (glossary): Roadmap > Phase (`P1`) > Slice (`P1-a`, thin and end-to-end) > Map or Spec > Planning folder > Ticket. A map that ends in a roadmap hands each slice on to a map or a spec; reshaping a map part-way is a **map rework** ("refit" is only `/refit-workflow`). Closing a map writes its destination in these levels.
