@@ -43,8 +43,20 @@ Which copy of the toolbox's templates a project runs: **production** (everything
 _Avoid_: channel, test branch
 
 **Trial**:
-One change being tried before promotion, recorded as a row in `notes/trials.md` with its success check, review date and verdict (keep, tune, drop). A **skill trial** installs the beta copy side by side as `<skill>-beta`, used wherever it is typed; a **template trial** puts one project on the beta track.
+One module switched on in one project and evaluated before promotion, with its own trial file holding a pass condition, the results and a verdict (keep, tune, drop). A change to a skill is carried by a beta copy installed side by side as `<skill>-beta`; a change to templates puts the project on the beta track.
 _Avoid_: experiment (that is a spike)
+
+**Pass condition**:
+What a trial must show, written before it starts: one to three markers, each with a baseline and a target, a "drop if" line naming the harm that ends it, and a review-by date.
+_Avoid_: success check (the old free-text column)
+
+**Marker**:
+A number collected automatically about a session or a project (tokens, peak context, turns, CI minutes), used as a trial's evidence. The owner's opinion sits beside markers and is never one.
+_Avoid_: metric, KPI, score
+
+**Removal trial**:
+A trial in reverse: a module, rule, check or skill switched off in one project to see whether the failure it was added for comes back. Kept only if its absence shows.
+_Avoid_: audit, cleanup
 
 **Update**:
 Refit's path that brings a primed project's files in step with a later toolbox version: migrations first, then a three-way merge of the templates that keeps the project's own edits.
@@ -189,6 +201,10 @@ _Avoid_: principles, non-negotiables
 
 **Ratchet**:
 How `AGENTS.md` grows and shrinks: a line is added only to stop a failure that really happened, and removed once a model no longer needs it.
+
+**Weekly review**:
+The owner's one fixed sitting for the evolution loop: reviewing the worst sessions with `retro`, deciding each proposal (accepted, rejected or backlog), sweeping trials past their review date and routing the idea batch; monthly it also checks seed drift and old migrations.
+_Avoid_: retro (that is one step of it), standup
 
 ## Ideas
 

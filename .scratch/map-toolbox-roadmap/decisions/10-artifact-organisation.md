@@ -48,3 +48,7 @@ A hard naming framework for plan breakdowns per project (from GitHub issue #37):
 ## From 39 (2026-11-27)
 
 A new artifact: the **session note**, one per session branch, about 15 lines, deleted when the work is done. Its exact location (provisionally `.scratch/sessions/<branch>.md`) is settled in the map's Directory and design fog, with the rest of the layout.
+
+## From 09 (2026-11-27)
+
+New artifacts to place and relate: a trial file per trial (`notes/trials/<slug>.md`, with `notes/trials.md` as its index), and in home a per-machine markers file (`markers/<machine>.csv`) and a weekly review file (`reviews/YYYY-Www.md`) holding `retro` proposals with accepted / rejected / backlog calls. On keep, a trial's lessons go into the module's guide (where guides live is this ticket's). Accepted proposals leave as `/idea` lines.
