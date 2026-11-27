@@ -179,14 +179,18 @@ _Avoid_: stage (a step of a change flow), stage folder, phase
 Reshaping a map's tickets and fog part-way through (merging, splitting, reordering).
 _Avoid_: refit (that is `/refit-workflow` only)
 
+**Roadmap refresh**:
+Editing a roadmap's slices in place (reorder, add, remove, mark done) as a small change. A question that can't yet be listed needs a new map instead.
+_Avoid_: map rework (reshaping a map part-way)
+
 ### Maps, specs and tickets
 
 **Map**:
-A wayfinder plan for a foggy effort: a destination, decisions so far, fog, and out of scope. Lives in `.scratch/map-<effort>/map.md`.
+A wayfinder plan for a foggy effort: a destination, decisions so far, fog, and out of scope. Lives in the repo whose files it will change (in home if it spans several repos), in `.scratch/map-<effort>/map.md`. Closed when its frontier and fog are empty, then archived as one unit.
 _Avoid_: plan, roadmap (those are destinations a map can lead to)
 
 **Destination**:
-What reaching the end of a map produces: a plan, a spec, a decision or a change.
+What reaching the end of a map produces: a plan, a spec, a decision or a change. Written by the map's last decision ticket.
 
 **Decision ticket**:
 One question on a map whose answer is a decision (research, prototype, grilling or task). Lives in a map's `decisions/` folder; never produces code.
