@@ -30,3 +30,7 @@ One branch per session (15 point 1): the LOG line goes on the session branch, se
 ## From 34 (2026-11-26)
 
 `/start-session` reads layer 0 only for routing (13's six-line flow and size table in `AGENTS.md`), never `change-flows.md`. If 09 wants owner corrections of the first proposed flow counted, the LOG line may carry a marker; its format is this ticket's.
+
+## From 37 (2026-11-27)
+
+`presets/team.md` is retired; its idea of STATUS per person (or replaced by the board) for shared repos comes here, alongside the session-specific STATUS lines idea in the Inbox.
