@@ -40,3 +40,7 @@ The owner's new standing principle (map Main takeaways): every module ships with
 ## From 34 (2026-11-26)
 
 34 adds the **Flows and routing** guide (flow table, method signals, who starts, tiers, per-project changes). Decide where it lives with the other module guides.
+
+## From the inbox (2026-11-27)
+
+A hard naming framework for plan breakdowns per project (from GitHub issue #37): phases, slices, sections and refits have drifted into different names ("phase 3 slice a section 5"), so each project needs one fixed hierarchy and wording, with its terms in the glossary. Ties to ICM's stage folders (40).
