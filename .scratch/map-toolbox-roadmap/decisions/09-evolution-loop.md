@@ -66,3 +66,7 @@ Routing stage 1 (34 point 13) is evaluated on how often the owner corrects the a
 ## From 37 (2026-11-27)
 
 Turning an agent's mistake into a lint rule or check is part of the workflow (pstack, Osmani); 37 only offers lint rules as errors at setup, the rest arrives through this ratchet. The seed trial watches every Checks line changed after seeding, with its reason: a seeded line edited back is evidence that the toolbox default is wrong.
+
+## From 39 (2026-11-27)
+
+LOG lines carry an optional `Flow: <flow>` tail with `(corrected from <flow>)` when the owner changed the first proposed flow. `/end-session`'s lesson answers arrive as `/idea` lines tagged `lesson`; `retro`'s cadence on the worst sessions is decided here. The session-bookends trial counts tokens per start and end, re-explanations after `/clear`, and missed-save flags.
