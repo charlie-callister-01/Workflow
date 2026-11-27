@@ -2,6 +2,8 @@
 
 One line per session, newest first, written by `/end-session`.
 
+## 2026-11-27 (4): ticket 10 artifact organisation resolved (decision 0020): one home per fact, guides, knowledge export, planning folders, plan levels. Next: ticket 14, closing work. PR #42.
+
 ## 2026-11-27 (3): ideas backlog triaged against the roadmap (absorbed, dropped, parked; learning skill to For knowledge); a CI-minutes failure from a private project routed to 09 and the roadmap items; roadmap ticket 09 evolution loop resolved: trials per module with a trial file and a pass condition written first (usage always measured, owner's opinion optional), a markers row per session in home, a weekly review running `retro` on the worst 1 in 5 transcripts with an accepted / rejected / backlog gate, removal trials on triggers, monthly seed drift and migration retirement, `ci.skip_docs` at setup and refit, Tier 1 skill lint in CI, three stages (decision 0019). Next: ticket 10, artifact organisation. PRs #40, #41. ADRs 0019.
 
 ## 2026-11-27 (2): roadmap map worked, ticket 39 session bookends resolved: a session note per branch (Osmani's five things, folded into the LOG and deleted when done; location left to the new Directory and design fog), HANDOFF and shared STATUS retired, one `session-facts` script, `/save-session` for "safe to clear", the lesson question via `/idea`, a home status script, `merge=union` for the LOG, three trial stages (decision 0018). Next: ticket 09, evolution loop and evidence. PR #39. ADRs 0018.

@@ -58,6 +58,10 @@ _Avoid_: metric, KPI, score
 A trial in reverse: a module, rule, check or skill switched off in one project to see whether the failure it was added for comes back. Kept only if its absence shows.
 _Avoid_: audit, cleanup
 
+**Guide**:
+A module's page for someone learning it, with five headings: what it is, why, how to use it, how to configure it, how to tell it's working. Lives in the toolbox only.
+_Avoid_: docs (alone), manual, README
+
 **Update**:
 Refit's path that brings a primed project's files in step with a later toolbox version: migrations first, then a three-way merge of the templates that keeps the project's own edits.
 _Avoid_: upgrade, sync
@@ -101,7 +105,7 @@ _Avoid_: pipeline (for one change), mode
 
 **Stage**:
 One step of a change flow: define, plan, build, verify, review or ship. A flow may skip stages; each stage has a default skill that can be swapped without changing the flow.
-_Avoid_: phase (that is a slice of a project's plan)
+_Avoid_: phase (a set of slices on a roadmap), planning folder
 
 **Flow table**:
 `docs/agents/change-flows.md`: one short section per change flow, a row per stage with its skill, model tier, who starts it and what to load (pointers only). The agent reads only the chosen flow's section; there is no router skill.
@@ -151,6 +155,32 @@ How a PR waits: **Show** is opened and merged by the owner without waiting for r
 
 ## Planning work
 
+### Plan levels
+
+Every repo uses the same levels, top to bottom: Roadmap > Phase > Slice > Map or Spec > Planning folder (specs only) > Ticket. Refer to each by name first, with its number inside the name.
+
+**Roadmap**:
+A repo's direction, split into phases. One per repo.
+_Avoid_: plan (alone), backlog
+
+**Phase**:
+A set of slices that land together on a roadmap (for the toolbox, a set of module trials), numbered `P1`, `P2` … Phases are a planning grouping, not waterfall gates: work inside one is still sliced and shipped piece by piece.
+_Avoid_: milestone (a GitHub due-date marker), stage (a step of a change flow), epic
+
+**Slice**:
+One thin, end-to-end change inside a phase that ships something working on its own, planned by one map or spec. Numbered within its phase and always named: "P1-a Session facts".
+_Avoid_: section, part, step, story
+
+**Planning folder**:
+One numbered folder of a spec, `01-grill`, `02-spec` or `03-tickets`, holding its stage contract and its output. A change is made in the earliest folder affected, and the later ones are re-run.
+_Avoid_: stage (a step of a change flow), stage folder, phase
+
+**Map rework**:
+Reshaping a map's tickets and fog part-way through (merging, splitting, reordering).
+_Avoid_: refit (that is `/refit-workflow` only)
+
+### Maps, specs and tickets
+
 **Map**:
 A wayfinder plan for a foggy effort: a destination, decisions so far, fog, and out of scope. Lives in `.scratch/map-<effort>/map.md`.
 _Avoid_: plan, roadmap (those are destinations a map can lead to)
@@ -181,14 +211,14 @@ An optional per-repo extra that also sends ideas to the platform's tracker (GitH
 One of ICM's five levels of context an agent reads top-down, stopping when it has enough: 0 `AGENTS.md`, 1 routing (settings, LOG or STATUS, the active map), 2 the stage contract, 3 reference (`docs/agents/*.md`, glossary, decisions), 4 working artifacts (specs, tickets, code). Layers 3 and 4 load only when the contract lists them.
 
 **Stage contract**:
-What a stage loads, doesn't load, outputs and checks before handing on. In the toolbox it is the skill for that stage; in a planning stage folder on trial (ticket 10) it is a `CONTEXT.md`.
+What a stage loads, doesn't load, outputs and checks before handing on. In the toolbox it is the skill for that stage; in a planning folder it is a `CONTEXT.md`.
 _Avoid_: CONTEXT.md (alone; Pocock used that name for the glossary)
 
 **Spec**:
 A description of one piece of work to build, written by `/to-spec`.
 
 **Work ticket**:
-A small slice of a spec to build, written by `/to-tickets` into the spec's `issues/` folder and built by `/implement`.
+A small piece of a spec to build, written by `/to-tickets` into the spec's `issues/` folder and built by `/implement`.
 _Avoid_: ticket (alone), task
 
 **Scope block**:
