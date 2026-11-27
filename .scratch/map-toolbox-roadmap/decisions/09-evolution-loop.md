@@ -62,3 +62,7 @@ Shipping rolls out in three stages (15 point 11), each watched for about a week 
 ## From 34 (2026-11-26)
 
 Routing stage 1 (34 point 13) is evaluated on how often the owner corrects the agent's first proposed flow, skill or method, plus tokens; decide how corrections are counted (39 owns any LOG-line marker). Recurring "no skill fits" gaps arrive as `/idea` lines for the ratchet to turn into a skill or a table row.
+
+## From 37 (2026-11-27)
+
+Turning an agent's mistake into a lint rule or check is part of the workflow (pstack, Osmani); 37 only offers lint rules as errors at setup, the rest arrives through this ratchet. The seed trial watches every Checks line changed after seeding, with its reason: a seeded line edited back is evidence that the toolbox default is wrong.

@@ -30,3 +30,13 @@ One branch per session (15 point 1): the LOG line goes on the session branch, se
 ## From 34 (2026-11-26)
 
 `/start-session` reads layer 0 only for routing (13's six-line flow and size table in `AGENTS.md`), never `change-flows.md`. If 09 wants owner corrections of the first proposed flow counted, the LOG line may carry a marker; its format is this ticket's.
+
+## From 37 (2026-11-27)
+
+`presets/team.md` is retired; its idea of STATUS per person (or replaced by the board) for shared repos comes here, alongside the session-specific STATUS lines idea in the Inbox.
+
+## From the inbox (2026-11-27)
+
+- **Mid-session save**, one idea merged from three Inbox items (update-docs skill, one-step LOG line, "safe to clear"): refresh the state or LOG line (append today's, or amend it if one exists), commit or list uncommitted work, write down open questions, then say plainly that it is safe to clear. No branch sweep or reminders; the LOG line rides on the session branch (15). Decide whether it is its own skill or script, or a light mode of `/end-session`.
+- **Session-specific state**: each session or worktree keeps its own lines (branch, what it is on, next step), possibly one small file per session keyed by branch (the pattern of 41's one inbox file per machine), so parallel sessions read the right context and never edit the same lines. Joins 37's STATUS per person for shared repos. Ties to 36 (worktrees).
+- **Tracking running sessions** (which repo, branch or worktree, what each is on, idle or finished) feeds the status page; the launcher itself is in `## For home`.

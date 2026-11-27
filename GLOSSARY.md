@@ -59,6 +59,10 @@ _Avoid_: repo type, category, preset
 **Seed**:
 The profile values and toolbox version a project's files were set up from, kept with the project so refit can tell what it started from and how far it has moved.
 
+**Seed file**:
+A toolbox starter file chosen by one profile value, copied into a project once at setup and owned by the project afterwards.
+_Avoid_: preset file
+
 **Audience**:
 Who opens a repo: **personal** (only the owner, working from home) or **shared** (teammates who may not use this workflow, so the repo stands alone).
 _Avoid_: solo, team (as profile values)
