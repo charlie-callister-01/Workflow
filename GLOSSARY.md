@@ -24,6 +24,10 @@ _Avoid_: harness (alone: that is everything around the model, research 25)
 The one repo a session works on, fixed at the start of the session: a project, the toolbox, or the home repo itself (for work across several repos). The session's state (log line, status, next step) belongs to it, wherever the session was started.
 _Avoid_: current project, target repo, active repo
 
+**Session note**:
+A short note kept on a session branch while its work runs: scope and decisions, status and next step, files and tree, checks run, open questions. Saved before a context is cleared, read by the next session on that branch, and folded into the log line when the work is done.
+_Avoid_: STATUS, HANDOFF (retired as shared state files)
+
 **Primed project**:
 A project the toolbox has been set up in by `/setup-workflow` or `/refit-workflow`; it records the toolbox commit it took as `workflow_version`.
 _Avoid_: onboarded repo, installed project

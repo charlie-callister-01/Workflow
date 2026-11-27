@@ -44,3 +44,7 @@ The owner's new standing principle (map Main takeaways): every module ships with
 ## From the inbox (2026-11-27)
 
 A hard naming framework for plan breakdowns per project (from GitHub issue #37): phases, slices, sections and refits have drifted into different names ("phase 3 slice a section 5"), so each project needs one fixed hierarchy and wording, with its terms in the glossary. Ties to ICM's stage folders (40).
+
+## From 39 (2026-11-27)
+
+A new artifact: the **session note**, one per session branch, about 15 lines, deleted when the work is done. Its exact location (provisionally `.scratch/sessions/<branch>.md`) is settled in the map's Directory and design fog, with the rest of the layout.
