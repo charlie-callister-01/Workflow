@@ -2,6 +2,8 @@
 
 One line per session, newest first, written by `/end-session`.
 
+## 2026-11-27 (6): Directory and design graduated to ticket 43 and resolved (decision 0022): agent workspace replaces `.scratch/`, one layout everywhere. Next: Roadmap phases (fog, last).
+
 ## 2026-11-27 (5): ticket 14 closing work resolved (decision 0021, supersedes 0005): maps close into a reviewed destination and are archived whole. Next: Directory and design (fog).
 
 ## 2026-11-27 (4): ticket 10 artifact organisation resolved (decision 0020): one home per fact, guides, knowledge export, planning folders, plan levels. Next: ticket 14, closing work. PR #42.

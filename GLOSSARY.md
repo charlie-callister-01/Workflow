@@ -185,8 +185,16 @@ _Avoid_: map rework (reshaping a map part-way)
 
 ### Maps, specs and tickets
 
+**Agent workspace**:
+The one folder in every repo (`workspace/`) holding planning and context work, never code: the roadmap, maps, specs and their planning folders, research, session notes and the archive. Routing files make its folders follow the context layers.
+_Avoid_: scratch, harness, docs
+
+**Routing file**:
+A `CONTEXT.md` at the workspace root or in a map or spec folder: what is here, what is current, what to load next.
+_Avoid_: stage contract (what one stage loads and outputs)
+
 **Map**:
-A wayfinder plan for a foggy effort: a destination, decisions so far, fog, and out of scope. Lives in the repo whose files it will change (in home if it spans several repos), in `.scratch/map-<effort>/map.md`. Closed when its frontier and fog are empty, then archived as one unit.
+A wayfinder plan for a foggy effort: a destination, decisions so far, fog, and out of scope. Lives in `workspace/maps/<effort>/map.md` in the repo whose files it will change (in home if it spans several repos). Closed when its frontier and fog are empty, then archived as one unit.
 _Avoid_: plan, roadmap (those are destinations a map can lead to)
 
 **Destination**:
