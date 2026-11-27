@@ -47,3 +47,7 @@ Resolved 2026-11-24 (grilling, four rounds). Decision 0011.
 11. **Success checks** stay free text until 21 settles the markers.
 
 Glossary: Track (now templates only), Trial (skill trial vs template trial).
+
+## Revised by 09 (2026-11-27)
+
+Point 10's trials board and point 11's free-text success check are replaced, and the unit of trial changes: a trial is **one module switched on in one project** (09 point 1); `<skill>-beta` copies and the template beta track are how a module's change is carried. Each trial gets `notes/trials/<slug>.md` with a pass condition written before it starts (markers with baseline and target, drop if, review by; usage always measured), and `notes/trials.md` becomes an index (09 points 2 to 4). Decision 0019 revises 0011.

@@ -1,6 +1,6 @@
 # Beta skills install side by side
 
-Status: **accepted** (2026-11-24), roadmap decision ticket 17 (Release tracks). Not built yet.
+Status: **accepted** (2026-11-24), roadmap decision ticket 17 (Release tracks). Not built yet. The unit of trial and the success check are revised by [0019](0019-trials-per-module-weekly-review.md) (2026-11-27): trials run per module, with a trial file each.
 
 Since decision 0009 skills live in the home repo, shared by every session, so a skill can't be put on beta for one project. A skill on trial is therefore installed **next to** its production version as `<skill>-beta` (description stamped `[wf <version> beta]`), always, with no switch; it is used only when typed by that name. Beta copies name their beta partners explicitly, and the copy script warns about mismatches. Templates, which are copied into projects, keep a per-project track: `/setup-workflow` and `/refit-workflow` take `-Track beta` and record `workflow_track`.
 
